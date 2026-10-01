@@ -1,0 +1,52 @@
+=== 第23讲：Computational Graph 与局部梯度 ===
+
+[实验1] Add / Multiply / Square / ReLU 的局部 backward 规则
+Add node: z=a+b, a=2.0, b=-3.0, 收到梯度=4.0
+  传给a的梯度 = 4.000000
+  传给b的梯度 = 4.000000
+Multiply node: z=a*b, a=2.0, b=-3.0, 收到梯度=4.0
+  传给a的梯度 = incoming*b = -12.000000
+  传给b的梯度 = incoming*a = 8.000000
+Square node: z=a^2, a=2.0, 收到梯度=4.0
+  传给a的梯度 = incoming*2a = 16.000000
+ReLU node: a=2.0 -> 梯度 4.000000; b=-3.0 -> 梯度 0.000000
+
+[实验2] 完整计算图：手工 Forward + Backward
+Forward: x=2.0, w=3.0, b=-1.0, target=4.0
+  m=w*x = 6.000000
+  z=m+b = 5.000000
+  a=ReLU(z) = 5.000000
+  d=a-target = 1.000000
+  L=d^2 = 1.000000
+Backward:
+  dL/dL = 1.000000
+  dL/dd = 2.000000
+  dL/da = 2.000000
+  dL/dtarget = -2.000000  (target通常不是可训练参数)
+  dL/dz = 2.000000
+  dL/dm = 2.000000
+  dL/db = 2.000000
+  dL/dw = 4.000000
+  dL/dx = 6.000000
+
+[实验3] 数值差分检查 w / b / x 梯度
+  manual dL/dw = 4.000000, numeric = 4.000000, abs error = 2.620e-11
+  manual dL/db = 2.000000, numeric = 2.000000, abs error = 7.572e-11
+  manual dL/dx = 6.000000, numeric = 6.000000, abs error = 1.337e-10
+
+[实验4] ReLU 关闭后，这条路径的梯度被截断
+  w=-3.0, z=-7.000000, ReLU(z)=0.000000, Loss=16.000000
+  ReLU local derivative=0.0
+  manual dL/dw=-0.000000, numeric=0.000000
+
+[实验5] 一个变量被使用两次：梯度必须累加
+  x=2.0, L=x^2+3x=10.000000
+  path1 contribution (x^2) = 4.000000
+  path2 contribution (3x) = 3.000000
+  accumulated dL/dx = 7.000000, numeric = 7.000000
+
+[实验6] 用手工梯度做一次最小参数更新
+  old w=3.000000, old b=-1.000000, old Loss=1.000000
+  lr=0.05
+  new w=2.800000, new b=-1.100000, new Loss=0.250000
+  这里还不是完整训练循环，只演示 backward 产生的梯度如何被参数更新使用。
