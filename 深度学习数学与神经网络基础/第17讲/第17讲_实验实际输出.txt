@@ -1,0 +1,57 @@
+========================================================================
+第17讲：Softmax 实验
+========================================================================
+
+[实验1] 手工拆开 Softmax
+logits                 = [2.  1.  0.1]
+exp(logits)            = [7.389056 2.718282 1.105171]
+sum(exp(logits))       = 11.212508845465344
+probabilities          = [0.659001 0.242433 0.098566]
+sum(probabilities)     = 1.0
+argmax(logits)         = 0
+argmax(probabilities)  = 0
+
+[实验2] Softmax 的平移不变性
+加常数 c=  10.0 -> probs=[0.659001 0.242433 0.098566], max_diff=0.000000000000
+加常数 c=  -7.5 -> probs=[0.659001 0.242433 0.098566], max_diff=0.000000000000
+加常数 c= 100.0 -> probs=[0.659001 0.242433 0.098566], max_diff=0.000000000000
+
+[实验3] 数值稳定性：为什么要先减最大值
+big logits             = [1000. 1001.  999.]
+naive exp              = [inf inf inf]
+naive probabilities    = [nan nan nan]
+stable probabilities   = [0.244728 0.665241 0.090031]
+stable sum             = 0.9999999999999999
+
+[实验4] Temperature
+T=0.5 -> probs=[0.863777 0.1169   0.019323], max_prob=0.863777, entropy=0.453668
+T=1.0 -> probs=[0.659001 0.242433 0.098566], max_prob=0.659001, entropy=0.846738
+T=2.0 -> probs=[0.501688 0.304289 0.194023], max_prob=0.501688, entropy=1.026244
+
+[实验5] Batch Softmax：沿最后一个维度归一化
+batch logits shape     = (2, 3)
+batch probabilities    =
+ [[0.659001 0.242433 0.098566]
+ [0.333333 0.333333 0.333333]]
+row sums               = [1. 1.]
+
+[实验6] 微型 LLM vocabulary Softmax
+token=猫   logit= 1.20  probability=0.193357
+token=狗   logit= 2.10  probability=0.475581
+token=AI  logit=-0.30  probability=0.043144
+token=你好  logit= 0.80  probability=0.129611
+token=世界  logit= 1.00  probability=0.158307
+最高概率 token          = 狗
+最高概率                = 0.4755811684453564
+
+[实验7] NumPy 与 PyTorch 对照
+NumPy probs             = [0.659001 0.242433 0.098566]
+PyTorch probs           = [0.659001 0.242433 0.098566]
+max abs difference      = 0.0
+
+图已保存到： /mnt/data/deep_learning_lesson17/final/figures
+- lesson17_logits_to_probabilities.png
+- lesson17_temperature_effect.png
+- lesson17_logit_gap_probability.png
+
+实验结束。

@@ -1,0 +1,96 @@
+
+========================================================================
+实验1：单样本 Cross Entropy 的完整链条
+========================================================================
+logits = [2.  1.  0.1]
+softmax probabilities = [0.659001 0.242433 0.098566]
+probability sum = 1.0
+p_correct = 0.6590011388859679
+cross entropy = -log(p_correct) = 0.4170300162778335
+
+========================================================================
+实验2：同一组 logits，不同 target 会得到不同 loss
+========================================================================
+target=0, p_correct=0.659001, loss=0.417030
+target=1, p_correct=0.242433, loss=1.417030
+target=2, p_correct=0.098566, loss=2.317030
+
+========================================================================
+实验3：提高正确类别 logit，Cross Entropy 是否下降
+========================================================================
+correct_logit=-2.0, p_correct=0.034186, loss=3.375938
+correct_logit=-1.0, p_correct=0.087771, loss=2.433019
+correct_logit= 0.0, p_correct=0.207320, loss=1.573490
+correct_logit= 1.0, p_correct=0.415529, loss=0.878202
+correct_logit= 2.0, p_correct=0.659001, loss=0.417030
+correct_logit= 3.0, p_correct=0.840083, loss=0.174255
+correct_logit= 5.0, p_correct=0.974885, loss=0.025436
+
+========================================================================
+实验4：one-hot 公式为什么会退化成 -log(p_correct)
+========================================================================
+one_hot target = [1. 0. 0.]
+-sum(y * log(p)) = 0.4170300162778335
+-log(p_correct) = 0.4170300162778335
+difference = 0.0
+
+========================================================================
+实验5：Batch Cross Entropy 与 mean reduction
+========================================================================
+logits_batch.shape = (3, 4)
+targets.shape = (3,)
+probabilities =
+ [[0.830953 0.112457 0.041371 0.015219]
+ [0.085117 0.077017 0.768179 0.069688]
+ [0.105074 0.635661 0.173238 0.086027]]
+per_sample_loss = [0.185182 0.263733 0.45309 ]
+mean_loss = 0.3006683679295324
+
+========================================================================
+实验6：Cross Entropy 的数值稳定性
+========================================================================
+naive exp = [inf inf inf]
+naive probabilities = [nan nan nan]
+naive loss = nan
+stable probabilities = [0.244728 0.665241 0.090031]
+stable loss = 0.40760596444438046
+
+========================================================================
+实验7：NumPy 手写 Cross Entropy 与 PyTorch 对照
+========================================================================
+torch per_sample_loss = [0.185182 0.263733 0.45309 ]
+torch mean_loss = 0.3006683679295324
+NumPy vs PyTorch max abs diff = 5.551115123125783e-17
+WRONG: cross_entropy(softmax(logits), target) = 0.9380847079052846
+RIGHT: cross_entropy(logits, target) = 0.3006683679295324
+
+========================================================================
+实验8：微型 LLM 的 Next-token Prediction Loss
+========================================================================
+sequence token ids = [0 1 2 3 4]
+sequence tokens = ['A', 'B', 'C', 'D', 'E']
+lm_logits.shape = (4, 5)
+lm_targets.shape = (4,)
+next-token targets = ['B', 'C', 'D', 'E']
+position=0, input=A, target=B, p_target=0.738495, token_loss=0.303142
+position=1, input=B, target=C, p_target=0.670085, token_loss=0.400350
+position=2, input=C, target=D, p_target=0.669558, token_loss=0.401137
+position=3, input=D, target=E, p_target=0.616054, token_loss=0.484420
+mean next-token loss = 0.39726236784849395
+
+========================================================================
+实验9：(B,T,V) logits 展平后计算 token Cross Entropy
+========================================================================
+lm_logits_btv.shape = (2, 4, 5)
+lm_targets_bt.shape = (2, 4)
+flat_logits.shape = (8, 5)
+flat_targets.shape = (8,)
+flat token losses = [0.303142 0.40035  0.401137 0.48442  0.340582 0.401779 0.378624 0.508473]
+flat mean token loss = 0.4023134518941067
+
+========================================================================
+实验完成
+========================================================================
+已生成 figures/lesson18_correct_logit_vs_loss.png
+已生成 figures/lesson18_probability_vs_cross_entropy.png
+已生成 figures/lesson18_next_token_losses.png
