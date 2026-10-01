@@ -1,0 +1,19 @@
+UNIFORM SYMMETRIC QUANTIZATION TOY DEMO
+8-bit: scale=0.04724, MSE=0.000182, MAE=0.011597, unique_levels_used=166
+4-bit: scale=0.85714, MSE=0.062109, MAE=0.215954, unique_levels_used=14
+3-bit: scale=2.00000, MSE=0.328141, MAE=0.492487, unique_levels_used=7
+
+THEORETICAL WEIGHT STORAGE FOR A 70B-PARAMETER MODEL
+FP32      :  280.0 GB decimal  |   260.8 GiB binary
+FP16/BF16 :  140.0 GB decimal  |   130.4 GiB binary
+INT8      :   70.0 GB decimal  |    65.2 GiB binary
+INT4 ideal:   35.0 GB decimal  |    32.6 GiB binary
+Note: real quantized checkpoints/runtime memory include scales, metadata, packing/alignment and other tensors.
+
+MOE TOY ACCOUNTING
+experts=8, expert_size=1.0B, shared=2.0B, top_k=2
+total parameters (toy)  = 10.0B
+active parameters/token = 4.0B (toy approximation)
+Important: active parameters are NOT an exact FLOP count; attention, router and communication overhead still matter.
+
+Saved plot: /mnt/data/LLM_Lesson23_Material_Pack/quantization_demo.png

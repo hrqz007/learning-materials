@@ -1,0 +1,40 @@
+KV CACHE SIZE DEMO
+layers=32, q_heads=32, head_dim=128, bytes/elem=2, batch=1
+
+Context length: 4,096 tokens
+  MHA (32 KV heads)   :  2.000 GiB
+  GQA (8 KV heads)    :  0.500 GiB
+  MQA (1 KV head)     :  0.062 GiB
+
+Context length: 8,192 tokens
+  MHA (32 KV heads)   :  4.000 GiB
+  GQA (8 KV heads)    :  1.000 GiB
+  MQA (1 KV head)     :  0.125 GiB
+
+Context length: 16,384 tokens
+  MHA (32 KV heads)   :  8.000 GiB
+  GQA (8 KV heads)    :  2.000 GiB
+  MQA (1 KV head)     :  0.250 GiB
+
+Context length: 32,768 tokens
+  MHA (32 KV heads)   : 16.000 GiB
+  GQA (8 KV heads)    :  4.000 GiB
+  MQA (1 KV head)     :  0.500 GiB
+
+TOY TTFT DECOMPOSITION (illustrative only)
+  prompt= 1,024 tokens -> toy TTFT=   51.8 ms
+  prompt= 8,192 tokens -> toy TTFT=   99.6 ms
+  prompt=32,768 tokens -> toy TTFT=  263.5 ms
+
+If TPOT=35 ms, output= 20 tokens -> after-first-token decode time ~ 0.67 s
+If TPOT=35 ms, output=100 tokens -> after-first-token decode time ~ 3.46 s
+If TPOT=35 ms, output=500 tokens -> after-first-token decode time ~ 17.46 s
+
+STATIC BATCH PADDING TOY EXAMPLE
+  output lengths: [12, 34, 7, 40]
+  useful token slots: 93
+  padded token slots: 160
+  toy utilization: 58.1%
+  Continuous batching can reduce this kind of idle waste, although real serving has additional overheads.
+
+Saved plot: /mnt/data/LLM_Lesson22_Material_Pack/kv_cache_scaling_demo.png

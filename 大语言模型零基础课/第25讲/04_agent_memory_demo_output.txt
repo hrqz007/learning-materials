@@ -1,0 +1,20 @@
+Query: How should I handle API timeout?
+==============================================================================
+1. score=0.494  sim=0.143  recency=0.912  importance=0.90  reliability=0.98
+    API timeout happened; verified fix: set timeout 30 and retry once.
+2. score=0.412  sim=0.083  recency=0.758  importance=0.80  reliability=0.95
+    API rate limit 429; use exponential backoff.
+3. score=0.359  sim=0.000  recency=0.794  importance=0.70  reliability=0.95
+    Database connection failed because password expired.
+4. score=0.319  sim=0.077  recency=0.933  importance=0.40  reliability=0.30
+    Temporary guess: timeout may be caused by DNS.
+5. score=0.260  sim=0.182  recency=0.223  importance=0.60  reliability=0.25
+    Old note: timeout should be 3 seconds.
+
+Top memory to inject into context:
+API timeout happened; verified fix: set timeout 30 and retry once.
+
+Lesson:
+- Similarity alone is not enough.
+- Old or unreliable memories can still look semantically relevant.
+- A memory system needs write/retrieve/update/forget policies.

@@ -1,0 +1,12 @@
+Toy closed-world hallucination / grounding demo
+========================================================
+Prior-only                   accuracy = 0.289
+Retrieval-grounded           accuracy = 1.000
+Noisy retrieval (15%)        accuracy = 0.853
+Noisy retrieval (30%)        accuracy = 0.694
+
+Question: Lyria 的首都是？
+Ground truth: Neris
+Language prior distribution: {'Valora': 0.55, 'Neris': 0.25, 'Candon': 0.2}
+Prior-only sample: Valora
+Grounded answer: Neris

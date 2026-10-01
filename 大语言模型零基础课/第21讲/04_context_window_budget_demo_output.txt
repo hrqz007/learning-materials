@@ -1,0 +1,55 @@
+CONTEXT WINDOW = 24 toy tokens
+RESERVED FOR OUTPUT = 6
+MAX INPUT TOKENS = 18
+
+TURN 1: role=system
+  total history tokens: 6
+  kept in current prompt: 6
+  dropped from oldest history: 0
+  visible context: You are a careful research assistant
+
+TURN 2: role=user
+  total history tokens: 12
+  kept in current prompt: 12
+  dropped from oldest history: 0
+  visible context: You are a careful research assistant My project studies reliable agent systems
+
+TURN 3: role=assistant
+  total history tokens: 20
+  kept in current prompt: 18
+  dropped from oldest history: 2
+  visible context: a careful research assistant My project studies reliable agent systems I will keep reliability as the main goal
+
+TURN 4: role=user
+  total history tokens: 27
+  kept in current prompt: 18
+  dropped from oldest history: 9
+  visible context: reliable agent systems I will keep reliability as the main goal Compare single agent and multi agent baselines
+
+TURN 5: role=assistant
+  total history tokens: 34
+  kept in current prompt: 18
+  dropped from oldest history: 16
+  visible context: as the main goal Compare single agent and multi agent baselines Use equal compute and repeated random seeds
+
+TURN 6: role=tool
+  total history tokens: 41
+  kept in current prompt: 18
+  dropped from oldest history: 23
+  visible context: and multi agent baselines Use equal compute and repeated random seeds benchmark result accuracy 0.72 cost 18 calls
+
+TURN 7: role=user
+  total history tokens: 48
+  kept in current prompt: 18
+  dropped from oldest history: 30
+  visible context: and repeated random seeds benchmark result accuracy 0.72 cost 18 calls Now summarize the most important experimental rule
+
+RETRIEVAL DEMO
+  score=2: report multiple random seeds
+  score=2: baseline equal compute
+  score=0: unrelated cafeteria menu
+  score=0: tool result accuracy 0.72 cost 18 calls
+  score=0: project reliable agent systems
+Top retrieved memory: report multiple random seeds
+
+Saved plot: /mnt/data/LLM_Lesson21_Material_Pack/context_budget_demo.png

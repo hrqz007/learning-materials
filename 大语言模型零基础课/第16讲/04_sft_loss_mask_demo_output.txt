@@ -1,0 +1,47 @@
+=== Toy Chat Template ===
+<system> 你是一名助教 </system>
+<user> 什么是梯度 </user>
+<assistant> 梯度表示损失对参数变化的敏感方向 </assistant>
+
+=== Token / Role / Label ===
+idx  token          role       label
+----------------------------------------------------
+  0  <system>       system     IGNORE
+  1  你              system     IGNORE
+  2  是              system     IGNORE
+  3  一名             system     IGNORE
+  4  助教             system     IGNORE
+  5  </system>      system     IGNORE
+  6  <user>         user       IGNORE
+  7  什么             user       IGNORE
+  8  是              user       IGNORE
+  9  梯度             user       IGNORE
+ 10  </user>        user       IGNORE
+ 11  <assistant>    control    IGNORE
+ 12  梯度             assistant  梯度
+ 13  表示             assistant  表示
+ 14  损失             assistant  损失
+ 15  对              assistant  对
+ 16  参数             assistant  参数
+ 17  变化             assistant  变化
+ 18  的              assistant  的
+ 19  敏感             assistant  敏感
+ 20  方向             assistant  方向
+ 21  </assistant>   assistant  </assistant>
+
+=== Assistant-token probabilities ===
+梯度       before=0.18  after=0.62
+表示       before=0.20  after=0.68
+损失       before=0.12  after=0.55
+对        before=0.22  after=0.70
+参数       before=0.16  after=0.64
+变化       before=0.13  after=0.58
+的        before=0.28  after=0.75
+敏感       before=0.11  after=0.60
+方向       before=0.14  after=0.66
+</assistant> before=0.30  after=0.80
+
+Mean SFT loss before: 1.7482
+Mean SFT loss after : 0.4246
+
+结论：SFT 优化会推动理想 assistant token 的条件概率上升，从而降低回答区域的 cross-entropy loss。

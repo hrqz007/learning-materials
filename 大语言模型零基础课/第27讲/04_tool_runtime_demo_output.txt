@@ -1,0 +1,44 @@
+Toy Tool Runtime
+========================================================================
+
+CASE: legal calculator call
+MODEL PROPOSED:
+{"tool": "calculator", "arguments": {"a": 173, "b": 294, "op": "mul"}}
+RUNTIME RESULT:
+{"status": "success", "value": 50862}
+
+CASE: unknown tool hallucination
+MODEL PROPOSED:
+{"tool": "delete_everything", "arguments": {}}
+RUNTIME RESULT:
+{"status": "rejected", "error": "unknown tool: delete_everything"}
+
+CASE: missing parameter
+MODEL PROPOSED:
+{"tool": "calculator", "arguments": {"a": 5, "op": "add"}}
+RUNTIME RESULT:
+{"status": "rejected", "error": "missing argument: b"}
+
+CASE: authorized file check
+MODEL PROPOSED:
+{"tool": "file_exists", "arguments": {"path": "/workspace/data.csv"}}
+RUNTIME RESULT:
+{"status": "success", "value": true}
+
+CASE: blocked path
+MODEL PROPOSED:
+{"tool": "file_exists", "arguments": {"path": "/etc/passwd"}}
+RUNTIME RESULT:
+{"status": "error", "error": "PermissionError: path outside allowed workspace"}
+
+CASE: lookup external state
+MODEL PROPOSED:
+{"tool": "lookup_record", "arguments": {"key": "budget_usd"}}
+RUNTIME RESULT:
+{"status": "success", "value": 200}
+
+========================================================================
+Key lesson:
+The model proposes an action.
+The runtime validates permissions and arguments.
+Only the runtime executes the tool.

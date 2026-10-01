@@ -1,0 +1,24 @@
+Query: HTTP 429 rate limit exponential backoff Retry-After
+========================================================================================
+1. score=0.512  doc_api_c0         RELEVANT
+    When an API returns HTTP 429, the client has hit a rate limit. Use exponential backoff before retrying.
+2. score=0.389  doc_api_c1         RELEVANT
+    Use exponential backoff before retrying. Respect the Retry-After header when it is present.
+3. score=0.357  doc_timeout_c1     
+    Set a reasonable timeout and retry only when the operation is safe. A timeout is different from an HTTP 429 rate limit.
+4. score=0.200  doc_api_c2         RELEVANT
+    Respect the Retry-After header when it is present. Do not retry immediately in a tight loop.
+5. score=0.050  doc_timeout_c0     
+    A timeout means the request took too long. Set a reasonable timeout and retry only when the operation is safe.
+6. score=0.000  doc_memory_c0      
+    Agent memory stores useful past experience outside model parameters. A retrieval policy selects which memories enter the current context.
+
+k=1: Recall@k=0.333  Precision@k=1.000
+k=2: Recall@k=0.667  Precision@k=1.000
+k=3: Recall@k=0.667  Precision@k=0.667
+k=5: Recall@k=1.000  Precision@k=0.600
+
+Lesson:
+- Larger k can improve recall.
+- But larger k can also introduce more irrelevant context.
+- A reranker can keep a larger candidate pool while shrinking final context.

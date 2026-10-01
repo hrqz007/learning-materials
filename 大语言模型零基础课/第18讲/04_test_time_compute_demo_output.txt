@@ -1,0 +1,22 @@
+N | random-pick | oracle-best-of-N | noisy-verifier
+--+-------------+------------------+---------------
+ 1 |      0.5842 |           0.5842 |        0.5842
+ 2 |      0.5915 |           0.8058 |        0.7237
+ 4 |      0.5900 |           0.9434 |        0.8147
+ 8 |      0.5906 |           0.9903 |        0.8776
+16 |      0.5858 |           0.9992 |        0.9172
+32 |      0.5917 |           0.9999 |        0.9422
+
+Mean single-sample success p = 0.5876
+If samples were truly independent with constant p,
+P(at least one success) = 1 - (1-p)^N
+N= 1: independent-theory=0.5876
+N= 2: independent-theory=0.8299
+N= 4: independent-theory=0.9711
+N= 8: independent-theory=0.9992
+N=16: independent-theory=1.0000
+N=32: independent-theory=1.0000
+
+Key lesson:
+More samples only help if you can exploit diversity and select/combine candidates well.
+Correlated errors and imperfect verifiers reduce the gain from test-time compute.

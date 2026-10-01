@@ -1,0 +1,52 @@
+TOKENS: ['model', 'system', 'agent', 'data', 'tool', 'banana']
+LOGITS: [4.2 3.4 2.8 2.1 1.6 0.3]
+
+Temperature T=0.3
+    model: 0.9259
+   system: 0.0643
+    agent: 0.0087
+     data: 0.0008
+     tool: 0.0002
+   banana: 0.0000
+
+Temperature T=1.0
+    model: 0.5228
+   system: 0.2349
+    agent: 0.1289
+     data: 0.0640
+     tool: 0.0388
+   banana: 0.0106
+
+Temperature T=2.0
+    model: 0.3411
+   system: 0.2286
+    agent: 0.1694
+     data: 0.1194
+     tool: 0.0930
+   banana: 0.0485
+
+Top-k with k=3 (after T=1.0)
+    model: 0.5896
+   system: 0.2649
+    agent: 0.1454
+     data: 0.0000
+     tool: 0.0000
+   banana: 0.0000
+
+Top-p with p=0.80 (after T=1.0)
+  kept tokens: ['model', 'system', 'agent']
+    model: 0.5896
+   system: 0.2649
+    agent: 0.1454
+     data: 0.0000
+     tool: 0.0000
+   banana: 0.0000
+
+Sampling frequencies over 10,000 draws
+T=0.3 {'model': 0.9269, 'system': 0.0623, 'agent': 0.0095, 'data': 0.0011, 'tool': 0.0002, 'banana': 0.0}
+T=1.0 {'model': 0.517, 'system': 0.2382, 'agent': 0.1294, 'data': 0.0659, 'tool': 0.0369, 'banana': 0.0126}
+T=2.0 {'model': 0.3379, 'system': 0.2297, 'agent': 0.1648, 'data': 0.129, 'tool': 0.091, 'banana': 0.0476}
+top-k=3 {'model': 0.5851, 'system': 0.2662, 'agent': 0.1487, 'data': 0.0, 'tool': 0.0, 'banana': 0.0}
+top-p=0.80 {'model': 0.5881, 'system': 0.2704, 'agent': 0.1415, 'data': 0.0, 'tool': 0.0, 'banana': 0.0}
+
+Saved plot: /mnt/data/LLM_Lesson20_Material_Pack/sampling_probability_demo.png

@@ -1,0 +1,35 @@
+PROMPT: ['<BOS>', 'I', 'like']
+PREFILL sequence length: 3
+KV cache rows after prefill: 3
+last hidden shape: (8,)
+
+DECODE step 1
+  next token: I
+  top probability: 0.21883535556417555
+  context length now: 4
+
+DECODE step 2
+  next token: I
+  top probability: 0.21864397751274692
+  context length now: 5
+
+DECODE step 3
+  next token: I
+  top probability: 0.21098332222805655
+  context length now: 6
+
+DECODE step 4
+  next token: I
+  top probability: 0.20571915933354795
+  context length now: 7
+
+GENERATED: ['I', 'I', 'I', 'I']
+FINAL TOKENS: ['<BOS>', 'I', 'like', 'I', 'I', 'I', 'I']
+
+Teaching proxy for K/V projection work
+  naive recomputation rows: 25
+  with KV cache rows:       7
+  ratio naive/cache:        3.57
+
+Note: real Transformer inference has many layers/heads and more costs.
+This counter only illustrates why cached K/V avoids recomputing past K/V projections.
