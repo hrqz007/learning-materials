@@ -1,0 +1,61 @@
+
+============================================================================
+实验1：Prediction、Target、Error 与 Loss
+============================================================================
+prediction= 1.0  target=4.0  error= -3.0  |error|= 3.0  squared_loss=  9.0
+prediction= 3.0  target=4.0  error= -1.0  |error|= 1.0  squared_loss=  1.0
+prediction= 4.0  target=4.0  error=  0.0  |error|= 0.0  squared_loss=  0.0
+prediction= 5.0  target=4.0  error=  1.0  |error|= 1.0  squared_loss=  1.0
+prediction= 7.0  target=4.0  error=  3.0  |error|= 3.0  squared_loss=  9.0
+
+观察：prediction=4 时 loss 最小；离 target 越远，loss 通常越大。
+
+============================================================================
+实验2：带符号 Error 会互相抵消
+============================================================================
+targets      = [4. 4.]
+predictions  = [2. 6.]
+errors       = [-2.  2.]
+mean(error)  = 0.000
+mean(|error|)= 2.000
+mean(square) = 4.000
+结论：平均带符号误差为 0，并不代表两个预测都正确。
+
+============================================================================
+实验3：单样本 Loss、Sum Loss 与 Mean Loss
+============================================================================
+targets         = [3. 5. 2. 8.]
+predictions     = [2.  6.  2.5 7. ]
+per-sample loss = [1.   1.   0.25 1.  ]
+sum loss         = 3.250000
+mean loss        = 0.812500
+
+把完全相同的数据复制一遍（batch size 翻倍）：
+duplicated sum loss  = 6.500000
+duplicated mean loss = 0.812500
+观察：sum 随样本数翻倍，mean 保持不变。
+
+============================================================================
+实验4：Absolute Loss 与 Squared Loss 的惩罚强度
+============================================================================
+误差绝对值=0.5  absolute_loss= 0.5  squared_loss=  0.2
+误差绝对值=1.0  absolute_loss= 1.0  squared_loss=  1.0
+误差绝对值=2.0  absolute_loss= 2.0  squared_loss=  4.0
+误差绝对值=4.0  absolute_loss= 4.0  squared_loss= 16.0
+观察：误差从 2 变成 4 时，Absolute Loss 变 2 倍，Squared Loss 变 4 倍。
+
+============================================================================
+实验5：把 Loss 看成参数 w 的函数
+============================================================================
+w=0.0  prediction= 0.0  loss= 36.00
+w=1.0  prediction= 2.0  loss= 16.00
+w=2.0  prediction= 4.0  loss=  4.00
+w=2.5  prediction= 5.0  loss=  1.00
+w=3.0  prediction= 6.0  loss=  0.00
+w=3.5  prediction= 7.0  loss=  1.00
+w=4.0  prediction= 8.0  loss=  4.00
+最小 loss 出现在 w=3，因为此时 prediction=2*3=6，刚好等于 target。
+
+实验图已保存：
+/mnt/data/deep_learning_lesson14/final/figures/lesson14_prediction_loss_curve.png
+/mnt/data/deep_learning_lesson14/final/figures/lesson14_weight_loss_landscape.png
