@@ -1,0 +1,58 @@
+=== 第24讲：一个神经元的 Backpropagation ===
+
+[实验1] 向量输入单神经元：手工 Forward + Backward
+x = [ 2. -1.  3.]
+w = [ 0.5 -2.   1. ]
+b = 0.200000, target = 5.000000
+z = x·w + b = 6.200000
+a = ReLU(z) = 6.200000
+error = a-target = 1.200000
+Loss = error^2 = 1.440000
+Backward:
+  dL/da = 2.400000
+  da/dz = 1.0
+  dL/dz = 2.400000
+  dL/dw = [ 4.8 -2.4  7.2]
+  dL/db = 2.400000
+  dL/dx = [ 1.2 -4.8  2.4]
+  shapes: x(3,), w(3,), dL/dw(3,), dL/dx(3,)
+
+[实验2] 数值差分 Gradient Check
+  w[0]: manual=4.800000, numeric=4.800000, abs_err=2.700e-11
+  w[1]: manual=-2.400000, numeric=-2.400000, abs_err=8.642e-11
+  w[2]: manual=7.200000, numeric=7.200000, abs_err=4.051e-11
+  b:    manual=2.400000, numeric=2.400000, abs_err=1.350e-11
+  x[0]: manual=1.200000, numeric=1.200000, abs_err=4.321e-11
+  x[1]: manual=-4.800000, numeric=-4.800000, abs_err=2.700e-11
+  x[2]: manual=2.400000, numeric=2.400000, abs_err=8.642e-11
+
+[实验3] 权重梯度与输入值的关系
+  dL/dw[0] = dL/dz * x[0] = 2.400000 * 2.000000 = 4.800000
+  dL/dw[1] = dL/dz * x[1] = 2.400000 * -1.000000 = -2.400000
+  dL/dw[2] = dL/dz * x[2] = 2.400000 * 3.000000 = 7.200000
+  直觉：同一个上游梯度 dL/dz，会被各输入 x_i 缩放后分配给对应 w_i。
+
+[实验4] 用梯度做一次最小参数更新
+  lr = 0.02
+  old w = [ 0.5 -2.   1. ], old b = 0.200000, old Loss = 1.440000
+  new w = [ 0.404 -1.952  0.856], new b = 0.152000, new Loss = 0.230400
+
+[实验5] ReLU 关闭：参数梯度为什么会全部归零
+  z=-6.000000, a=0.000000, Loss=4.000000
+  dL/dz=-0.000000
+  dL/dw=[-0.  0. -0.], dL/db=-0.000000
+
+[实验6] PyTorch Autograd 对照（可选，不要求现在记语法）
+  torch Loss = 1.440000
+  torch dL/dw = [ 4.8 -2.4  7.2]
+  torch dL/db = 2.400000
+  torch dL/dx = [ 1.2 -4.8  2.4]
+  max |manual-torch| for w = 0.000e+00
+
+[实验7] Batch 梯度聚合预览
+  zs = [ 6.2 -3.3]
+  per-sample loss = [1.44 1.  ], mean loss = 1.220000
+  per-sample dL/dz contributions = [1.2 0. ]
+  mean-loss dL/dw = [ 2.4 -1.2  3.6]
+  mean-loss dL/db = 1.200000
+  提示：第25讲会把这种向量/矩阵形式扩展到两层 MLP。

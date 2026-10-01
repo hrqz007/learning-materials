@@ -1,0 +1,110 @@
+=== 第25讲：两层 MLP Backpropagation 实验 ===
+
+1) 固定网络与 Forward
+x.shape = (1, 3), value =
+[[ 1.  2. -1.]]
+W1.shape = (3, 2), value =
+[[ 0.5 -1. ]
+ [ 1.   0.5]
+ [-0.5  2. ]]
+b1.shape = (2,), value =
+[0. 0.]
+W2.shape = (2, 1), value =
+[[ 2.]
+ [-1.]]
+b2.shape = (1,), value =
+[0.5]
+target.shape = (1, 1), value =
+[[5.]]
+z1 = x @ W1 + b1 = [[ 3. -2.]]
+a1 = ReLU(z1) = [[3. 0.]]
+y_hat = a1 @ W2 + b2 = [[6.5]]
+error = [[1.5]]
+loss = 2.250000
+
+2) 手工矩阵 Backward
+dy_hat.shape = (1, 1), value =
+[[3.]]
+dW2.shape = (2, 1), value =
+[[9.]
+ [0.]]
+db2.shape = (1,), value =
+[3.]
+da1.shape = (1, 2), value =
+[[ 6. -3.]]
+dz1.shape = (1, 2), value =
+[[ 6. -0.]]
+dW1.shape = (3, 2), value =
+[[ 6.  0.]
+ [12.  0.]
+ [-6.  0.]]
+db1.shape = (2,), value =
+[6. 0.]
+dx.shape = (1, 3), value =
+[[ 3.  6. -3.]]
+
+3) 关键 Shape 关系
+W1.shape == dL/dW1.shape ? (3, 2) == (3, 2) -> True
+b1.shape == dL/db1.shape ? (2,) == (2,) -> True
+W2.shape == dL/dW2.shape ? (2, 1) == (2, 1) -> True
+b2.shape == dL/db2.shape ? (1,) == (1,) -> True
+x.shape == dL/dx.shape ? (1, 3) == (1, 3) -> True
+
+4) Gradient Check
+W1(0, 0): analytic=6.000000000, numeric=6.000000000, abs_err=3.931e-11
+W1(0, 1): analytic=0.000000000, numeric=0.000000000, abs_err=0.000e+00
+W1(1, 0): analytic=12.000000000, numeric=12.000000000, abs_err=7.861e-11
+W1(1, 1): analytic=0.000000000, numeric=0.000000000, abs_err=0.000e+00
+W1(2, 0): analytic=-6.000000000, numeric=-6.000000000, abs_err=3.931e-11
+W1(2, 1): analytic=0.000000000, numeric=0.000000000, abs_err=0.000e+00
+b1(0,): analytic=6.000000000, numeric=6.000000000, abs_err=3.931e-11
+b1(1,): analytic=0.000000000, numeric=0.000000000, abs_err=0.000e+00
+W2(0, 0): analytic=9.000000000, numeric=9.000000000, abs_err=1.922e-10
+W2(1, 0): analytic=0.000000000, numeric=0.000000000, abs_err=0.000e+00
+b2(0,): analytic=3.000000000, numeric=3.000000000, abs_err=1.136e-10
+x(0, 0): analytic=3.000000000, numeric=3.000000000, abs_err=1.136e-10
+x(0, 1): analytic=6.000000000, numeric=6.000000000, abs_err=3.931e-11
+x(0, 2): analytic=-3.000000000, numeric=-3.000000000, abs_err=1.136e-10
+max gradient-check error = 1.922e-10
+
+5) ReLU gate 对前层梯度的影响
+z1 = [[ 3. -2.]]; ReLU mask = [[1. 0.]]
+da1 = [[ 6. -3.]]
+dz1 = da1 * mask = [[ 6. -0.]]
+第二个 hidden unit 的 z1<0，因此它对应的 W1 第二列梯度全部为0。
+
+6) 做一次小步参数更新
+learning rate = 0.01
+loss before = 2.250000
+loss after  = 0.158245
+
+7) Batch 版本预览：mean MSE
+X_batch.shape=(2, 3), Y_batch.shape=(2, 1), batch_loss=3.125000
+Z1=
+[[ 3.  -2. ]
+ [ 0.5  2.5]]
+ReLU mask=
+[[1. 0.]
+ [1. 1.]]
+dW1.shape=(3, 2), dW1=
+[[ 3.  0.]
+ [ 2.  2.]
+ [-7.  2.]]
+dW2.shape=(2, 1), dW2=
+[[ 3.5]
+ [-5. ]]
+
+8) PyTorch Autograd 对照
+torch loss = 2.250000
+W1.grad=
+[[ 6.  0.]
+ [12.  0.]
+ [-6. -0.]]
+b1.grad=[6. 0.]
+W2.grad=
+[[9.]
+ [0.]]
+b2.grad=[3.]
+x.grad=
+[[ 3.  6. -3.]]
+max NumPy-vs-PyTorch gradient diff = 0.000e+00

@@ -1,0 +1,42 @@
+========================================================================
+第26讲：NumPy 手写完整 Backpropagation + Training Loop
+========================================================================
+X.shape=(20, 1), Y.shape=(20, 1)
+网络结构: 1 -> 8 -> 1
+主实验: learning_rate=0.03, steps=2000, seed=42
+
+[实验1] 训练前的 Gradient Check
+W1[0,0]  analytic=+0.007174907 numeric=+0.007174907 abs_error=2.524e-12
+b1[0,0]  analytic=+0.013030021 numeric=+0.013030021 abs_error=1.464e-11
+W2[0,0]  analytic=-0.445614491 numeric=-0.445614491 abs_error=7.122e-13
+b2[0,0]  analytic=-1.258798161 numeric=-1.258798161 abs_error=5.551e-12
+
+[实验2] 完整 Training Loop
+step=   0 loss=1.376293897 grad_norm=2.636107121
+step=   1 loss=1.173282352 grad_norm=2.494647165
+step=  10 loss=0.201688394 grad_norm=1.162390070
+step=  50 loss=0.016090193 grad_norm=0.094922050
+step= 100 loss=0.008488307 grad_norm=0.051503567
+step= 500 loss=0.001005813 grad_norm=0.012892456
+step=1000 loss=0.000169043 grad_norm=0.003213296
+step=1999 loss=0.000065037 grad_norm=0.001765084
+final_mae=0.004993288
+final_max_abs_error=0.023183712
+前5个目标值: [-1.       -0.789474 -0.578947 -0.368421 -0.157895]
+前5个训练前预测: [0.296596 0.264009 0.231423 0.198836 0.16625 ]
+前5个训练后预测: [-0.997212 -0.787693 -0.578175 -0.368656 -0.159138]
+
+[实验3] 固定相同初始化，只比较 Learning Rate
+lr=0.003 steps= 500 initial_loss=1.376293897 final_loss=0.016321767 min_loss=0.016321767
+lr=0.03  steps= 500 initial_loss=1.376293897 final_loss=0.001010820 min_loss=0.001010820
+lr=1.0   steps=  80 initial_loss=1.376293897 final_loss=10.717153391 min_loss=1.376293897
+
+[实验4] 保存训练曲线与结果图
+已生成:
+ - lesson26_before_after_fit.png
+ - lesson26_gradient_norm.png
+ - lesson26_learning_rate_comparison.png
+ - lesson26_training_loss.png
+
+[科研边界] 本实验只说明训练集上的优化闭环能够工作。
+它没有证明模型对新数据的泛化能力；Train/Validation/Test 会在后续课程系统学习。
