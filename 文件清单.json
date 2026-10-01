@@ -1,7 +1,8 @@
 {
-  "original_file_count": 602,
-  "original_total_bytes": 345353057,
+  "original_file_count": 673,
+  "original_total_bytes": 370553394,
   "snapshot_date_utc": "2026-10-01",
+  "snapshot_cutoff_utc": "2026-10-01T13:04:00Z",
   "files": [
     {
       "source_path": "Agent_Systems_Research_Topic_A_Lesson_01_Package.zip",
@@ -428,6 +429,84 @@
       "target_path": "Agent_Systems研究型进阶专题A/第17讲/Agent_Systems_研究型进阶专题A_第17讲_完整资料包.zip",
       "size_bytes": 1132576,
       "sha256": "87d11564858cc408483cd458cf061db9f9bef603079bf5e3179594032f6f0f87"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第18讲_01_零基础讲义.pdf",
+      "target_path": "Agent_Systems研究型进阶专题A/第18讲/Agent_Systems_研究型进阶专题A_第18讲_01_零基础讲义.pdf",
+      "size_bytes": 664792,
+      "sha256": "616d5e624e36094a222790e8c0bf52c273ee71287810b99cf2b2863aabc18195"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第18讲_03_实验指导书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第18讲/Agent_Systems_研究型进阶专题A_第18讲_03_实验指导书.docx",
+      "size_bytes": 39138,
+      "sha256": "2401e69f301416f044f0b12f596443dc2e7633f1277622bcd8720fde008a905c"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第18讲_04_实验设计书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第18讲/Agent_Systems_研究型进阶专题A_第18讲_04_实验设计书.docx",
+      "size_bytes": 39316,
+      "sha256": "d1ec765abc6bcc2861e3bb07036efa9d3695de200d1ae18a26d81119635341f6"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第18讲_完整资料包.zip",
+      "target_path": "Agent_Systems研究型进阶专题A/第18讲/Agent_Systems_研究型进阶专题A_第18讲_完整资料包.zip",
+      "size_bytes": 1477149,
+      "sha256": "939fc32821b9b073ee8029568c7797914e185b1e5635003144c4fe3b80f8f11d"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第19讲_01_零基础讲义.pdf",
+      "target_path": "Agent_Systems研究型进阶专题A/第19讲/Agent_Systems_研究型进阶专题A_第19讲_01_零基础讲义.pdf",
+      "size_bytes": 736451,
+      "sha256": "89964d7f95970731d7dd75e4fc5974295bd07a9a4651941d8bf7e3566924fe01"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第19讲_03_实验指导书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第19讲/Agent_Systems_研究型进阶专题A_第19讲_03_实验指导书.docx",
+      "size_bytes": 39752,
+      "sha256": "86c9f0f9b659613ff07e92ccab573e0abe856a87c251adcad1ba2dae9d220287"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第19讲_04_实验设计书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第19讲/Agent_Systems_研究型进阶专题A_第19讲_04_实验设计书.docx",
+      "size_bytes": 40660,
+      "sha256": "a02d76ec45996baab87644f073996fc63a5e6366b53788b3bfcf689f51101899"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第19讲_完整资料包.zip",
+      "target_path": "Agent_Systems研究型进阶专题A/第19讲/Agent_Systems_研究型进阶专题A_第19讲_完整资料包.zip",
+      "size_bytes": 1523011,
+      "sha256": "7b2feca8a3210ce60718d99720fb7630821bfc76665c1a8150a0e1393b1411a8"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第20讲_01_零基础讲义.pdf",
+      "target_path": "Agent_Systems研究型进阶专题A/第20讲/Agent_Systems_研究型进阶专题A_第20讲_01_零基础讲义.pdf",
+      "size_bytes": 815954,
+      "sha256": "0efa3a3c914ecc5b863827e37d9e342c834879d475fcb803279e0ea02145a466"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第20讲_03_实验指导书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第20讲/Agent_Systems_研究型进阶专题A_第20讲_03_实验指导书.docx",
+      "size_bytes": 40470,
+      "sha256": "8d83785a149a4c7ee2866c3802bc23f88b0a4999a6c9f93ea466d49bd651e0ba"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第20讲_04_实验设计书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第20讲/Agent_Systems_研究型进阶专题A_第20讲_04_实验设计书.docx",
+      "size_bytes": 40247,
+      "sha256": "d7fa8aa2c69299aa22ae74cfd442e3c865a4bdade77a136bd61a543836ddac59"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第20讲_完整资料包.zip",
+      "target_path": "Agent_Systems研究型进阶专题A/第20讲/Agent_Systems_研究型进阶专题A_第20讲_完整资料包.zip",
+      "size_bytes": 1511299,
+      "sha256": "c34c32265a77c58e6578be9a15b04f5c8a81baeb2040a0edae8f6f494973a426"
+    },
+    {
+      "source_path": "Agent_Systems_专题A_结课_第一篇论文项目包.zip",
+      "target_path": "Agent_Systems研究型进阶专题A/结课项目/Agent_Systems_专题A_结课_第一篇论文项目包.zip",
+      "size_bytes": 73682,
+      "sha256": "0ffffd01ae3ff07f085a4ccb479f9d1aa57aa4236f7c23e340b50f7ad93f2e2e"
     },
     {
       "source_path": "01_零基础讲义.docx",
@@ -3608,6 +3687,354 @@
       "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_讲义_CrossEntropy.pdf",
       "size_bytes": 451186,
       "sha256": "607890e278175ffc21c819f377cacf26ceceed57f38190b75fd33589252e348f"
+    },
+    {
+      "source_path": "README_第19讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第19讲/README_第19讲.txt",
+      "size_bytes": 872,
+      "sha256": "3d1fbca8b9ae4bb10b97bbbce3059e6f8d3ae03b54ad2d672bc1e7ffe9ea0c98"
+    },
+    {
+      "source_path": "lesson19_loss_slices.png",
+      "target_path": "深度学习数学与神经网络基础/第19讲/lesson19_loss_slices.png",
+      "size_bytes": 95548,
+      "sha256": "85034f409ab164a04e6c1fa5db572ac064260b68965d02e72a722d0022d3da66"
+    },
+    {
+      "source_path": "lesson19_mse_loss_contour.png",
+      "target_path": "深度学习数学与神经网络基础/第19讲/lesson19_mse_loss_contour.png",
+      "size_bytes": 345294,
+      "sha256": "37f58a310580bfec9d2c74bf9a7011f70810dcf29104feddd7896a7ae9ab8c50"
+    },
+    {
+      "source_path": "lesson19_partial_axes_contour.png",
+      "target_path": "深度学习数学与神经网络基础/第19讲/lesson19_partial_axes_contour.png",
+      "size_bytes": 297704,
+      "sha256": "143ed0965611d09cad6d8fa1383c27f400514668dddc550a1918057dca54dfe2"
+    },
+    {
+      "source_path": "lesson19_partial_derivative_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第19讲/lesson19_partial_derivative_experiment.py",
+      "size_bytes": 11474,
+      "sha256": "b1503a7161c862230407844230f85fd249ad8c9055f29d2f0605e305092488c9"
+    },
+    {
+      "source_path": "第19讲_PartialDerivative偏导数_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第19讲/第19讲_PartialDerivative偏导数_完整材料包.zip",
+      "size_bytes": 2164470,
+      "sha256": "0693a0016edee43050a9f34bb6a576adb96f9df600b06ce2cbe94d72a33a2e7f"
+    },
+    {
+      "source_path": "第19讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第19讲/第19讲_实验实际输出.txt",
+      "size_bytes": 1728,
+      "sha256": "8efae5dbe9fad23d41f205e66d660b3610a048f5b6326c005db027d645dec3a3"
+    },
+    {
+      "source_path": "第19讲_实验设计_PartialDerivative与多参数Loss.pdf",
+      "target_path": "深度学习数学与神经网络基础/第19讲/第19讲_实验设计_PartialDerivative与多参数Loss.pdf",
+      "size_bytes": 469714,
+      "sha256": "54a5dd16dd73f9359d47754cec57d91a41be9a18d0743b5e0a205792e90bebbc"
+    },
+    {
+      "source_path": "第19讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第19讲/第19讲_核心概念速查卡.pdf",
+      "size_bytes": 130277,
+      "sha256": "8ffc0d17b7c2c46555972f81588398d8a2bb286c692486e09c19d38153e77b59"
+    },
+    {
+      "source_path": "第19讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第19讲/第19讲_练习题与答案.pdf",
+      "size_bytes": 141463,
+      "sha256": "68557cdbe12d0631fb48dd2350f30323eaa999d6f684fb17aed50e8e268b8559"
+    },
+    {
+      "source_path": "第19讲_讲义_PartialDerivative偏导数.pdf",
+      "target_path": "深度学习数学与神经网络基础/第19讲/第19讲_讲义_PartialDerivative偏导数.pdf",
+      "size_bytes": 919193,
+      "sha256": "7526aa32e3a262e8a5ab4e0319a7b49bf5d68f410bede68f7853294fc211f573"
+    },
+    {
+      "source_path": "README_第20讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第20讲/README_第20讲.txt",
+      "size_bytes": 783,
+      "sha256": "723cf00d57dec5602261423ff64fffd1fce6fed597d09b76075e29d2397a7c45"
+    },
+    {
+      "source_path": "lesson20_gradient_direction.png",
+      "target_path": "深度学习数学与神经网络基础/第20讲/lesson20_gradient_direction.png",
+      "size_bytes": 281951,
+      "sha256": "5dfb50da2c42266da0734a9d14b14cd2d060e21e23f7026be30f26338710a07c"
+    },
+    {
+      "source_path": "lesson20_gradient_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第20讲/lesson20_gradient_experiment.py",
+      "size_bytes": 11801,
+      "sha256": "516c5b61b7d1d59cadbd376ef253febb334360d7c398d712c77c51259667e740"
+    },
+    {
+      "source_path": "lesson20_gradient_norm.png",
+      "target_path": "深度学习数学与神经网络基础/第20讲/lesson20_gradient_norm.png",
+      "size_bytes": 55005,
+      "sha256": "110499b39431cd1184bfe9c66f7b5b7b1b227cdff2961e4575245e313ed88661"
+    },
+    {
+      "source_path": "lesson20_learning_rate_one_step.png",
+      "target_path": "深度学习数学与神经网络基础/第20讲/lesson20_learning_rate_one_step.png",
+      "size_bytes": 69068,
+      "sha256": "b5d87e1f416201e2902ef175bf8fd0593bbdb6021b793864e22121b8421328f6"
+    },
+    {
+      "source_path": "lesson20_loss_descent.png",
+      "target_path": "深度学习数学与神经网络基础/第20讲/lesson20_loss_descent.png",
+      "size_bytes": 49995,
+      "sha256": "5769673fc74a3883e663181dbe5e5247c3b90ce4810a592d73dd16d3391c59a8"
+    },
+    {
+      "source_path": "第20讲_Gradient梯度_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第20讲/第20讲_Gradient梯度_完整材料包.zip",
+      "size_bytes": 1903540,
+      "sha256": "0f94aee778b69456814537af7288ca7980da975fb71068e5acc19e6848673459"
+    },
+    {
+      "source_path": "第20讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第20讲/第20讲_实验实际输出.txt",
+      "size_bytes": 3126,
+      "sha256": "775a947930e8a61693d228fb69ecd588d7550e4c5815c9f04d03fe7fd12f533c"
+    },
+    {
+      "source_path": "第20讲_实验设计_Gradient方向范数与步长.pdf",
+      "target_path": "深度学习数学与神经网络基础/第20讲/第20讲_实验设计_Gradient方向范数与步长.pdf",
+      "size_bytes": 655450,
+      "sha256": "95b850fe8ea4e8d34b1d39f0cc85260faf4ff1c9920642b6327666584a42d20e"
+    },
+    {
+      "source_path": "第20讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第20讲/第20讲_核心概念速查卡.pdf",
+      "size_bytes": 149069,
+      "sha256": "a81b53fbe507c9d89518f0a92a9fac83f2dc4200160790c2715a6f9aefbbd2b6"
+    },
+    {
+      "source_path": "第20讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第20讲/第20讲_练习题与答案.pdf",
+      "size_bytes": 171245,
+      "sha256": "0829e666d58d09cf1064c05055af3474bda23b22734382468eb017c309152d46"
+    },
+    {
+      "source_path": "第20讲_讲义_Gradient梯度.pdf",
+      "target_path": "深度学习数学与神经网络基础/第20讲/第20讲_讲义_Gradient梯度.pdf",
+      "size_bytes": 722044,
+      "sha256": "6fbb5a37293e882db63007c6a14d0a86ecf4dc72ca3d48861862c8393c4e57a6"
+    },
+    {
+      "source_path": "README_第21讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第21讲/README_第21讲.txt",
+      "size_bytes": 676,
+      "sha256": "379cdbd373274461a3c3e453c26d3766cc577a72e8d9e020784440165479f3ae"
+    },
+    {
+      "source_path": "lesson21_bowl_contour.png",
+      "target_path": "深度学习数学与神经网络基础/第21讲/lesson21_bowl_contour.png",
+      "size_bytes": 240064,
+      "sha256": "6c9e7dd55d7cebc774cef206ab352758d81b7f8f6cf9b607475df2948ede5807"
+    },
+    {
+      "source_path": "lesson21_descent_trajectories.png",
+      "target_path": "深度学习数学与神经网络基础/第21讲/lesson21_descent_trajectories.png",
+      "size_bytes": 248296,
+      "sha256": "e4843892cf1c005a282e6979bbe1665143609e6d50edbcf442d94c4ac80ec2e6"
+    },
+    {
+      "source_path": "lesson21_flat_vs_sharp.png",
+      "target_path": "深度学习数学与神经网络基础/第21讲/lesson21_flat_vs_sharp.png",
+      "size_bytes": 65231,
+      "sha256": "94f990fbbaab0f94cf91d22fd75574b190d2370dc2f2dde0d1805d9656967722"
+    },
+    {
+      "source_path": "lesson21_loss_landscape_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第21讲/lesson21_loss_landscape_experiment.py",
+      "size_bytes": 6889,
+      "sha256": "a445a5b86fe178ddd9d560973113b14cac82bed6fb9fc28c29ac63fe6b70f23e"
+    },
+    {
+      "source_path": "lesson21_plateau_small_gradient.png",
+      "target_path": "深度学习数学与神经网络基础/第21讲/lesson21_plateau_small_gradient.png",
+      "size_bytes": 78792,
+      "sha256": "424fd9612bd2d60c919f623a4a879fc95ae322ac5f7d918c9703669c145ff5d7"
+    },
+    {
+      "source_path": "lesson21_saddle_contour.png",
+      "target_path": "深度学习数学与神经网络基础/第21讲/lesson21_saddle_contour.png",
+      "size_bytes": 422460,
+      "sha256": "3ae530e3211ab953211e09e1f1cdb0dc1b7e236dbbb36ab3b004659b7306e4d8"
+    },
+    {
+      "source_path": "第21讲_LossLandscape_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第21讲/第21讲_LossLandscape_完整材料包.zip",
+      "size_bytes": 2558783,
+      "sha256": "fe79304c2f99a6f4b406474cb8daba31ad35f067d4236a4136de35c1bb2b88cc"
+    },
+    {
+      "source_path": "第21讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第21讲/第21讲_实验实际输出.txt",
+      "size_bytes": 2356,
+      "sha256": "1259db38c214c558bf8e4fb5038da78d4854a2668e86f0190618f6bc9c02c04d"
+    },
+    {
+      "source_path": "第21讲_实验设计_LossLandscape.pdf",
+      "target_path": "深度学习数学与神经网络基础/第21讲/第21讲_实验设计_LossLandscape.pdf",
+      "size_bytes": 173371,
+      "sha256": "268bd0b619192d9cd00d205ed6fc7fca9cceda4a721b1d126856a39c627a23c6"
+    },
+    {
+      "source_path": "第21讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第21讲/第21讲_核心概念速查卡.pdf",
+      "size_bytes": 149019,
+      "sha256": "83e846aa1a6a8f84fb012929623896feeda93d4c1f50faf625af14056244f57d"
+    },
+    {
+      "source_path": "第21讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第21讲/第21讲_练习题与答案.pdf",
+      "size_bytes": 151575,
+      "sha256": "6dc62099c57e723c1f0a5718a1301acf03b4678b1c7134070301f11ccc61ce7c"
+    },
+    {
+      "source_path": "第21讲_讲义_LossLandscape.pdf",
+      "target_path": "深度学习数学与神经网络基础/第21讲/第21讲_讲义_LossLandscape.pdf",
+      "size_bytes": 1282563,
+      "sha256": "2a37561510973ec802ef40afd019d48c6d84e9ee07dd921e56ed127f3836dd0e"
+    },
+    {
+      "source_path": "README_第22讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第22讲/README_第22讲.txt",
+      "size_bytes": 792,
+      "sha256": "e4eb257be458b7d0f21b91e2c323081609e9a4bd2d74b007a32e642ed63460f8"
+    },
+    {
+      "source_path": "lesson22_chain_loss_curve.png",
+      "target_path": "深度学习数学与神经网络基础/第22讲/lesson22_chain_loss_curve.png",
+      "size_bytes": 48108,
+      "sha256": "38e4541f579709c1b17f8643eb0c4fa48dfaa1f7263efbbe2f6696269989afc6"
+    },
+    {
+      "source_path": "lesson22_chain_rule_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第22讲/lesson22_chain_rule_experiment.py",
+      "size_bytes": 5875,
+      "sha256": "797de547ed046dc91ebdfcba329c414e2d055d4d2c5256c650a9e7b09bc93c26"
+    },
+    {
+      "source_path": "lesson22_gradient_product_depth.png",
+      "target_path": "深度学习数学与神经网络基础/第22讲/lesson22_gradient_product_depth.png",
+      "size_bytes": 83812,
+      "sha256": "b9113929abc37dd638e67365dc47e311d2669923c70ecb629b9f5d6e8f3b7546"
+    },
+    {
+      "source_path": "lesson22_relu_gradient_gate.png",
+      "target_path": "深度学习数学与神经网络基础/第22讲/lesson22_relu_gradient_gate.png",
+      "size_bytes": 50610,
+      "sha256": "c6d74fabb537f891465bf54a7e1a13b5f1871592379fdd0dbbaef331ae3f0686"
+    },
+    {
+      "source_path": "第22讲_ChainRule链式法则_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第22讲/第22讲_ChainRule链式法则_完整材料包.zip",
+      "size_bytes": 1023094,
+      "sha256": "18461bb1253c35b1bb746b71c8ff1c7b32768856f27bddf38e0367766dcfa8fa"
+    },
+    {
+      "source_path": "第22讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第22讲/第22讲_实验实际输出.txt",
+      "size_bytes": 1323,
+      "sha256": "07fce15ec151f1dffd01583facb71b4ff1698c5b82d94411dac7ccf7d809940c"
+    },
+    {
+      "source_path": "第22讲_实验设计_ChainRule与梯度路径.pdf",
+      "target_path": "深度学习数学与神经网络基础/第22讲/第22讲_实验设计_ChainRule与梯度路径.pdf",
+      "size_bytes": 268486,
+      "sha256": "ea5a3a93d3608d3a65b5296b01bf370152bf50355cdcb511f26c0d3ac504b127"
+    },
+    {
+      "source_path": "第22讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第22讲/第22讲_核心概念速查卡.pdf",
+      "size_bytes": 119423,
+      "sha256": "e0edd41f4df42508ae5d472bcb230215564cc454b8e2e729361599475e2defe0"
+    },
+    {
+      "source_path": "第22讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第22讲/第22讲_练习题与答案.pdf",
+      "size_bytes": 123682,
+      "sha256": "7f915e84801b6d1ae00deb495b7b117139565cd4ca420552af0522b9783b917d"
+    },
+    {
+      "source_path": "第22讲_讲义_ChainRule链式法则.pdf",
+      "target_path": "深度学习数学与神经网络基础/第22讲/第22讲_讲义_ChainRule链式法则.pdf",
+      "size_bytes": 478430,
+      "sha256": "4b2fb422ffbde289980c48d058b8d3620012eaafeac565f75c45bb52a2fee340"
+    },
+    {
+      "source_path": "README_第23讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第23讲/README_第23讲.txt",
+      "size_bytes": 907,
+      "sha256": "cee422fa8bc9ac5ac3037386d5426b4d95e2f0756f15553b41740375030c9a0b"
+    },
+    {
+      "source_path": "lesson23_computational_graph_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第23讲/lesson23_computational_graph_experiment.py",
+      "size_bytes": 8778,
+      "sha256": "593dbadd527b6661eabc993929897f626d388c2f3c9712e75eb0b0f88f4b2f62"
+    },
+    {
+      "source_path": "lesson23_forward_backward_graph.png",
+      "target_path": "深度学习数学与神经网络基础/第23讲/lesson23_forward_backward_graph.png",
+      "size_bytes": 65515,
+      "sha256": "9ce5fb2a54001a99cda78a2b692daa300a2337ed7a3be09b9ebdd8aad9184d3b"
+    },
+    {
+      "source_path": "lesson23_gradient_check.png",
+      "target_path": "深度学习数学与神经网络基础/第23讲/lesson23_gradient_check.png",
+      "size_bytes": 34660,
+      "sha256": "ad5386dbfe13942074629f81a8a5e9c6e53a354164b361494b22842842789e79"
+    },
+    {
+      "source_path": "lesson23_local_node_rules.png",
+      "target_path": "深度学习数学与神经网络基础/第23讲/lesson23_local_node_rules.png",
+      "size_bytes": 51912,
+      "sha256": "0c9f67dfd4f2508e8a5cc24a6a91cd281a649de34eed5318c31244b0afa8c3c7"
+    },
+    {
+      "source_path": "第23讲_ComputationalGraph与局部梯度_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_ComputationalGraph与局部梯度_完整材料包.zip",
+      "size_bytes": 878718,
+      "sha256": "1cc0bafce420b2e493ec402004284bbc3ac68e665e1265276c4aa124bfa847ff"
+    },
+    {
+      "source_path": "第23讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_实验实际输出.txt",
+      "size_bytes": 1878,
+      "sha256": "c6af583428bae5faa19b936b34412d20fff236899db3318d078b3755f795d6fb"
+    },
+    {
+      "source_path": "第23讲_实验设计_ComputationalGraph与局部梯度.pdf",
+      "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_实验设计_ComputationalGraph与局部梯度.pdf",
+      "size_bytes": 231710,
+      "sha256": "03eda2a7caae6e7a55dbb0bcda3bc07708086522d343ff5f394ff7ae580d5918"
+    },
+    {
+      "source_path": "第23讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_核心概念速查卡.pdf",
+      "size_bytes": 112023,
+      "sha256": "3b59694657483ebf9dab29851cdf21d6a11fad13ab2730aa15939596a33a262f"
+    },
+    {
+      "source_path": "第23讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_练习题与答案.pdf",
+      "size_bytes": 109591,
+      "sha256": "8ded7ebd89dcd5364bb1d30e90bf95ba1aac6064735603f86c5eb0150279763a"
+    },
+    {
+      "source_path": "第23讲_讲义_ComputationalGraph与局部梯度.pdf",
+      "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_讲义_ComputationalGraph与局部梯度.pdf",
+      "size_bytes": 428200,
+      "sha256": "0ac83b26b0e4ab3461500e9e5afacbd7a30684e3382cc7fa6bd818bde4b8c24f"
     },
     {
       "source_path": "肿瘤新抗原与StableNeoRank全景图.png",
