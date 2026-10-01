@@ -1,6 +1,7 @@
 {
-  "original_file_count": 572,
-  "original_total_bytes": 335394087,
+  "original_file_count": 602,
+  "original_total_bytes": 345353057,
+  "snapshot_date_utc": "2026-10-01",
   "files": [
     {
       "source_path": "Agent_Systems_Research_Topic_A_Lesson_01_Package.zip",
@@ -379,6 +380,54 @@
       "target_path": "Agent_Systems研究型进阶专题A/第15讲/Agent_Systems_研究型进阶专题A_第15讲_完整资料包.zip",
       "size_bytes": 3527837,
       "sha256": "cadf68b7a46589010c15e3a0bba13e65f2d4839340865011e954d2bdde81a191"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第16讲_01_零基础讲义.pdf",
+      "target_path": "Agent_Systems研究型进阶专题A/第16讲/Agent_Systems_研究型进阶专题A_第16讲_01_零基础讲义.pdf",
+      "size_bytes": 677367,
+      "sha256": "43073a0aae3ebe4e4aa695b3760c85aafd74136654c31cbd0ab1e0ea72ba591c"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第16讲_03_实验指导书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第16讲/Agent_Systems_研究型进阶专题A_第16讲_03_实验指导书.docx",
+      "size_bytes": 39719,
+      "sha256": "988245f6b89cc6d06543b3b8e1121e32e127b2412ad757bff848c45beb2fc01e"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第16讲_04_实验设计书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第16讲/Agent_Systems_研究型进阶专题A_第16讲_04_实验设计书.docx",
+      "size_bytes": 39426,
+      "sha256": "88c9f2826405b6dba178abc78469c02fd012d8bb15883b0a2070c6cd9f47723d"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第16讲_完整资料包.zip",
+      "target_path": "Agent_Systems研究型进阶专题A/第16讲/Agent_Systems_研究型进阶专题A_第16讲_完整资料包.zip",
+      "size_bytes": 3637799,
+      "sha256": "24b0d5cd9b7700df83a00ee0b858586b383132f1356edaa5e192c812873cbc80"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第17讲_01_零基础讲义.pdf",
+      "target_path": "Agent_Systems研究型进阶专题A/第17讲/Agent_Systems_研究型进阶专题A_第17讲_01_零基础讲义.pdf",
+      "size_bytes": 555707,
+      "sha256": "68944fbb45986d26485a867f973dcbba9a479a86576190ebcd91d08a5f70e009"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第17讲_03_实验指导书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第17讲/Agent_Systems_研究型进阶专题A_第17讲_03_实验指导书.docx",
+      "size_bytes": 38831,
+      "sha256": "50d7d56a823fd2c2a64f1d4ca723ec09ef3570052830b8e2ed775098dcd981b2"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第17讲_04_实验设计书.docx",
+      "target_path": "Agent_Systems研究型进阶专题A/第17讲/Agent_Systems_研究型进阶专题A_第17讲_04_实验设计书.docx",
+      "size_bytes": 39138,
+      "sha256": "283dfb3aa1573c7f068f102757861b114b372b2c4e9e53ae789be7a13f77efad"
+    },
+    {
+      "source_path": "Agent_Systems_研究型进阶专题A_第17讲_完整资料包.zip",
+      "target_path": "Agent_Systems研究型进阶专题A/第17讲/Agent_Systems_研究型进阶专题A_第17讲_完整资料包.zip",
+      "size_bytes": 1132576,
+      "sha256": "87d11564858cc408483cd458cf061db9f9bef603079bf5e3179594032f6f0f87"
     },
     {
       "source_path": "01_零基础讲义.docx",
@@ -3427,6 +3476,138 @@
       "target_path": "深度学习数学与神经网络基础/第16讲/第16讲_讲义_概率指数与对数.pdf",
       "size_bytes": 639963,
       "sha256": "95ec81694e425215fa3c437bbe2a0568ed5abf33c11cbcbe3c5e0cbc58505de7"
+    },
+    {
+      "source_path": "README_第17讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第17讲/README_第17讲.txt",
+      "size_bytes": 1413,
+      "sha256": "b222899c4b462abf3642feb0e3f2beb87775ee2403f0f86666c25024f8f8c577"
+    },
+    {
+      "source_path": "lesson17_logit_gap_probability.png",
+      "target_path": "深度学习数学与神经网络基础/第17讲/lesson17_logit_gap_probability.png",
+      "size_bytes": 59682,
+      "sha256": "97202d21e68c61f1068d62325098ba7ceb337b60bc430542a30e8c853a341ae8"
+    },
+    {
+      "source_path": "lesson17_logits_to_probabilities.png",
+      "target_path": "深度学习数学与神经网络基础/第17讲/lesson17_logits_to_probabilities.png",
+      "size_bytes": 40478,
+      "sha256": "fe4b7c85c133d39ecba96ec809474f006643030d58b580849d558f61de9630f1"
+    },
+    {
+      "source_path": "lesson17_softmax_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第17讲/lesson17_softmax_experiment.py",
+      "size_bytes": 8220,
+      "sha256": "d747ce3095dc646ed2ec0d7ded0ebdfc720756a1fc68bd45ae4c40da2b711fed"
+    },
+    {
+      "source_path": "lesson17_temperature_effect.png",
+      "target_path": "深度学习数学与神经网络基础/第17讲/lesson17_temperature_effect.png",
+      "size_bytes": 38468,
+      "sha256": "ed3357120d9e18954543e37f06ece21a97f8d9f2059c14b7eaecdfb893e045ff"
+    },
+    {
+      "source_path": "第17讲_Softmax_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第17讲/第17讲_Softmax_完整材料包.zip",
+      "size_bytes": 718013,
+      "sha256": "38ff4a31aba5a18d01c101755019484e767c1d18e9907862ff188af71621882d"
+    },
+    {
+      "source_path": "第17讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第17讲/第17讲_实验实际输出.txt",
+      "size_bytes": 2242,
+      "sha256": "c6001e9db5ca8d6f504b2a57a00d10875fcab80a72f4a82461d16e09ba963c25"
+    },
+    {
+      "source_path": "第17讲_实验设计_SoftmaxTemperature与数值稳定性.pdf",
+      "target_path": "深度学习数学与神经网络基础/第17讲/第17讲_实验设计_SoftmaxTemperature与数值稳定性.pdf",
+      "size_bytes": 227370,
+      "sha256": "b6a95c93db94a533a663605b66b35ab7a995d26155b241b05f1117a2bd004dc0"
+    },
+    {
+      "source_path": "第17讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第17讲/第17讲_核心概念速查卡.pdf",
+      "size_bytes": 74320,
+      "sha256": "b659ff6e2925b1ab91b45cbee8c53b370311ff8dbbb2904514daa17a5eb89fd9"
+    },
+    {
+      "source_path": "第17讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第17讲/第17讲_练习题与答案.pdf",
+      "size_bytes": 108590,
+      "sha256": "4091a5dc8c38731494bcd412613bacc33636168eace8f10421221de3a89d506d"
+    },
+    {
+      "source_path": "第17讲_讲义_Softmax.pdf",
+      "target_path": "深度学习数学与神经网络基础/第17讲/第17讲_讲义_Softmax.pdf",
+      "size_bytes": 303922,
+      "sha256": "0813c26f4781c8d29de174f250eeaa85e551a3c166f747fedcdeced090bcb3ad"
+    },
+    {
+      "source_path": "README_第18讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第18讲/README_第18讲.txt",
+      "size_bytes": 865,
+      "sha256": "6e349f0c17ada54133c88727dea321fcc2c5d295f2c8331f53c31a7ee2de2376"
+    },
+    {
+      "source_path": "lesson18_correct_logit_vs_loss.png",
+      "target_path": "深度学习数学与神经网络基础/第18讲/lesson18_correct_logit_vs_loss.png",
+      "size_bytes": 94975,
+      "sha256": "9e63eecc27450bee58edd1fe04776e36183cb850256fd9e43bd9134ce122acc5"
+    },
+    {
+      "source_path": "lesson18_cross_entropy_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第18讲/lesson18_cross_entropy_experiment.py",
+      "size_bytes": 16897,
+      "sha256": "a78d2c5a54440ec2c2f34e0dbc1c138a9d8f6b5a4b3413efba537e08d53e6183"
+    },
+    {
+      "source_path": "lesson18_next_token_losses.png",
+      "target_path": "深度学习数学与神经网络基础/第18讲/lesson18_next_token_losses.png",
+      "size_bytes": 40795,
+      "sha256": "d3b3ceb1fcc34e354cb9d992fae4c628c50f1cd4c0ddfa806b16810b3f288962"
+    },
+    {
+      "source_path": "lesson18_probability_vs_cross_entropy.png",
+      "target_path": "深度学习数学与神经网络基础/第18讲/lesson18_probability_vs_cross_entropy.png",
+      "size_bytes": 65235,
+      "sha256": "a6beff4e287ceac193f17a1b5217818c6d62a19a105afc5fedefdbd929b84df7"
+    },
+    {
+      "source_path": "第18讲_CrossEntropy_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_CrossEntropy_完整材料包.zip",
+      "size_bytes": 1029949,
+      "sha256": "dbc2a0d72d68127e690e3f4b8893c5299b01429b0667d39716671b2afd108360"
+    },
+    {
+      "source_path": "第18讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_实验实际输出.txt",
+      "size_bytes": 4395,
+      "sha256": "653c17c88ec605142eb567065f386d18a244acb97bcd8f678c57ec8e67bfd31f"
+    },
+    {
+      "source_path": "第18讲_实验设计_CrossEntropy与NextTokenLoss.pdf",
+      "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_实验设计_CrossEntropy与NextTokenLoss.pdf",
+      "size_bytes": 232474,
+      "sha256": "9993399a85a55a6b2a6120ab1d2f1f4ff1cadc845b8fb3082f8047114d105875"
+    },
+    {
+      "source_path": "第18讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_核心概念速查卡.pdf",
+      "size_bytes": 130837,
+      "sha256": "1e06ecb4f5cd6ffeedc96e498ec82633c6da60ef206f026bc1546938bf02892f"
+    },
+    {
+      "source_path": "第18讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_练习题与答案.pdf",
+      "size_bytes": 148081,
+      "sha256": "58f1f9b368dd7e6665ccd8e7d720b37d2363a14858ba0e4d3bd5098c54fcf40f"
+    },
+    {
+      "source_path": "第18讲_讲义_CrossEntropy.pdf",
+      "target_path": "深度学习数学与神经网络基础/第18讲/第18讲_讲义_CrossEntropy.pdf",
+      "size_bytes": 451186,
+      "sha256": "607890e278175ffc21c819f377cacf26ceceed57f38190b75fd33589252e348f"
     },
     {
       "source_path": "肿瘤新抗原与StableNeoRank全景图.png",
