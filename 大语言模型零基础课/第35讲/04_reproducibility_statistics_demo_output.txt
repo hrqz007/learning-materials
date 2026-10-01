@@ -1,0 +1,26 @@
+PART A: One experiment can mislead
+==============================================================================
+Single benchmark seed=3: A=0.640 B=0.670 diff(B-A)=+0.030
+
+PART B: Repeat many independent benchmarks
+==============================================================================
+Mean diff(B-A) over 100 experiments = +0.031
+Std of diff = 0.064
+A wins=29, B wins=66, ties=5
+
+PART C: Paired bootstrap CI on one benchmark
+==============================================================================
+seed=42 A=0.800 B=0.710 diff=-0.090
+paired bootstrap 95% CI for diff = [-0.200, +0.020]
+
+PART D: Seed reproduces a pseudo-random sequence
+==============================================================================
+seed=1: ['A', 'B', 'B', 'A', 'A', 'A', 'B', 'B', 'A', 'A', 'B', 'A']
+seed=2: ['C', 'C', 'A', 'A', 'B', 'B', 'B', 'A', 'B', 'B', 'A', 'A']
+seed=1 again: ['A', 'B', 'B', 'A', 'A', 'A', 'B', 'B', 'A', 'A', 'B', 'A']
+
+Lesson:
+- A better true method can still lose on one finite benchmark.
+- Repeated trials estimate variability.
+- Paired bootstrap puts uncertainty directly on the difference.
+- Seed controls pseudo-random draws, not the entire software/hardware world.

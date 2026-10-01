@@ -1,0 +1,15 @@
+Toy LoRA low-rank approximation demo
+========================================================================
+Base matrix shape: 16 x 16
+Full trainable parameters: 256
+
+Full fine-tuning delta error: 0.00000000
+rank= 1 | LoRA params= 32 | ratio= 12.50% | delta MSE=0.495037
+rank= 2 | LoRA params= 64 | ratio= 25.00% | delta MSE=0.000654
+rank= 4 | LoRA params=128 | ratio= 50.00% | delta MSE=0.000375
+rank= 8 | LoRA params=256 | ratio=100.00% | delta MSE=0.000098
+
+Lesson:
+- Full fine-tuning can represent any delta but trains all parameters.
+- LoRA restricts the delta to a low-rank subspace.
+- If the useful task update is approximately low-rank, small r can work well.

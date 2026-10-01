@@ -1,0 +1,31 @@
+PART A: Calibration
+========================================================================
+N=1000
+accuracy=0.698
+average reported confidence=0.813
+ECE=0.115
+
+Bin details:
+[0.5,0.6) n=  40 conf=0.586 acc=0.300
+[0.6,0.7) n= 212 conf=0.650 acc=0.524
+[0.7,0.8) n= 197 conf=0.748 acc=0.680
+[0.8,0.9) n= 221 conf=0.848 acc=0.719
+[0.9,1.0) n= 330 conf=0.961 acc=0.855
+
+PART B: Risk-Coverage
+========================================================================
+coverage=1.0 threshold>=0.578 selective_accuracy=0.698 risk=0.302
+coverage=0.8 threshold>=0.675 selective_accuracy=0.754 risk=0.246
+coverage=0.6 threshold>=0.775 selective_accuracy=0.790 risk=0.210
+coverage=0.4 threshold>=0.865 selective_accuracy=0.860 risk=0.140
+coverage=0.2 threshold>=0.954 selective_accuracy=0.885 risk=0.115
+
+PART C: Agent Agreement
+========================================================================
+mostly independent             | unanimous cases=1867 | wrong among unanimous=0.079
+with shared systematic error   | unanimous cases=2680 | wrong among unanimous=0.524
+
+Lesson:
+- High confidence is useful only if calibrated.
+- Selective prediction trades coverage for lower risk.
+- Unanimous agents can still be wrong when they share a systematic error.

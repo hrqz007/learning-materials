@@ -1,0 +1,23 @@
+PART A: Pass@k
+================================================================
+theoretical p=0.30, k= 1 -> Pass@k=0.300
+theoretical p=0.30, k= 2 -> Pass@k=0.510
+theoretical p=0.30, k= 5 -> Pass@k=0.832
+theoretical p=0.30, k=10 -> Pass@k=0.972
+
+empirical n=20, c=6, k= 1 -> Pass@k=0.300
+empirical n=20, c=6, k= 2 -> Pass@k=0.521
+empirical n=20, c=6, k= 5 -> Pass@k=0.871
+empirical n=20, c=6, k=10 -> Pass@k=0.995
+
+PART B: Toy Judge Bias
+================================================================
+Order 1: A=short, B=long
+score(A)=1.098 score(B)=1.060 winner=A
+Order 2: A=long, B=short
+score(A)=1.140 score(B)=1.018 winner=A
+
+Lesson:
+- Pass@k rises when you allow more attempts; this is extra test-time budget.
+- A judge can prefer position or verbosity even when factual quality is equal.
+- Evaluation protocol can change the apparent winner.

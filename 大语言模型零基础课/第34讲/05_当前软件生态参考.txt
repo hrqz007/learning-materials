@@ -1,0 +1,19 @@
+第34讲当前软件生态参考（检查日期：2026-09-29）
+
+1. Hugging Face - Loading models
+   https://huggingface.co/docs/transformers/main/models
+
+2. Hugging Face - Using Transformers at the Hub
+   https://huggingface.co/docs/hub/main/transformers
+
+3. Hugging Face - Safetensors
+   https://huggingface.co/docs/safetensors/index
+
+4. vLLM - OpenAI-Compatible Server
+   https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/
+
+5. llama.cpp - README
+   https://github.com/ggml-org/llama.cpp
+
+6. llama.cpp - GGUF Python README
+   https://github.com/ggml-org/llama.cpp/tree/master/gguf-py

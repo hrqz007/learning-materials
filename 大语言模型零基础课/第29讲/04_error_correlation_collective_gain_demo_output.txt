@@ -1,0 +1,26 @@
+Toy multi-agent collective gain simulation
+======================================================================================
+Target individual accuracy ~= 0.65
+
+SCENARIO: Independent-ish (shared_prob=0.0)
+  N= 1 | individual=0.657 | majority=0.657 | gain=+0.000 | avg_error_corr=0.000
+  N= 3 | individual=0.649 | majority=0.719 | gain=+0.070 | avg_error_corr=0.002
+  N= 5 | individual=0.652 | majority=0.767 | gain=+0.116 | avg_error_corr=-0.002
+  N= 9 | individual=0.652 | majority=0.833 | gain=+0.181 | avg_error_corr=0.001
+
+SCENARIO: Low shared errors (shared_prob=0.2)
+  N= 1 | individual=0.653 | majority=0.653 | gain=+0.000 | avg_error_corr=0.000
+  N= 3 | individual=0.649 | majority=0.702 | gain=+0.054 | avg_error_corr=0.207
+  N= 5 | individual=0.648 | majority=0.744 | gain=+0.096 | avg_error_corr=0.198
+  N= 9 | individual=0.647 | majority=0.789 | gain=+0.142 | avg_error_corr=0.202
+
+SCENARIO: Highly correlated (shared_prob=0.7)
+  N= 1 | individual=0.652 | majority=0.652 | gain=+0.000 | avg_error_corr=0.000
+  N= 3 | individual=0.645 | majority=0.663 | gain=+0.018 | avg_error_corr=0.702
+  N= 5 | individual=0.647 | majority=0.680 | gain=+0.033 | avg_error_corr=0.701
+  N= 9 | individual=0.646 | majority=0.699 | gain=+0.053 | avg_error_corr=0.704
+
+Lesson:
+- Same individual accuracy does NOT imply same collective gain.
+- Majority vote benefits from errors that are not too correlated.
+- More agents cannot fix a shared systematic error.

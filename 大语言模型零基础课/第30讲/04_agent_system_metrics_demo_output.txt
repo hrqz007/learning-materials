@@ -1,0 +1,25 @@
+Agent System Metrics Demo
+========================================================================
+A: accuracy=0.667 tokens=7200 calls=24
+B: accuracy=0.667 tokens=7600 calls=26
+C: accuracy=0.667 tokens=7100 calls=23
+
+Mean individual accuracy: 0.667
+Majority-vote accuracy:    0.833
+Collective gain:           +0.167
+
+Pairwise error correlations:
+  A-B: 0.250
+  A-C: 0.250
+  B-C: 0.250
+Average error correlation: 0.250
+
+Total system resources:
+  tokens = 21900
+  calls  = 73
+
+Lesson:
+- Outcome metric: majority-vote accuracy
+- Mechanism metric: error correlation
+- Cost metric: tokens / calls
+- A convincing experiment usually needs all three.

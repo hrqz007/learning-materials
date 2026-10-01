@@ -1,0 +1,26 @@
+Toy local deployment weight-memory estimator
+==============================================================================
+Pure weights only; decimal GB for teaching.
+
+Model               FP32       BF16/FP16            INT8      ideal INT4
+------------------------------------------------------------------------
+1B                  4.0G            2.0G            1.0G            0.5G
+7B                 28.0G           14.0G            7.0G            3.5G
+14B                56.0G           28.0G           14.0G            7.0G
+32B               128.0G           64.0G           32.0G           16.0G
+
+Deployment stack checklist
+- model architecture/config
+- checkpoint/weights
+- tokenizer + chat template
+- inference runtime
+- precision / quantization
+- device RAM/VRAM
+- context length + KV cache
+- batching / concurrency
+- application or API layer
+
+Lesson:
+- Model size in GB is not the same as runtime memory.
+- The same checkpoint can be served by different runtimes.
+- Reproducibility requires pinning both model revision and runtime settings.

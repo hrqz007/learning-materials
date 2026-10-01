@@ -1,0 +1,45 @@
+Toy research workflow: Outcome + Mechanism + Cost
+========================================================================================================
+Items/run=900, repeated runs=30
+
+Single Agent
+  system accuracy     = 0.698  95%CI [0.693, 0.703]
+  individual accuracy = 0.698
+  collective gain     = +0.000
+  error correlation   = 0.000
+  calls/run           = 900
+  tokens/run          = 270000
+
+Single Agent Self-Consistency x3
+  system accuracy     = 0.770  95%CI [0.763, 0.777]
+  individual accuracy = 0.701
+  collective gain     = +0.069
+  error correlation   = 0.054
+  calls/run           = 2700
+  tokens/run          = 810000
+
+Homogeneous Multi-Agent x3
+  system accuracy     = 0.746  95%CI [0.740, 0.752]
+  individual accuracy = 0.697
+  collective gain     = +0.049
+  error correlation   = 0.429
+  calls/run           = 2700
+  tokens/run          = 810000
+
+Experience-Diverse Multi-Agent x3
+  system accuracy     = 0.791  95%CI [0.786, 0.796]
+  individual accuracy = 0.701
+  collective gain     = +0.090
+  error correlation   = -0.035
+  calls/run           = 2700
+  tokens/run          = 810000
+
+Mechanism question:
+Does lower error correlation predict larger collective gain at matched 3-call compute?
+Correlation(error_correlation, collective_gain) = -0.862
+
+Lesson:
+- Outcome alone is not enough.
+- Compare same-compute baselines.
+- Measure the proposed mechanism directly.
+- Repeat runs and report uncertainty.
