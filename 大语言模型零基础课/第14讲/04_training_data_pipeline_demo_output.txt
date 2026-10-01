@@ -1,0 +1,26 @@
+
+[raw]
+documents: 11  characters: 331
+sources: {'web': 4, 'book': 2, 'code': 2, 'math': 2, 'benchmark': 1}
+
+[after quality filter]
+documents: 10  characters: 312
+sources: {'web': 3, 'book': 2, 'code': 2, 'math': 2, 'benchmark': 1}
+
+[after dedup]
+documents: 8  characters: 244
+sources: {'web': 1, 'book': 2, 'code': 2, 'math': 2, 'benchmark': 1}
+
+removed duplicates:
+ - Python 入门教程：变量用于保存数据，函数用于封装可 ...  ~=   Python 入门教程：变量用于保存数据，函数用于封装可 ...
+ - Python 入门教程 - 变量用于保存数据，函数用于封 ...  ~=   Python 入门教程：变量用于保存数据，函数用于封装可 ...
+
+[mixture sampling: 20 draws]
+{'web': 10, 'code': 2, 'book': 6, 'math': 2}
+
+[benchmark contamination check]
+query: 法国的首都是哪里
+hits: 1
+ -> benchmark 测试题：法国的首都是哪里？答案：巴黎。
+
+结论：训练数据管道中的过滤、去重、配比和污染检查，会改变模型实际看到的数据分布。
