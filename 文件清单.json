@@ -1,8 +1,8 @@
 {
-  "original_file_count": 673,
-  "original_total_bytes": 370553394,
+  "original_file_count": 729,
+  "original_total_bytes": 380592374,
   "snapshot_date_utc": "2026-10-01",
-  "snapshot_cutoff_utc": "2026-10-01T13:04:00Z",
+  "snapshot_cutoff_utc": "2026-10-01T14:21:19Z",
   "files": [
     {
       "source_path": "Agent_Systems_Research_Topic_A_Lesson_01_Package.zip",
@@ -4035,6 +4035,342 @@
       "target_path": "深度学习数学与神经网络基础/第23讲/第23讲_讲义_ComputationalGraph与局部梯度.pdf",
       "size_bytes": 428200,
       "sha256": "0ac83b26b0e4ab3461500e9e5afacbd7a30684e3382cc7fa6bd818bde4b8c24f"
+    },
+    {
+      "source_path": "README_第24讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第24讲/README_第24讲.txt",
+      "size_bytes": 1283,
+      "sha256": "74d8252401fbfa9fb2c90509c3588c55a6202d9c3033bf7b8116eda37457b622"
+    },
+    {
+      "source_path": "lesson24_gradient_check.png",
+      "target_path": "深度学习数学与神经网络基础/第24讲/lesson24_gradient_check.png",
+      "size_bytes": 31627,
+      "sha256": "eccad1bcb9d53336af225aaf48b56970dd4534fd23aaa1955cd71b8dcda03b88"
+    },
+    {
+      "source_path": "lesson24_one_step_update.png",
+      "target_path": "深度学习数学与神经网络基础/第24讲/lesson24_one_step_update.png",
+      "size_bytes": 35512,
+      "sha256": "558c2756bad3fc0c5fc42f13cb22d4b83d25a89f28b2d544bdc0077d291b4c57"
+    },
+    {
+      "source_path": "lesson24_relu_gate_gradient.png",
+      "target_path": "深度学习数学与神经网络基础/第24讲/lesson24_relu_gate_gradient.png",
+      "size_bytes": 26336,
+      "sha256": "d045f950ed98b62b8b9e9bf952fc91f24d906ebdedc510d08a90adf3605b078d"
+    },
+    {
+      "source_path": "lesson24_single_neuron_backprop_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第24讲/lesson24_single_neuron_backprop_experiment.py",
+      "size_bytes": 9379,
+      "sha256": "f3134f4c9dffcbc0890d41bfa48c859a241f02b215b2efe8fb671fc6f97b642a"
+    },
+    {
+      "source_path": "lesson24_single_neuron_forward_backward.png",
+      "target_path": "深度学习数学与神经网络基础/第24讲/lesson24_single_neuron_forward_backward.png",
+      "size_bytes": 75484,
+      "sha256": "75262c9781c65dc1fe109adf1f48082a8b5272989e9b484bc4f24520f234d576"
+    },
+    {
+      "source_path": "第24讲_一个神经元的Backpropagation_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第24讲/第24讲_一个神经元的Backpropagation_完整材料包.zip",
+      "size_bytes": 1007397,
+      "sha256": "b0260a4580c8e5743825c09d77f9e18ca3aaf8c5687ce7ab32ecc63197d062b6"
+    },
+    {
+      "source_path": "第24讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第24讲/第24讲_实验实际输出.txt",
+      "size_bytes": 2135,
+      "sha256": "6183e8515ff8504fa3d28fed0a77f0da3759b9f1c93a5b9c82ab045f2a63f664"
+    },
+    {
+      "source_path": "第24讲_实验设计_单神经元Backpropagation.pdf",
+      "target_path": "深度学习数学与神经网络基础/第24讲/第24讲_实验设计_单神经元Backpropagation.pdf",
+      "size_bytes": 375207,
+      "sha256": "68897269fe46ca9646633de307b4ccf67a0ee8e83bb3598bc406a474c74031c4"
+    },
+    {
+      "source_path": "第24讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第24讲/第24讲_核心概念速查卡.pdf",
+      "size_bytes": 106686,
+      "sha256": "7149be1a9e2bb666d49e387f4e5b73fdc48aaac2b10ce5b70308fdad38f2ff10"
+    },
+    {
+      "source_path": "第24讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第24讲/第24讲_练习题与答案.pdf",
+      "size_bytes": 113155,
+      "sha256": "32b36032fd9e958b332368c3241aff44199854d67bb0c093fdb9bc6fd764b3cd"
+    },
+    {
+      "source_path": "第24讲_讲义_一个神经元的Backpropagation.pdf",
+      "target_path": "深度学习数学与神经网络基础/第24讲/第24讲_讲义_一个神经元的Backpropagation.pdf",
+      "size_bytes": 456018,
+      "sha256": "408b348a24cd8a01dd56205b2ea870c8dafbbfa040d24c6e0415674264a40b57"
+    },
+    {
+      "source_path": "README_第25讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第25讲/README_第25讲.txt",
+      "size_bytes": 687,
+      "sha256": "6bffacc0c748046dabcbda83ead516ffc5a2933c4386c2697d39261223ead89c"
+    },
+    {
+      "source_path": "lesson25_gradient_check.png",
+      "target_path": "深度学习数学与神经网络基础/第25讲/lesson25_gradient_check.png",
+      "size_bytes": 57220,
+      "sha256": "2f90437e8e0b557ca6c972b36ebe9733868087a4ef51c80f7ed69c2ecdf26dbe"
+    },
+    {
+      "source_path": "lesson25_mlp_forward_backward.png",
+      "target_path": "深度学习数学与神经网络基础/第25讲/lesson25_mlp_forward_backward.png",
+      "size_bytes": 56477,
+      "sha256": "88c044bd477a97da3600cfbec3564b2bfa6f38f65e395aef4f0dc32b8798d1b9"
+    },
+    {
+      "source_path": "lesson25_one_step_update.png",
+      "target_path": "深度学习数学与神经网络基础/第25讲/lesson25_one_step_update.png",
+      "size_bytes": 25902,
+      "sha256": "d377cf79b6ba3eb28c1146b78cfad92a0431ab1cdd637d0f72b68815163fb74e"
+    },
+    {
+      "source_path": "lesson25_relu_gate_columns.png",
+      "target_path": "深度学习数学与神经网络基础/第25讲/lesson25_relu_gate_columns.png",
+      "size_bytes": 32432,
+      "sha256": "0bb9896722505dd37c5329bc3f6441af174d35454b089c45371eaf8514ee38e2"
+    },
+    {
+      "source_path": "lesson25_two_layer_mlp_backprop_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第25讲/lesson25_two_layer_mlp_backprop_experiment.py",
+      "size_bytes": 20038,
+      "sha256": "af930f6dd76db0e3994def86a0c949c16e428878e44b279aebc3138901f4fd39"
+    },
+    {
+      "source_path": "第25讲_两层MLP的Backpropagation_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第25讲/第25讲_两层MLP的Backpropagation_完整材料包.zip",
+      "size_bytes": 1056773,
+      "sha256": "d948ba78d49df3cff832596fa79180fd14aa08a2ab8f6b078013c08b1c8ead1a"
+    },
+    {
+      "source_path": "第25讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第25讲/第25讲_实验实际输出.txt",
+      "size_bytes": 2911,
+      "sha256": "f9ed33829aabd7fc3723c8e72de58a245a2991fe988983b60a09f525dca24b11"
+    },
+    {
+      "source_path": "第25讲_实验设计_两层MLPBackpropagation.pdf",
+      "target_path": "深度学习数学与神经网络基础/第25讲/第25讲_实验设计_两层MLPBackpropagation.pdf",
+      "size_bytes": 390942,
+      "sha256": "b2b97ee6311aa0eab7dcda301915dacd729ce9d8ae002371cc395a605a73fcdb"
+    },
+    {
+      "source_path": "第25讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第25讲/第25讲_核心概念速查卡.pdf",
+      "size_bytes": 113578,
+      "sha256": "c37eb6c39803a9a8fb893aa67af7a30cae14cc1871875cfdf7ab26919b54fa88"
+    },
+    {
+      "source_path": "第25讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第25讲/第25讲_练习题与答案.pdf",
+      "size_bytes": 135892,
+      "sha256": "d034842ec677919e4c9e448b9639dbaf437d431089908139a78c60471e23731b"
+    },
+    {
+      "source_path": "第25讲_讲义_两层MLP的Backpropagation.pdf",
+      "target_path": "深度学习数学与神经网络基础/第25讲/第25讲_讲义_两层MLP的Backpropagation.pdf",
+      "size_bytes": 464515,
+      "sha256": "f4b8efe7039bcf42aaaefa2dbb3c920ebeab5066e8f45f0f8aa9d734de18afd7"
+    },
+    {
+      "source_path": "README_第26讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第26讲/README_第26讲.txt",
+      "size_bytes": 997,
+      "sha256": "dca93e3d61fadad1bba16ad39065a8cc27210b10941c2fabc8068704a9d48537"
+    },
+    {
+      "source_path": "lesson26_before_after_fit.png",
+      "target_path": "深度学习数学与神经网络基础/第26讲/lesson26_before_after_fit.png",
+      "size_bytes": 70833,
+      "sha256": "9f95d7fbc16a1c6af8740eb815d606436ec817de51a98f350b18f3a10c783595"
+    },
+    {
+      "source_path": "lesson26_gradient_norm.png",
+      "target_path": "深度学习数学与神经网络基础/第26讲/lesson26_gradient_norm.png",
+      "size_bytes": 55504,
+      "sha256": "cad74ecd18cf83e5f7e7b59cb3c31f62561885fe28ab8b7e007e9af7f977b781"
+    },
+    {
+      "source_path": "lesson26_learning_rate_comparison.png",
+      "target_path": "深度学习数学与神经网络基础/第26讲/lesson26_learning_rate_comparison.png",
+      "size_bytes": 64267,
+      "sha256": "4361781c896bfac256b96e9e840907b82076eba3fa91ce17a0dcf724adff0f35"
+    },
+    {
+      "source_path": "lesson26_numpy_training_loop_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第26讲/lesson26_numpy_training_loop_experiment.py",
+      "size_bytes": 14013,
+      "sha256": "19ff1fe939ca9ba9a2b4c2469824e6f8f24b0fbfdd3279e8d74212bd7f0f9117"
+    },
+    {
+      "source_path": "lesson26_training_loss.png",
+      "target_path": "深度学习数学与神经网络基础/第26讲/lesson26_training_loss.png",
+      "size_bytes": 50229,
+      "sha256": "6ba02442bb040209050e51d6433e6c97e92d146ae655f66c9f77b145c72b2d45"
+    },
+    {
+      "source_path": "第26讲_NumPy完整Backpropagation与TrainingLoop_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第26讲/第26讲_NumPy完整Backpropagation与TrainingLoop_完整材料包.zip",
+      "size_bytes": 1059210,
+      "sha256": "1196a2b07e8f9c1050c1cecc5b25cd720275196b9e22b1b488655320ebbd9e46"
+    },
+    {
+      "source_path": "第26讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第26讲/第26讲_实验实际输出.txt",
+      "size_bytes": 2038,
+      "sha256": "db6a90d0539556108b50c3a11318187cae1c2f6c061dc827cc1eb2099925fdc3"
+    },
+    {
+      "source_path": "第26讲_实验设计_NumPy完整TrainingLoop.pdf",
+      "target_path": "深度学习数学与神经网络基础/第26讲/第26讲_实验设计_NumPy完整TrainingLoop.pdf",
+      "size_bytes": 331424,
+      "sha256": "4969f2d8c7dcd2c851c43b8c32cb3a3e926f9464fb30c3708c725466f8c0151b"
+    },
+    {
+      "source_path": "第26讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第26讲/第26讲_核心概念速查卡.pdf",
+      "size_bytes": 67331,
+      "sha256": "64cfedf97dbf6ccff983beaea7a348e342b0c3aadfa66da22e6b54849698124d"
+    },
+    {
+      "source_path": "第26讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第26讲/第26讲_练习题与答案.pdf",
+      "size_bytes": 78034,
+      "sha256": "60d8384d573947b9b0e6499a41d07e6d7b2effd94b439064f15a3f06f2a0bbe5"
+    },
+    {
+      "source_path": "第26讲_讲义_NumPy完整Backpropagation与TrainingLoop.pdf",
+      "target_path": "深度学习数学与神经网络基础/第26讲/第26讲_讲义_NumPy完整Backpropagation与TrainingLoop.pdf",
+      "size_bytes": 420310,
+      "sha256": "db5e199f5b7482191ddecae6acff2029aa8ed7ee3d6de44cded0e89b3ef171bc"
+    },
+    {
+      "source_path": "README_第27讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第27讲/README_第27讲.txt",
+      "size_bytes": 1001,
+      "sha256": "8fe97c22b71c9b3f94c0b120a7e8ec668aae780394fa94c046c86733c3639610"
+    },
+    {
+      "source_path": "lesson27_memory_sharing.png",
+      "target_path": "深度学习数学与神经网络基础/第27讲/lesson27_memory_sharing.png",
+      "size_bytes": 71398,
+      "sha256": "d8883f637bd73e2d9385d6bd37f94d459d91db4ea548801d4b39fd854c690829"
+    },
+    {
+      "source_path": "lesson27_pytorch_tensor_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第27讲/lesson27_pytorch_tensor_experiment.py",
+      "size_bytes": 10409,
+      "sha256": "da10c2189d01f3ef6e151cd7276cb078fd3c13442f64bd247082018815538de0"
+    },
+    {
+      "source_path": "第27讲_PyTorchTensor_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第27讲/第27讲_PyTorchTensor_完整材料包.zip",
+      "size_bytes": 663735,
+      "sha256": "8cf675166db559f85e2500f3f22e1165f9f4b032156530c66964ba72c6a5eacc"
+    },
+    {
+      "source_path": "第27讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第27讲/第27讲_实验实际输出.txt",
+      "size_bytes": 5255,
+      "sha256": "62f8554ae009e28eb0c9dc37e3ce3340670c828cf9df80d94eff4379882a4b08"
+    },
+    {
+      "source_path": "第27讲_实验设计_PyTorchTensor.pdf",
+      "target_path": "深度学习数学与神经网络基础/第27讲/第27讲_实验设计_PyTorchTensor.pdf",
+      "size_bytes": 193508,
+      "sha256": "da01cce63f43726f7f67297ee531578286fd64cce55c55235ceba64cef53fab5"
+    },
+    {
+      "source_path": "第27讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第27讲/第27讲_核心概念速查卡.pdf",
+      "size_bytes": 89513,
+      "sha256": "747e5399a0ee5c4d760ff9f53c36e43d4bb4dcbd8decdcab3cb36c3834e4c052"
+    },
+    {
+      "source_path": "第27讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第27讲/第27讲_练习题与答案.pdf",
+      "size_bytes": 74614,
+      "sha256": "b899754e983b9453dc4e05175fab4d09730b3fe03962821c54f74c5a991010f5"
+    },
+    {
+      "source_path": "第27讲_讲义_PyTorchTensor.pdf",
+      "target_path": "深度学习数学与神经网络基础/第27讲/第27讲_讲义_PyTorchTensor.pdf",
+      "size_bytes": 260897,
+      "sha256": "94044e579ff24c2e5e621d7007e29b4a567a92af3a62fdd491c01341ac101640"
+    },
+    {
+      "source_path": "README_第28讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第28讲/README_第28讲.txt",
+      "size_bytes": 1229,
+      "sha256": "46bcc695a54d730cbd81ff1e9700276fbd01f7a934d75613654de6f3c6453698"
+    },
+    {
+      "source_path": "lesson28_activation_curves.png",
+      "target_path": "深度学习数学与神经网络基础/第28讲/lesson28_activation_curves.png",
+      "size_bytes": 77654,
+      "sha256": "3c485113fe20c2828a50e2166876b9e0a475874e221e306f803c1716bdf26ee3"
+    },
+    {
+      "source_path": "lesson28_ffn_shape_flow.png",
+      "target_path": "深度学习数学与神经网络基础/第28讲/lesson28_ffn_shape_flow.png",
+      "size_bytes": 70014,
+      "sha256": "46a2b710ce5cf837880d104316d1f4a5787c9865016487a585d55fd97360342e"
+    },
+    {
+      "source_path": "lesson28_linear_activation_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第28讲/lesson28_linear_activation_experiment.py",
+      "size_bytes": 12514,
+      "sha256": "113edad061e6fb33bb4d5ef4e454836a380155bf296e3e59c53564271d2fe053"
+    },
+    {
+      "source_path": "lesson28_linear_relu_values.png",
+      "target_path": "深度学习数学与神经网络基础/第28讲/lesson28_linear_relu_values.png",
+      "size_bytes": 34812,
+      "sha256": "5a2978d36bb89793be431d931e48915983e01d660ecb90e84358b49f7cbf7134"
+    },
+    {
+      "source_path": "第28讲_PyTorchLinear与Activation_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第28讲/第28讲_PyTorchLinear与Activation_完整材料包.zip",
+      "size_bytes": 890515,
+      "sha256": "5e824cad88dab93b52994e676e5e6a6fdfa3daa099199536c2ec6163b4dcf7e4"
+    },
+    {
+      "source_path": "第28讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第28讲/第28讲_实验实际输出.txt",
+      "size_bytes": 4967,
+      "sha256": "a7ed94d11bd27cf24561f33e1d79d35451d44bd5518eae1677fde3cd41f986ad"
+    },
+    {
+      "source_path": "第28讲_实验设计_PyTorchLinear与Activation.pdf",
+      "target_path": "深度学习数学与神经网络基础/第28讲/第28讲_实验设计_PyTorchLinear与Activation.pdf",
+      "size_bytes": 294855,
+      "sha256": "e17f646ea5bbdd8db5a53763ff2ad166652e7d80c9396201f7241b0b81a9a04f"
+    },
+    {
+      "source_path": "第28讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第28讲/第28讲_核心概念速查卡.pdf",
+      "size_bytes": 72313,
+      "sha256": "1b7ecc3eca822c6488886ee28e94e39f8e5768d0aca6d671274a4a17a902f796"
+    },
+    {
+      "source_path": "第28讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第28讲/第28讲_练习题与答案.pdf",
+      "size_bytes": 71572,
+      "sha256": "b1f4254d4d652d4f82e39721b45bcdae9d3abc2663cef9bd4b99d52d61b2b380"
+    },
+    {
+      "source_path": "第28讲_讲义_PyTorchLinear与Activation.pdf",
+      "target_path": "深度学习数学与神经网络基础/第28讲/第28讲_讲义_PyTorchLinear与Activation.pdf",
+      "size_bytes": 326429,
+      "sha256": "d59241858b0c6b1e65714c2bb953c29b971fc379c7b68fbc50bf53102acb05ec"
     },
     {
       "source_path": "肿瘤新抗原与StableNeoRank全景图.png",
