@@ -1,0 +1,645 @@
+我要继续之前的《Agent Systems / 智能体系统零基础科研大课》，但原窗口已经达到长度上限。
+
+请不要重新设计课程，不要从头讲，也不要重新询问我的背景和学习目标。下面是此前已经确定并完成的全部上下文，请直接承接。
+
+==================================================
+一、我的长期科研方向
+==================================================
+
+我的长期科研母方向已经最终确定为：
+
+AI Systems Science / 人工智能系统科学
+
+核心研究对象是：
+
+由有限、随机、会犯错、相互作用的 AI 组件构成的复杂系统，
+如何被理解、预测、验证与可靠控制。
+
+当前主要研究方向是：
+
+Agent Systems / 智能体系统
+
+注意：
+
+Agent Safety
+Agent Reliability
+Multi-Agent
+Scientific Agents
+
+都只是 Agent Systems 的子方向。
+
+不要默认把我的研究范围缩窄到“安全”或者“可靠性”。
+
+我是个人独立研究者、高校教师，没有大型实验室和学生团队。
+
+现实条件：
+
+- 可以使用商业模型 API；
+- 每月 Agent 实验预算约 200 美元；
+- 不适合大规模训练基础模型；
+- 可以优先使用 API；
+- 不希望依赖昂贵 GPU；
+- 优先做低成本、可复现、机制导向研究；
+- 不希望论文成败依赖“必须超过 SOTA”；
+- 目标至少计算机相关 SCI 三区以上或相当水平会议；
+- 默认排除 MDPI；
+- 希望第一篇 Agent Systems 论文尽量在 3 个月左右完成主要闭环。
+
+==================================================
+二、52讲主课程已经全部完成
+==================================================
+
+《Agent Systems / 智能体系统零基础科研大课》原定共 52 讲。
+
+已经全部完成，不要重新讲，也不要重新生成。
+
+第1讲：Agent 到底是什么
+第2讲：LLM 最低必要原理
+第3讲：API、HTTP、JSON 与 Agent
+第4讲：Agent Loop
+第5讲：第一个最小 Agent
+第6讲：Structured Output
+第7讲：Tool Calling
+第8讲：完整 Agent Loop
+第9讲：工具系统深入
+第10讲：Context Engineering
+第11讲：Agent Memory
+第12讲：RAG 与 Agent
+第13讲：MCP 与工具生态
+第14讲：ReAct
+第15讲：Planning
+第16讲：Reflection / Critic / Verifier
+第17讲：状态机与控制逻辑
+第18讲：长任务失败与 Error Accumulation
+第19讲：为什么需要 Multi-Agent
+第20讲：Multi-Agent 基本架构
+第21讲：Agent Communication
+第22讲：Role Assignment
+第23讲：协作、竞争、Debate、Voting 与 Consensus
+第24讲：第一个完整 Multi-Agent 实验
+第25讲：Agent Harness
+第26讲：Sandbox 与执行环境
+第27讲：Agent Runtime 与任务调度
+第28讲：Tracing 与 Agent Observability
+第29讲：Agent Debugging 与 Root Cause Analysis
+第30讲：Agent Evaluation
+第31讲：Agent 的随机性与重复实验
+第32讲：Benchmark 到底是什么——Agent Benchmark、Task、Environment、Metric 与 Leaderboard
+第33讲：Agent Trajectory Evaluation——过程级评测、First Bad Span 与 Failure Propagation
+第34讲：Agent Reliability & Robustness——Consistency、Perturbation、Recovery 与 Graceful Degradation
+第35讲：Agent Safety & Security——Prompt Injection、Tool Abuse、权限边界与 Data Leakage
+第36讲：Agent Efficiency & Scalability——Cost、Token、Latency、Concurrency 与 Compute-Matched Evaluation
+第37讲：怎么精读一篇 Agent Systems 论文——Claim-Evidence Map 与 Research Question
+第38讲：怎么看懂并重建 Agent 系统架构图——Module、Control Flow、Data Flow、State 与 Boundary
+第39讲：怎么看 Agent 代码——Entrypoint、Config、Runner、Agent Loop、Tool Adapter 与 Trace
+第40讲：复现一篇 Agent 论文——Minimum Reproduction
+第41讲：从 Observation 到 Research Question——Hypothesis、Baseline、Controlled Experiment 与 Ablation
+第42讲：Agent 实验的统计推断——Effect Size、Confidence Interval、P-value、Multiple Comparisons 与 Pseudoreplication
+第43讲：Agent Systems 论文的 Method 怎么写
+第44讲：Agent Systems 论文的 Experiments 怎么设计
+第45讲：Results 与 Evidence——从 CSV、统计结果和 Trace 到论文 Claim
+第46讲：Discussion 与 Limitations——机制、边界、Threats to Validity 与因果边界
+第47讲：Introduction、Related Work 与 Contribution
+第48讲：Pilot Experiment——怎样判断一个科研现象值不值得继续投入
+第49讲：Main / Confirmatory Experiment——正式论文证据闭环
+第50讲：把 Agent Systems 项目整理成可投稿论文工程
+第51讲：完整科研综合项目——从 Trace Observation 到论文 Claim
+第52讲：如何独立启动并完成第一篇真实 Agent Systems 论文
+
+所以：
+
+==================================================
+52讲主课程已经正式结束。
+==================================================
+
+接下来不要继续机械编号“第53讲、第54讲”。
+
+后续进入：
+
+==================================================
+Agent Systems 研究型进阶专题
+==================================================
+
+
+==================================================
+三、我们已经确定的后续研究型专题
+==================================================
+
+后续按下面路线逐步学习，但不要现在一次性把所有专题全部生成。
+
+A. 真实 Agent Benchmark 实战
+【下一步首先开始这个】
+
+目标：
+
+第一次真正完成：
+
+真实 Task
+→ 真实模型 API
+→ 真实 Agent / Harness
+→ 真实 Tool / Environment
+→ 真实 Trace
+→ 真实 Evaluator
+→ Benchmark Score
+→ Failure Analysis
+→ Research Observation
+
+重点体验真实 Agent 实验中教学模拟无法完全体现的问题：
+
+- API nondeterminism
+- model version
+- prompt version
+- Harness difference
+- environment difference
+- timeout
+- retry
+- rate limit
+- tool failure
+- evaluator
+- token usage
+- API dollar cost
+- trace
+- reproducibility
+
+B. Multi-Agent 机制科学
+
+以后重点学习：
+
+- Error Correlation
+- Error Decorrelation
+- Effective Diversity
+- Agent Diversity
+- Communication Topology
+- Communication Cost
+- Information Cascade
+- Groupthink
+- Conformity
+- Wrong Consensus
+- Heterogeneous Agents
+- Role Specialization
+- Specialization Emergence
+- Collective Intelligence
+- Collective Failure
+- Agent Number Scaling
+- Compute-Matched Multi-Agent Evaluation
+
+最终希望能够研究类似：
+
+Agent interaction
+→ Error structure
+→ Communication
+→ Collective behavior
+
+这样的系统规律。
+
+C. Persistent / Learning / Long-term Agents
+
+重点区分：
+
+Context
+Memory
+Learning
+Fine-tuning
+Adaptation
+
+并逐渐理解：
+
+- Episodic Memory
+- Semantic Memory
+- Procedural Memory
+- Experience Learning
+- Online Adaptation
+- Lifelong Learning
+- Persistent Agents
+- Memory Consolidation
+- Forgetting
+- Memory Poisoning
+- Experience-induced Heterogeneity
+- Persistent Specialization
+
+D. Agent Systems 所需的最小 Distributed Systems 基础
+
+不要完整重学《分布式系统》。
+
+只学习与 Agent Systems 直接相关的最低必要内容：
+
+- Partial Failure
+- Timeout
+- Retry
+- Idempotency
+- Consistency
+- Distributed State
+- Concurrency
+- Race Condition
+- Queue
+- Scheduling
+- Backpressure
+- Fault Tolerance
+- Duplicate Execution
+
+重点理解：
+
+很多所谓“Agent Failure”可能其实是传统系统 Failure。
+
+E. Mechanistic / Causal Agent Science
+
+进一步学习：
+
+Observation
+→ Intervention
+→ Mechanism
+→ Mediation
+→ Boundary Condition
+→ Generalization
+
+尤其训练：
+
+如何避免把 Correlation 写成 Causation。
+
+如何设计真正的：
+
+Controlled Intervention
+
+最终逐步靠近：
+
+AI Systems Science
+
+而不是只做 Benchmark engineering。
+
+Scientific Agents、Human-Agent Interaction、Embodied Agents 等以后根据真实科研需要再补，不作为当前优先内容。
+
+==================================================
+四、现在直接开始的内容
+==================================================
+
+现在不要再解释上面的课程安排。
+
+请直接开始：
+
+==================================================
+【研究型进阶专题 A · 第1讲】
+真实 Agent Benchmark 实战
+==================================================
+
+这一专题不要只是理论介绍。
+
+目标是让我第一次真正从零跑通：
+
+一个真实 Agent Benchmark 的最小实验闭环。
+
+需要你根据截至当前日期的最新情况，先检索：
+
+- 正式论文
+- 官方 Benchmark 页面
+- 官方 GitHub
+- 官方文档
+- 官方 Harness / Evaluation code
+- 当前支持的模型/API方式
+- 当前真实运行成本
+
+优先使用一手资料。
+
+不要使用已经过时的 API 教我。
+
+课程核心仍然不能绑死在某个框架。
+
+==================================================
+五、真实 Benchmark 的选择原则
+==================================================
+
+因为我是第一次真正做 Agent Benchmark，请优先选择：
+
+- 免费或低成本；
+- 数据公开；
+- Harness 开源；
+- Evaluator 清楚；
+- 环境不复杂；
+- 不需要大 GPU；
+- 可以使用商业模型 API；
+- 可以先跑 5～20 个 Task；
+- 能保存完整 Trace；
+- 适合个人研究者；
+- 能帮助我以后做真正 Agent Systems 科研。
+
+不要一开始就让我跑：
+
+- 极其昂贵的 Browser Benchmark；
+- 大规模 SWE Benchmark 全集；
+- 数百美元以上实验；
+- 很复杂的容器集群；
+- 很难复现的环境。
+
+如果真实 Benchmark 很复杂，应当采用：
+
+Step 1：先理解 Benchmark
+Step 2：Smoke Test
+Step 3：1～3个真实 Task
+Step 4：5～20个 Task Pilot
+Step 5：Trace Analysis
+Step 6：再决定是否扩展
+
+==================================================
+六、这一专题必须回答的问题
+==================================================
+
+我要真正理解：
+
+1. 这个 Benchmark 测的到底是什么？
+2. Task 长什么样？
+3. Environment 是什么？
+4. Agent 能做什么 Action？
+5. Tool 是什么？
+6. Harness 是什么？
+7. Evaluator 怎样判断成功？
+8. Metric 怎样计算？
+9. 一个 Episode 是怎样运行的？
+10. Trace 在哪里？
+11. 如何保存 Trace？
+12. 如何定位 First Bad Span？
+13. 一个失败到底是：
+   - Model Failure
+   - Planning Failure
+   - Tool Failure
+   - Harness Failure
+   - Environment Failure
+   - Evaluator Failure
+   中的哪一种？
+14. API Cost 怎样记录？
+15. Token 怎样记录？
+16. Latency 怎样记录？
+17. Retry 怎样记录？
+18. Model / API version 怎样记录？
+19. Prompt / Harness version 怎样记录？
+20. 如何建立 Run Manifest？
+21. 如何保证实验可以复现？
+22. 如何从真实 Benchmark failure 中寻找 Research Question？
+
+==================================================
+七、继续保持原课程统一教学风格
+==================================================
+
+以后无论生成哪一个研究型专题，都继续保持原课程已经固定的统一风格。
+
+必须面向零基础。
+
+新的重要概念默认按照：
+
+原理
+→ 通俗解释
+→ 现实例子
+→ Agent 场景例子
+→ 图解
+→ 常见误区
+→ 可运行实验
+→ 科研视角
+→ 练习题
+→ 详细答案
+
+讲解。
+
+不要因为52讲已经学完就默认我是专家。
+
+专业名词第一次出现时仍然解释：
+
+英文全称
+中文含义
+系统中的作用
+与相近概念的区别
+
+颜色继续保持：
+
+🔵 蓝色：
+核心概念、定义、必须掌握内容
+
+🟢 绿色：
+通俗解释、比喻、现实例子
+
+🟠 橙色：
+初学者容易误解、容易混淆的地方
+
+🔴 红色：
+错误、Failure、风险、实验坑
+
+🟣 紫色：
+科研洞察、潜在 Research Question
+
+灰色：
+当前可以暂时跳过的进阶知识
+
+图必须真正帮助理解，例如：
+
+- Agent-Benchmark Architecture
+- Task Flow
+- Harness Flow
+- Environment Interaction
+- Trace Tree
+- Data Flow
+- Evaluation Flow
+- Failure Propagation
+- Research Pipeline
+
+不要加无意义装饰图。
+
+==================================================
+八、资料包规范继续保持
+==================================================
+
+每个专题讲次最终继续生成完整可下载 ZIP。
+
+建议目录继续采用类似：
+
+Advanced_A_01/
+│
+├── 01_零基础讲义.docx
+├── 02_零基础讲义.pdf
+├── 03_实验指导书.docx
+├── 04_实验设计书.docx
+├── 05_练习题.docx
+├── 06_练习题答案.docx
+├── 07_术语速查表.docx
+│
+├── src/
+├── data/
+├── configs/
+├── traces/
+├── results/
+├── figures/
+├── templates/
+│
+├── README_本讲学习说明.md
+└── MANIFEST
+
+最后统一压缩。
+
+文件名例如：
+
+Agent_Systems_研究型进阶专题A_第01讲_资料包.zip
+
+==================================================
+九、实验要求
+==================================================
+
+所有必做源码必须：
+
+- 实际运行验证；
+- 完整代码；
+- 中文注释；
+- 零基础能看懂；
+- 不能只给片段；
+- 不能伪造结果。
+
+如果某个实验必须真实 API Key 才能运行：
+
+可以分成：
+
+A. 无 Key 的 Harness / Trace 教学版本；
+B. 真实 API 小规模版本。
+
+但：
+
+绝对不能把 Mock 结果冒充真实模型实验结果。
+
+Mock 必须显著写：
+
+“这是受控教学模拟，不代表 GPT / Claude / Gemini / DeepSeek / Kimi 或任何真实模型的实际性能。”
+
+真实 API 如果没有实际运行，就明确写：
+
+“未实际调用真实 API，因此没有生成真实模型性能数据。”
+
+不能伪造。
+
+==================================================
+十、科研方法继续坚持
+==================================================
+
+始终坚持：
+
+Observation
+→ 确认现象稳定
+→ Research Question
+→ 文献检索
+→ Hypothesis
+→ Falsifier
+→ Controlled Experiment
+→ Baseline
+→ Ablation
+→ Repeated Experiment
+→ Statistics
+→ Failure Trace
+→ Mechanism
+→ Boundary
+→ Claim
+
+不要采用：
+
+先想一个新方法
+→ 再找实验刷分
+
+这种倒置流程。
+
+尤其鼓励从真实：
+
+Failure Case
+Trace
+Trajectory
+异常结果
+Evaluator discrepancy
+Harness discrepancy
+Tool failure
+Model difference
+Task length
+Agent number
+Communication
+Memory
+Runtime
+Cost-Reliability Trade-off
+
+中寻找研究现象。
+
+==================================================
+十一、实验指标习惯
+==================================================
+
+以后真实 Agent 实验不要只看 Task Success。
+
+逐渐记录：
+
+- Task Success
+- Completion Rate
+- Tool Selection Accuracy
+- Argument Validity
+- Step Count
+- Token Usage
+- API Cost
+- Latency
+- p95 / p99 Latency
+- Retry
+- Recovery Rate
+- Error Rate
+- Redundant Actions
+- Communication Cost
+- Trace-level Failure
+- First Bad Span
+- Root Cause
+- Failure Propagation
+- Diagnostic Coverage
+
+Multi-Agent 对比还必须警惕：
+
+“Multi-Agent 只是用了更多模型调用 / Token / Compute 才变好。”
+
+适当使用：
+
+- Compute-Matched Baseline
+- Token-Matched Baseline
+- Cost-Matched Baseline
+
+==================================================
+十二、课程与真实科研的关系
+==================================================
+
+52讲之后不要再把我长期困在“继续学习基础知识”里。
+
+研究型专题必须越来越接近真实项目。
+
+最终目标不是：
+
+“把所有 Agent 知识学完。”
+
+而是：
+
+==================================================
+真正独立完成第一篇 Agent Systems 论文。
+==================================================
+
+如果遇到不会的知识，再按需补。
+
+不要为了准备而无限准备。
+
+==================================================
+十三、现在开始
+==================================================
+
+不要重新输出整个课程规划。
+
+不要先问我使用哪一家模型 API。
+
+请你根据：
+
+低成本
+易复现
+个人研究者可完成
+研究价值
+真实 Benchmark
+当前最新生态
+
+自行选择一个最适合作为第一次实战的 Agent Benchmark。
+
+先说明为什么选它。
+
+然后直接开始：
+
+【研究型进阶专题 A · 第1讲】
+
+最后仍然给我一个完整可下载 ZIP 资料包。
