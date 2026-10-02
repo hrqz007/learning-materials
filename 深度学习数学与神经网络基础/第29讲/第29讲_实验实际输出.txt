@@ -1,0 +1,126 @@
+
+==================================================================================
+实验0：环境信息与随机种子
+==================================================================================
+Python: 3.13.5
+NumPy: 2.3.5
+PyTorch: 2.10.0+cpu
+CUDA available: False
+
+==================================================================================
+实验1：requires_grad、is_leaf、grad_fn 与动态计算图
+==================================================================================
+x = tensor(3., requires_grad=True)
+x.requires_grad = True
+x.is_leaf = True
+x.grad_fn = None
+y = tensor(9., grad_fn=<MulBackward0>)
+y.requires_grad = True
+y.is_leaf = False
+y.grad_fn = MulBackward0
+z = tensor(11., grad_fn=<AddBackward0>)
+z.grad_fn = AddBackward0
+在 backward 之前，x.grad = None
+
+==================================================================================
+实验2：最小 backward —— x^2 在 x=3 处自动得到梯度6
+==================================================================================
+loss = 9.0
+before backward: x.grad = None
+after backward:  x.grad = 6.0
+解析结果 2*x = 6.0
+
+==================================================================================
+实验3：单神经元 —— 手工 Backprop 与 Autograd 三个梯度完全对齐
+==================================================================================
+Forward: z = 6.199999809265137
+Forward: a = 6.199999809265137
+Forward: loss = 1.4399995803833008
+before backward: w.grad = None
+Autograd dL/dw = tensor([ 4.8000, -2.4000,  7.2000])
+Manual   dL/dw = tensor([ 4.8000, -2.4000,  7.2000])
+Autograd dL/db = 2.3999996185302734
+Manual   dL/db = 2.4000000953674316
+Autograd dL/dx = tensor([ 1.2000, -4.8000,  2.4000])
+Manual   dL/dx = tensor([ 1.2000, -4.8000,  2.4000])
+dw max abs diff = 9.5367431640625e-07
+db abs diff = 4.76837158203125e-07
+dx max abs diff = 9.5367431640625e-07
+
+==================================================================================
+实验4：Gradient Accumulation —— backward 默认把新梯度加到 .grad 中
+==================================================================================
+第一次 backward 后 p.grad = 4.0
+第二次 backward 后 p.grad = 8.0
+zero_() 后 p.grad = 0.0
+清零后再 backward，p.grad = 4.0
+
+==================================================================================
+实验5：非标量输出 —— backward 需要先定义怎样把多个输出聚合成一个目标
+==================================================================================
+y_vec = tensor([1., 4., 9.], grad_fn=<PowBackward0>)
+y_vec.shape = (3,)
+直接 y_vec.backward() 的报错类型: RuntimeError
+报错说明: grad can be implicitly created only for scalar outputs
+对 y_vec.sum() backward 后 v.grad = tensor([2., 4., 6.])
+grad_outputs = tensor([1.0000, 0.5000, 0.0000])
+torch.autograd.grad 结果 = tensor([2., 2., 0.])
+
+==================================================================================
+实验6：torch.no_grad() 与 detach() —— 主动停止记录梯度
+==================================================================================
+q.requires_grad = True
+r.requires_grad = True
+r.grad_fn = MulBackward0
+r_detached.requires_grad = False
+r_detached.grad_fn = None
+s.requires_grad = False
+s.grad_fn = None
+
+==================================================================================
+实验7：nn.Linear + MSE —— 参数梯度 Shape 与手工矩阵公式对齐
+==================================================================================
+Y.shape = (2, 2)
+loss = 0.20250001549720764
+before backward: weight.grad = None
+weight.grad.shape = (2, 3)
+bias.grad.shape = (2,)
+X.grad.shape = (2, 3)
+Autograd weight.grad =
+ tensor([[-0.1500, -0.2000,  0.3500],
+        [ 0.1000, -0.2000, -0.9000]])
+Autograd bias.grad = tensor([-0.0500, -0.3000])
+Autograd X.grad =
+ tensor([[ 0.0250,  0.2000, -0.3500],
+        [-0.3500, -0.3000,  0.4000]])
+Manual weight.grad =
+ tensor([[-0.1500, -0.2000,  0.3500],
+        [ 0.1000, -0.2000, -0.9000]])
+Manual bias.grad = tensor([-0.0500, -0.3000])
+Manual X.grad =
+ tensor([[ 0.0250,  0.2000, -0.3500],
+        [-0.3500, -0.3000,  0.4000]])
+weight grad max diff = 0.0
+bias grad max diff = 0.0
+X grad max diff = 0.0
+
+==================================================================================
+实验8：backward 只计算梯度；参数是否更新是另一件事
+==================================================================================
+loss before update = 0.20250001549720764
+loss after update  = 0.1496780812740326
+weight.grad after zero_grad = None
+bias.grad after zero_grad = None
+
+==================================================================================
+实验总结
+==================================================================================
+1. requires_grad=True 让相关运算开始被 Autograd 记录。
+2. grad_fn 描述非叶子 Tensor 是由什么运算产生的。
+3. backward() 从标量目标反向遍历计算图，并把结果写入叶子 Tensor 的 .grad。
+4. .grad 默认累加，因此训练循环需要主动 zero_grad / set_to_none。
+5. backward 只负责计算梯度，不会自动更新参数。
+6. no_grad / detach 可以主动切断梯度记录，但语义和使用场景需要区分。
+7. Autograd 的数学本质仍然是前面学过的 Computational Graph + Chain Rule + 梯度累加。
+
+实验完成。图像已写入: /mnt/data/deep_learning_lesson29/final/figures

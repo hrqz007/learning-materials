@@ -1,0 +1,42 @@
+=== 实验1：数据集与三种 Gradient 计算方式 ===
+N = 64
+x.shape = (64, 1)
+y.shape = (64, 1)
+真实生成规律：y = 3x - 2 + noise
+
+Full-Batch Loss = 16.504467
+Full-Batch Gradient = [dw=-8.218764, db=4.092798]
+Single-sample gradients 数量 = 64
+Single-sample dw 标准差 = 8.939261
+Single-sample db 标准差 = 7.074524
+
+=== 实验2：Batch Size 与 Gradient Noise ===
+B= 1 | mean_grad=[-8.3396,  3.7032] | std=[8.8183, 7.1767] | mean ||g_batch-g_full||=10.2810
+B= 2 | mean_grad=[-8.0623,  3.9466] | std=[6.3813, 4.8189] | mean ||g_batch-g_full||=7.1147
+B= 4 | mean_grad=[-8.1120,  4.1481] | std=[4.2362, 3.4047] | mean ||g_batch-g_full||=4.7569
+B= 8 | mean_grad=[-8.0332,  4.0531] | std=[2.9476, 2.4251] | mean ||g_batch-g_full||=3.4060
+B=16 | mean_grad=[-8.2523,  4.1344] | std=[2.0359, 1.4983] | mean ||g_batch-g_full||=2.2290
+B=32 | mean_grad=[-8.1993,  4.0749] | std=[1.1442, 0.8875] | mean ||g_batch-g_full||=1.2611
+B=64 | mean_grad=[-8.2188,  4.0928] | std=[0.0000, 0.0000] | mean ||g_batch-g_full||=0.0000
+
+=== 实验3：Full-Batch / SGD / Mini-Batch 的训练轨迹 ===
+B= 1 | steps/epoch=64 | total_steps=1920 | final_epoch_loss=0.052726 | w=2.9930, b=-2.0520
+B= 8 | steps/epoch= 8 | total_steps= 240 | final_epoch_loss=0.042188 | w=2.9757, b=-2.0436
+B=32 | steps/epoch= 2 | total_steps=  60 | final_epoch_loss=0.041232 | w=2.9867, b=-2.0415
+B=64 | steps/epoch= 1 | total_steps=  30 | final_epoch_loss=0.059228 | w=2.9425, b=-1.9385
+注意：这里固定相同 epoch 数，因此不同 Batch Size 的 optimizer step 数不同。
+不能仅凭这一个玩具实验断言哪种 Batch Size 普遍最好。
+
+=== 实验4：Gradient Accumulation 与 Effective Batch Size ===
+Big Batch=16 gradient: dw=-26.13723755, db=16.71434021
+4 x Micro-Batch=4 accumulated gradient: dw=-26.13724136, db=16.71433830
+|dw difference| = 3.815e-06
+|db difference| = 1.907e-06
+若每个 micro-batch loss 使用 mean reduction，则通常需要除以 accumulation_steps，才能匹配大 Batch 的 mean gradient。
+
+=== 实验结论边界 ===
+1. Mini-Batch gradient 是 Full-Batch gradient 的随机估计；Batch 越小，通常波动越大。
+2. Batch 越大不代表训练一定更好，也不代表 wall-clock 一定更快；硬件、学习率、并行效率、数据与模型都会影响结果。
+3. 比较 Batch Size 时必须说明比较基准：相同 epoch、相同 optimizer steps、相同 seen samples/tokens，结论可能不同。
+4. torch.optim.SGD 负责更新规则；DataLoader 的 batch_size 决定每次用多少样本估计 gradient。
+5. Gradient Accumulation 可以提高 effective batch size，但不会把 micro-batch 的峰值激活显存 magically 变成零；它主要减少一次同时驻留的样本数。

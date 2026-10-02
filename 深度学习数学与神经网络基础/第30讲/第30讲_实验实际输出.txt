@@ -1,0 +1,101 @@
+
+======================================================================================
+实验0：环境信息
+======================================================================================
+Python: 3.13.5
+PyTorch: 2.10.0+cpu
+CUDA available: False
+
+======================================================================================
+实验1：定义 TinyMLP —— __init__ 负责搭零件，forward 负责定义数据流
+======================================================================================
+TinyMLP(
+  (fc1): Linear(in_features=3, out_features=4, bias=True)
+  (act): ReLU()
+  (fc2): Linear(in_features=4, out_features=2, bias=True)
+)
+模型类型: TinyMLP
+总参数量: 26
+
+======================================================================================
+实验2：model(x) 与手工 fc2(ReLU(fc1(x))) 是否完全一致？
+======================================================================================
+输入 x.shape = (1, 3)
+fc1.weight.shape = (4, 3)
+fc1.bias.shape = (4,)
+fc2.weight.shape = (2, 4)
+fc2.bias.shape = (2,)
+z1_manual = tensor([[-3.4000,  2.3000,  2.8000, -1.4000]], grad_fn=<AddBackward0>)
+a1_manual = tensor([[0.0000, 2.3000, 2.8000, 0.0000]], grad_fn=<ReluBackward0>)
+model(x) = tensor([[-0.2500,  4.7500]], grad_fn=<AddmmBackward0>)
+manual   = tensor([[-0.2500,  4.7500]], grad_fn=<AddBackward0>)
+最大绝对误差 = 0.0
+
+======================================================================================
+实验3：named_parameters() —— PyTorch 到底认哪些东西是可训练 Parameter？
+======================================================================================
+fc1.weight   shape=(4, 3)     numel=12 requires_grad=True
+fc1.bias     shape=(4,)       numel= 4 requires_grad=True
+fc2.weight   shape=(2, 4)     numel= 8 requires_grad=True
+fc2.bias     shape=(2,)       numel= 2 requires_grad=True
+model.parameters() 总元素数 = 26
+按公式计算 = (3*4+4) + (4*2+2) = 26
+
+======================================================================================
+实验4：Parameter、普通 Tensor、Buffer —— 三种模型状态有什么不同？
+======================================================================================
+named_parameters: ['scale']
+named_buffers: ['fixed_offset']
+state_dict keys: ['scale', 'fixed_offset']
+plain_tensor 是否在 state_dict 中: False
+scale.requires_grad = True
+fixed_offset.requires_grad = False
+plain_tensor.requires_grad = False
+
+======================================================================================
+实验5：state_dict() —— 保存、恢复模型参数后，输出是否完全一致？
+======================================================================================
+TinyMLP state_dict keys:
+  fc1.weight shape=(4, 3)
+  fc1.bias   shape=(4,)
+  fc2.weight shape=(2, 4)
+  fc2.bias   shape=(2,)
+新模型加载前输出 = tensor([[-0.3869,  0.3487]])
+加载 state_dict 后输出 = tensor([[-0.2500,  4.7500]])
+原模型输出 = tensor([[-0.2500,  4.7500]])
+加载后与原模型最大绝对误差 = 0.0
+
+======================================================================================
+实验6：model.to(device) —— 为什么 Module 能统一移动参数和 Buffer？
+======================================================================================
+选中的 device = cpu
+Parameter scale.device = cpu
+Buffer fixed_offset.device = cpu
+普通 plain_tensor.device = cpu
+StateDemo forward 输出 = 11.0
+
+======================================================================================
+实验7：model(x) 与 model.forward(x) 的数值结果一致，但推荐使用 model(x)
+======================================================================================
+model(x) = tensor([[-0.2500,  4.7500]], grad_fn=<AddmmBackward0>)
+model.forward(x) = tensor([[-0.2500,  4.7500]], grad_fn=<AddmmBackward0>)
+当前最小例子最大绝对误差 = 0.0
+说明：推荐 model(x)，因为 __call__ 还负责 hooks 等 Module 机制，再由它调用 forward。
+
+======================================================================================
+实验8：注册 Parameter 怎样接收梯度？
+======================================================================================
+fc1.weight   grad.shape=(4, 3) grad_norm=3.061862
+fc1.bias     grad.shape=(4,) grad_norm=1.250000
+fc2.weight   grad.shape=(2, 4) grad_norm=5.124451
+fc2.bias     grad.shape=(2,) grad_norm=1.414214
+
+======================================================================================
+实验总结
+======================================================================================
+1) __init__ 注册 Layer/Parameter；forward 定义数据怎样流过这些组件。
+2) model(x) 数值上等价于本例手工 Forward，但它经过 Module.__call__ 机制。
+3) named_parameters() 只列出已注册 Parameter；TinyMLP 总参数量为26。
+4) state_dict 包含 Parameter 和持久 Buffer，但不包含普通 Tensor 属性。
+5) model.to(device) 能统一迁移已注册 Parameter/Buffer；普通 Tensor 属性需自行管理。
+6) backward 后，注册 Parameter 的梯度自动写入 parameter.grad。
