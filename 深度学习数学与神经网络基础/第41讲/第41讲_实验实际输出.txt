@@ -1,0 +1,52 @@
+
+==================================================================================
+实验1：模型容量与 Underfitting / Overfitting
+==================================================================================
+linear | final train=0.163446 | final val=0.244899 | best val=0.237621 @ epoch=307 | best test=0.229308 | final test=0.238305
+ small | final train=0.032329 | final val=0.104096 | best val=0.096869 @ epoch=1135 | best test=0.100863 | final test=0.111837
+ large | final train=0.002010 | final val=0.152615 | best val=0.095893 @ epoch=111 | best test=0.101043 | final test=0.161832
+
+==================================================================================
+实验2：Train / Validation 曲线与 Generalization Gap
+==================================================================================
+Large model best validation epoch = 111
+Best epoch train loss = 0.034981
+Best epoch val loss   = 0.095893
+Best epoch gap        = 0.060912
+Final train loss      = 0.002010
+Final val loss        = 0.152615
+Final gap             = 0.150605
+Best checkpoint test  = 0.101043
+Final checkpoint test = 0.161832
+
+==================================================================================
+实验3：Early Stopping / Best Validation Checkpoint
+==================================================================================
+用 Validation 选择的 checkpoint: test MSE = 0.101043
+训练到最后的 checkpoint:       test MSE = 0.161832
+注意：Test 只用于最后报告，不参与挑 best epoch。
+
+==================================================================================
+实验4：Random Labels Memorization
+==================================================================================
+Random labels final train loss = 0.000294
+Random labels final train acc  = 1.0000
+Random labels final val acc    = 0.4980
+随机标签没有可泛化规律；高训练准确率只说明模型记住了训练样本。
+
+==================================================================================
+实验5：总结与科研解释边界
+==================================================================================
+模型      final_train   final_val    best_val    best_test   final_test
+linear     0.163446    0.244899    0.237621    0.229308    0.238305
+small      0.032329    0.104096    0.096869    0.100863    0.111837
+large      0.002010    0.152615    0.095893    0.101043    0.161832
+
+本讲实验结论边界：
+1) Train Loss 低只说明训练集拟合好，不自动等于 Generalization 好。
+2) Validation 用于模型选择/调参；Test 应尽量只在最后做一次独立评估。
+3) Generalization Gap 必须在同一指标、同一数据处理口径下解释。
+4) Early Stopping 是一种模型选择策略，不是证明模型已经找到真实因果规律。
+5) 单个合成实验只验证机制，不代表所有模型/数据集都呈现完全相同曲线。
+
+所有实验已完成。图像保存在: /mnt/data/deep_learning_lesson41/final/figures

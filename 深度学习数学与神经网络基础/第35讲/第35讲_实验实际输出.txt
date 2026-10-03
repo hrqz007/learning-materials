@@ -1,0 +1,67 @@
+
+==============================================================================
+实验1：DataLoader 的 Batch 数量、最后一个 Batch 与 drop_last
+==============================================================================
+drop_last=False
+  实际 batches/epoch = 4
+  理论 batches/epoch = 4
+  batch sizes        = [6, 6, 6, 5]
+  sample ranges      = [(0, 5), (6, 11), (12, 17), (18, 22)]
+drop_last=True
+  实际 batches/epoch = 3
+  理论 batches/epoch = 3
+  batch sizes        = [6, 6, 6]
+  sample ranges      = [(0, 5), (6, 11), (12, 17)]
+
+==============================================================================
+实验2：Gradient Accumulation 后，micro-batch iteration 与 optimizer step 不再相等
+==============================================================================
+micro-batches/epoch = 7
+gradient_accumulation_steps = 3
+每个 Epoch 结束时 flush 剩余梯度 -> optimizer steps/epoch = 3
+若错误地丢弃不足 A 个的剩余梯度 -> optimizer steps/epoch = 2
+2 Epoch 总 micro-batch iterations = 14
+2 Epoch 总 optimizer steps（每 Epoch flush） = 6
+
+==============================================================================
+实验3：Gradient Accumulation 跨 Epoch 还是每个 Epoch flush？
+==============================================================================
+每 Epoch flush: 6 optimizer steps
+跨 Epoch 连续累计: 5 optimizer steps
+差异来自 Epoch 边界处不足 accumulation_steps 的残余 micro-batch 是否立即更新。
+
+==============================================================================
+实验4：Micro Batch、Global Batch、Effective Batch 与 Tokens per Update
+==============================================================================
+micro_batch_per_device = 2
+world_size = 4
+gradient_accumulation_steps = 8
+global effective batch = 64 sequences/update
+sequence length = 2048
+raw token slots/update = 131,072
+8 条示例序列的 raw token slots = 16,384
+8 条示例序列的 valid tokens    = 13,244
+8 条示例序列的 padding tokens  = 3,140
+
+==============================================================================
+实验5：Learning Rate Scheduler 应该跟哪个 step？
+==============================================================================
+total micro-batches = 20
+gradient accumulation = 4
+optimizer steps = 5
+scheduler 按 optimizer step: final lr = 0.05904900
+scheduler 按 micro-batch:    final lr = 0.01215767
+
+==============================================================================
+实验6：把 Epoch、Batch、Optimizer Step、Samples、Tokens 统一起来
+==============================================================================
+N=1000, batch_size=128, epochs=10, accumulation=4, drop_last=False
+micro-batches/epoch = 8
+optimizer steps/epoch（Epoch 末 flush） = 2
+total micro-batch iterations = 80
+total optimizer steps = 20
+total sample visits = 10,000
+若每条序列固定 512 token，则 raw token slots = 5,120,000
+
+结论提醒：日志里的 'step' 必须确认它到底指 micro-batch iteration、optimizer step、scheduler step 还是 global step。
+实验完成，图片已保存到 figures/ 目录。
