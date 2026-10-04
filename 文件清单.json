@@ -1,8 +1,8 @@
 {
-  "original_file_count": 855,
-  "original_total_bytes": 421818651,
-  "snapshot_date_utc": "2026-10-03",
-  "snapshot_cutoff_utc": "2026-10-03T12:55:00Z",
+  "original_file_count": 909,
+  "original_total_bytes": 436946190,
+  "snapshot_date_utc": "2026-10-04",
+  "snapshot_cutoff_utc": "2026-10-04T12:17:26Z",
   "files": [
     {
       "source_path": "Agent_Systems_Research_Topic_A_Lesson_01_Package.zip",
@@ -5127,6 +5127,330 @@
       "target_path": "深度学习数学与神经网络基础/第41讲/第41讲_讲义_Overfitting与Generalization.pdf",
       "size_bytes": 810422,
       "sha256": "8c23a6e46a9921c141e741a18c4fc9081a900fd55ecb957d2be9a8fc609dae05"
+    },
+    {
+      "source_path": "README_第42讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第42讲/README_第42讲.txt",
+      "size_bytes": 903,
+      "sha256": "0bba02c197ba108f7851eb53875e88fc40d1bd6072710db6b16d1cfe056cf9c1"
+    },
+    {
+      "source_path": "lesson42_group_leakage.png",
+      "target_path": "深度学习数学与神经网络基础/第42讲/lesson42_group_leakage.png",
+      "size_bytes": 52899,
+      "sha256": "a8ab9b78323cf6f3345beb276797c4b40cc117d990498973db5d34f018bed904"
+    },
+    {
+      "source_path": "lesson42_model_selection_mse.png",
+      "target_path": "深度学习数学与神经网络基础/第42讲/lesson42_model_selection_mse.png",
+      "size_bytes": 83711,
+      "sha256": "9dd758907b3a00c52b9100771fb8ef68f646c30ab0130cf917845663749098d6"
+    },
+    {
+      "source_path": "lesson42_selected_model_fit.png",
+      "target_path": "深度学习数学与神经网络基础/第42讲/lesson42_selected_model_fit.png",
+      "size_bytes": 207537,
+      "sha256": "dadb2948e0320cc88cb21f571ae1211f9478e9b66f0a05f9f6dfc90604cbc5bb"
+    },
+    {
+      "source_path": "lesson42_train_val_test_leakage_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第42讲/lesson42_train_val_test_leakage_experiment.py",
+      "size_bytes": 12566,
+      "sha256": "8976c0645c218b992fd544dd95b04d4e7faf52151b4ae36d0cc73da9a239d7a4"
+    },
+    {
+      "source_path": "lesson42_validation_overfitting.png",
+      "target_path": "深度学习数学与神经网络基础/第42讲/lesson42_validation_overfitting.png",
+      "size_bytes": 94408,
+      "sha256": "1e882c8c9fb9d6f3c7765c05c816efddec5e103a796194edb2799c5eafc131e5"
+    },
+    {
+      "source_path": "第42讲_TrainValidationTest与DataLeakage_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第42讲/第42讲_TrainValidationTest与DataLeakage_完整材料包.zip",
+      "size_bytes": 1468237,
+      "sha256": "f3eddf188e66be8b3ba61ab5dcf4f51d7072bd42cbe565daf1c5770e94993700"
+    },
+    {
+      "source_path": "第42讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第42讲/第42讲_实验实际输出.txt",
+      "size_bytes": 2730,
+      "sha256": "1a3b4dc300655ded7a22fb1ceda2fd53ee64e3f85deeac781b373d468d9b27dc"
+    },
+    {
+      "source_path": "第42讲_实验设计_TrainValidationTest与DataLeakage.pdf",
+      "target_path": "深度学习数学与神经网络基础/第42讲/第42讲_实验设计_TrainValidationTest与DataLeakage.pdf",
+      "size_bytes": 357867,
+      "sha256": "70a4ce6592b88123f68f865562cdc54db0c41b2b4937c6dc5bf32ddc68255174"
+    },
+    {
+      "source_path": "第42讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第42讲/第42讲_核心概念速查卡.pdf",
+      "size_bytes": 107886,
+      "sha256": "61e39829768258b1b0535f00a379701681bbd204770b394911d8782301ed7114"
+    },
+    {
+      "source_path": "第42讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第42讲/第42讲_练习题与答案.pdf",
+      "size_bytes": 123939,
+      "sha256": "1953f69f13af8faa643f9cfec0bf105c2657ecf3ccd9990a0a130b4c09c91294"
+    },
+    {
+      "source_path": "第42讲_讲义_TrainValidationTest与DataLeakage.pdf",
+      "target_path": "深度学习数学与神经网络基础/第42讲/第42讲_讲义_TrainValidationTest与DataLeakage.pdf",
+      "size_bytes": 550434,
+      "sha256": "b2276fca2e43fe1faa392ae7e2dbfd90a83f35089d9336f9ea940008733e406d"
+    },
+    {
+      "source_path": "README_第43讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第43讲/README_第43讲.txt",
+      "size_bytes": 881,
+      "sha256": "95d74b0ae3defb15db156a18a35a29e7afb639aa08fa22f3d526370efab7ebbd"
+    },
+    {
+      "source_path": "lesson43_informative_vs_noise_weights.png",
+      "target_path": "深度学习数学与神经网络基础/第43讲/lesson43_informative_vs_noise_weights.png",
+      "size_bytes": 79388,
+      "sha256": "90c9739796e6ada67b2ab2e8b96196fa009639cdf56b47d8fc273f6c8de44a42"
+    },
+    {
+      "source_path": "lesson43_parameter_norm.png",
+      "target_path": "深度学习数学与神经网络基础/第43讲/lesson43_parameter_norm.png",
+      "size_bytes": 71790,
+      "sha256": "9ee27d7a3f2991136e50a821d10544fa9f93f80aecfa9ee10736c4af3bfd0f47"
+    },
+    {
+      "source_path": "lesson43_regularization_weight_decay_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第43讲/lesson43_regularization_weight_decay_experiment.py",
+      "size_bytes": 9874,
+      "sha256": "82fc59c28dd8c8cfdc09e04c0e894bd4c51c23ee4a984e9cd0fda0fb6218110d"
+    },
+    {
+      "source_path": "lesson43_regularized_objective.png",
+      "target_path": "深度学习数学与神经网络基础/第43讲/lesson43_regularized_objective.png",
+      "size_bytes": 102022,
+      "sha256": "1f296744dcd8c7668435fe32da4531ccb9c2266a92f17f203753db58e654a82e"
+    },
+    {
+      "source_path": "lesson43_weight_decay_sweep.png",
+      "target_path": "深度学习数学与神经网络基础/第43讲/lesson43_weight_decay_sweep.png",
+      "size_bytes": 102602,
+      "sha256": "cc74c7ff3b7d3bb7cbd7da25aa4a114af7c7a6939baa8afb52daf7ac2e2d3eb7"
+    },
+    {
+      "source_path": "lesson43_weight_profiles.png",
+      "target_path": "深度学习数学与神经网络基础/第43讲/lesson43_weight_profiles.png",
+      "size_bytes": 85301,
+      "sha256": "fabddfa1273120b31d46d94d029c8c45b4993cc11c24e8c453fcbdfaa22796cd"
+    },
+    {
+      "source_path": "第43讲_Regularization与WeightDecay_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第43讲/第43讲_Regularization与WeightDecay_完整材料包.zip",
+      "size_bytes": 1498161,
+      "sha256": "00b16ede5c77ed7d60bd421893b7aa58b3c377fbab31900cb0e1decab6594074"
+    },
+    {
+      "source_path": "第43讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第43讲/第43讲_实验实际输出.txt",
+      "size_bytes": 2187,
+      "sha256": "dc8eb7d249b397974340a281312723b974ee4222399e52c7f4609037809dd9c8"
+    },
+    {
+      "source_path": "第43讲_实验设计_Regularization与WeightDecay.pdf",
+      "target_path": "深度学习数学与神经网络基础/第43讲/第43讲_实验设计_Regularization与WeightDecay.pdf",
+      "size_bytes": 298702,
+      "sha256": "a207973ba8879df51ca97a921498562329685736dab5cd72a91ded51ac47d55e"
+    },
+    {
+      "source_path": "第43讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第43讲/第43讲_核心概念速查卡.pdf",
+      "size_bytes": 82516,
+      "sha256": "78da467bbedb44ef1ce83bb21b81df53e5ed2ab96b374a56decd9998a93d7cee"
+    },
+    {
+      "source_path": "第43讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第43讲/第43讲_练习题与答案.pdf",
+      "size_bytes": 117153,
+      "sha256": "e1321fd1e14dc504aef4a721da15733adf9944c7200a6437ac532142ab991e20"
+    },
+    {
+      "source_path": "第43讲_讲义_Regularization与WeightDecay.pdf",
+      "target_path": "深度学习数学与神经网络基础/第43讲/第43讲_讲义_Regularization与WeightDecay.pdf",
+      "size_bytes": 694798,
+      "sha256": "3d22e7bff7b1bb139a93fd3a12c7df311d099904ba81a2d2c865c311b72c3962"
+    },
+    {
+      "source_path": "README_第44讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第44讲/README_第44讲.txt",
+      "size_bytes": 1047,
+      "sha256": "7377cab7de972bbb2a627dc63b8cc4da77b42e568e378063f69f7b4118206430"
+    },
+    {
+      "source_path": "lesson44_dropout_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第44讲/lesson44_dropout_experiment.py",
+      "size_bytes": 13240,
+      "sha256": "5a6666aa0972ca4294be465e183800a4a72b3e65d4048618f2b640eb9763faf7"
+    },
+    {
+      "source_path": "第44讲_Dropout_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第44讲/第44讲_Dropout_完整材料包.zip",
+      "size_bytes": 1847297,
+      "sha256": "3800c3c2ad970b71efde29f929e8fbdc48ca181021cfe09d986291c5448829ca"
+    },
+    {
+      "source_path": "第44讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第44讲/第44讲_实验实际输出.txt",
+      "size_bytes": 1582,
+      "sha256": "978c2be9a4bf66c188a0f93297a134bdc84e0325fa949b725d590309ec0873aa"
+    },
+    {
+      "source_path": "第44讲_实验设计_Dropout.pdf",
+      "target_path": "深度学习数学与神经网络基础/第44讲/第44讲_实验设计_Dropout.pdf",
+      "size_bytes": 277092,
+      "sha256": "fae90587bf54cc56146d5fdb9d2e36c0aafbbd6617928a73f4269862695ba81c"
+    },
+    {
+      "source_path": "第44讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第44讲/第44讲_核心概念速查卡.pdf",
+      "size_bytes": 88451,
+      "sha256": "2979434571c3413585f4691d14bd4b944b7bd2ae4bf64ef1f2f148b8e02a7142"
+    },
+    {
+      "source_path": "第44讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第44讲/第44讲_练习题与答案.pdf",
+      "size_bytes": 108501,
+      "sha256": "d60c92da77e535cdae32697ed5d0db86a91db81be6b9598acd1e3fca78bf6cae"
+    },
+    {
+      "source_path": "第44讲_讲义_Dropout.pdf",
+      "target_path": "深度学习数学与神经网络基础/第44讲/第44讲_讲义_Dropout.pdf",
+      "size_bytes": 956985,
+      "sha256": "44d942a47f314daebddbf0808e2c7ddedbe138432e2b5a184b7e72df68b70b2b"
+    },
+    {
+      "source_path": "README_第45讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第45讲/README_第45讲.txt",
+      "size_bytes": 776,
+      "sha256": "c31d1c95d5409755fbd4f81cc6dde002eee4664e483e87d105d24c43a3d148d4"
+    },
+    {
+      "source_path": "lesson45_activation_saturation.png",
+      "target_path": "深度学习数学与神经网络基础/第45讲/lesson45_activation_saturation.png",
+      "size_bytes": 85216,
+      "sha256": "b1bd3bab240b2367d606b10c9044bdde3dccc8ec5aa04608b79532ae7bcf3741"
+    },
+    {
+      "source_path": "lesson45_deep_activation_scale.png",
+      "target_path": "深度学习数学与神经网络基础/第45讲/lesson45_deep_activation_scale.png",
+      "size_bytes": 78069,
+      "sha256": "e9d9453c9eadf4ceba2b42f1dba97c71838e908f50c4fb6404ac9c84c77ca019"
+    },
+    {
+      "source_path": "lesson45_feature_scale_gradient.png",
+      "target_path": "深度学习数学与神经网络基础/第45讲/lesson45_feature_scale_gradient.png",
+      "size_bytes": 45937,
+      "sha256": "41ed5f300b828f5a98d9d77f1b36e4a31af1b4b9a6f48ba0da7b54f20ea92f93"
+    },
+    {
+      "source_path": "lesson45_layernorm_preview.png",
+      "target_path": "深度学习数学与神经网络基础/第45讲/lesson45_layernorm_preview.png",
+      "size_bytes": 76864,
+      "sha256": "776c365d725c227911b152ce97aadbdd87cc817db3f068ce509074bd5d765dc1"
+    },
+    {
+      "source_path": "lesson45_standardization_numbers.png",
+      "target_path": "深度学习数学与神经网络基础/第45讲/lesson45_standardization_numbers.png",
+      "size_bytes": 41402,
+      "sha256": "199a4276567a05983700d19b3312d97fbfd7555f2b71bd19a6f974144ee5eb32"
+    },
+    {
+      "source_path": "lesson45_why_normalization_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第45讲/lesson45_why_normalization_experiment.py",
+      "size_bytes": 14668,
+      "sha256": "aca3a86a5814eefb41ae48d44bf493dd7050a2f86f760b0d7f50916187cc1306"
+    },
+    {
+      "source_path": "第45讲_为什么需要Normalization_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第45讲/第45讲_为什么需要Normalization_完整材料包.zip",
+      "size_bytes": 1229075,
+      "sha256": "6f5c17b581a6681db49de7c4946a5f00a71e5c429d58d9b4a97683ebfc667448"
+    },
+    {
+      "source_path": "第45讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第45讲/第45讲_实验实际输出.txt",
+      "size_bytes": 2627,
+      "sha256": "7b28eb4922f9998c755cd4f15f1882ab7153a7a87ef37b50f04bed1b84b9512c"
+    },
+    {
+      "source_path": "第45讲_实验设计_为什么需要Normalization.pdf",
+      "target_path": "深度学习数学与神经网络基础/第45讲/第45讲_实验设计_为什么需要Normalization.pdf",
+      "size_bytes": 135138,
+      "sha256": "211b340362ce26359105df5535e04ceebd07b6a1b63e5eb34608c9360a0409a9"
+    },
+    {
+      "source_path": "第45讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第45讲/第45讲_核心概念速查卡.pdf",
+      "size_bytes": 88812,
+      "sha256": "d9495547121bc534765951d8a1f9b543643478b7c42b77ba362846e949bed731"
+    },
+    {
+      "source_path": "第45讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第45讲/第45讲_练习题与答案.pdf",
+      "size_bytes": 105975,
+      "sha256": "2e6b5d36ffc08faf11bd91d80c87ddbb8db9abe8f4c918ec708834f3c60b496e"
+    },
+    {
+      "source_path": "第45讲_讲义_为什么需要Normalization.pdf",
+      "target_path": "深度学习数学与神经网络基础/第45讲/第45讲_讲义_为什么需要Normalization.pdf",
+      "size_bytes": 682256,
+      "sha256": "1e40f2592104eb40a255d97112d46c68ea4370bec9e0e4e6193a034e28931a15"
+    },
+    {
+      "source_path": "README_第46讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第46讲/README_第46讲.txt",
+      "size_bytes": 1394,
+      "sha256": "bfc20df4877f8a51b9d95792d1c0a1e583509d2d96a39d0d529ffe1172197a46"
+    },
+    {
+      "source_path": "lesson46_batchnorm_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第46讲/lesson46_batchnorm_experiment.py",
+      "size_bytes": 18804,
+      "sha256": "93f8e609943a14a4c2bd37483d3efdbbe62d49cad8f813ea6f478b82eb000fec"
+    },
+    {
+      "source_path": "第46讲_BatchNorm_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第46讲/第46讲_BatchNorm_完整材料包.zip",
+      "size_bytes": 1615232,
+      "sha256": "139d1a3f8e14cca09be6428590270b6343df31601c08486aa439d471991727e9"
+    },
+    {
+      "source_path": "第46讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第46讲/第46讲_实验实际输出.txt",
+      "size_bytes": 4903,
+      "sha256": "7feaaf9911bf8946ddf9e0b7a9d7891e54812c4bf0eafacc260bada96371eb25"
+    },
+    {
+      "source_path": "第46讲_实验设计_BatchNorm统计轴与TrainEval.pdf",
+      "target_path": "深度学习数学与神经网络基础/第46讲/第46讲_实验设计_BatchNorm统计轴与TrainEval.pdf",
+      "size_bytes": 478072,
+      "sha256": "3924b2482aec7f65987269b16c1974b96425e3a63460e9c5650824c87487c099"
+    },
+    {
+      "source_path": "第46讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第46讲/第46讲_核心概念速查卡.pdf",
+      "size_bytes": 115449,
+      "sha256": "267ff6a6e269505670e32bbbab48f2ab3061ff92d8d46f63a24d19613eed48ce"
+    },
+    {
+      "source_path": "第46讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第46讲/第46讲_练习题与答案.pdf",
+      "size_bytes": 128071,
+      "sha256": "33c562ff684df4df9b04ae8f6a5e36352a06d8cb655678095841d731e13fef59"
+    },
+    {
+      "source_path": "第46讲_讲义_BatchNorm.pdf",
+      "target_path": "深度学习数学与神经网络基础/第46讲/第46讲_讲义_BatchNorm.pdf",
+      "size_bytes": 676112,
+      "sha256": "5b555bf230ce9047011762a05de4b55a2c595cd9d3b734bc26868a6a707ee385"
     },
     {
       "source_path": "肿瘤新抗原与StableNeoRank全景图.png",

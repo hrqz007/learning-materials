@@ -1,0 +1,37 @@
+==================================================================================
+第44讲实验：Dropout
+==================================================================================
+PyTorch version: 2.10.0+cpu
+
+实验1：随机 Mask、零比例与 inverted dropout 缩放
+p=0.5, 输入均值=1.000000
+训练模式零元素比例≈0.497000
+训练模式非零值=[2.0]
+训练模式输出均值≈1.006000
+eval 模式 max|Dropout(x)-x|=0
+
+实验2：为什么训练时要除以 keep probability？
+p=0.3, keep probability q=0.7
+输入 x=[1.0, 2.0, 4.0, 8.0]
+20000 次 Dropout 后逐元素经验均值=[1.0122144222259521, 1.9954289197921753, 3.9937145709991455, 8.029714584350586]
+最大期望误差=0.029715
+
+实验3：model.train()/eval() 与 torch.no_grad() 不是同一件事
+train + grad 输出=[[0.0, 2.0, 0.0, 0.0]], requires_grad=True
+train + no_grad 输出=[[0.0, 2.0, 0.0, 0.0]], requires_grad=False
+eval + grad 输出=[[1.0, 1.0, 1.0, 1.0]], requires_grad=True
+eval + no_grad 输出=[[1.0, 1.0, 1.0, 1.0]], requires_grad=False
+同一随机种子下 train+grad 与 train+no_grad 输出是否一致：True
+
+实验4：Shape 与 Parameter
+X.shape=(2, 3, 8)
+Dropout(X).shape=(2, 3, 8)
+Dropout 可训练参数量=0
+
+实验5：Dropout 强度与 Generalization（只按 Validation 选 p）
+p | train MSE | val MSE | test MSE | best step
+0.0 | 0.071438 | 0.091302 | 0.092745 | 81
+0.1 | 0.087764 | 0.089288 | 0.091337 | 131
+0.3 | 0.068203 | 0.091064 | 0.094628 | 2731
+0.6 | 0.128736 | 0.119763 | 0.124082 | 1461
+按 Validation 选择的最佳 p=0.1, 独立 Test MSE=0.091337

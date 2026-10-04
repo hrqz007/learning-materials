@@ -1,0 +1,47 @@
+==============================================================================
+第43讲实验：Regularization 与 Weight Decay
+==============================================================================
+Train / Val / Test = 120 / 1000 / 1000
+Feature dimension D = 100, 真正有用特征数 = 8, 噪声特征数 = 92
+Noise std = 0.5, LR = 0.02, Steps = 8000
+
+实验1：Weight Decay Sweep（只按 Validation 选择）
+weight_decay | train MSE | val MSE | test MSE | ||w||2 | mean|w_info| | mean|w_noise| | cos(w, w_true)
+          0 | 0.047494 | 1.932416 | 2.063637 | 3.498969 | 1.035375 | 0.107323 | 0.927223
+     0.0001 | 0.047495 | 1.926845 | 2.057678 | 3.497421 | 1.035082 | 0.107158 | 0.927398
+      0.001 | 0.047528 | 1.878799 | 2.006250 | 3.483852 | 1.032483 | 0.105703 | 0.928910
+       0.01 | 0.049494 | 1.547217 | 1.649218 | 3.374962 | 1.009398 | 0.095432 | 0.939590
+       0.03 | 0.059056 | 1.248371 | 1.322300 | 3.222855 | 0.970472 | 0.084197 | 0.949672
+        0.1 | 0.108011 | 1.146598 | 1.189738 | 2.958181 | 0.888312 | 0.071466 | 0.953869
+        0.3 | 0.287233 | 1.561145 | 1.571346 | 2.612053 | 0.771280 | 0.070490 | 0.942528
+          1 | 1.049958 | 2.820091 | 2.790723 | 2.057075 | 0.588989 | 0.068590 | 0.910914
+
+按 Validation MSE 选择的最佳 weight_decay = 0.1
+对应 Validation MSE = 1.146598
+对应独立 Test MSE = 1.189738
+
+实验2：同一训练预算下的部分 Training Loss 轨迹
+weight_decay=0
+  step=   1 | train_loss=13.215476
+  step=  10 | train_loss=3.673164
+  step= 100 | train_loss=0.205435
+  step=1000 | train_loss=0.053697
+  step=8000 | train_loss=0.047494
+weight_decay=0.1
+  step=   1 | train_loss=13.215476
+  step=  10 | train_loss=3.710817
+  step= 100 | train_loss=0.249223
+  step=1000 | train_loss=0.109302
+  step=8000 | train_loss=0.108011
+weight_decay=1
+  step=   1 | train_loss=13.215476
+  step=  10 | train_loss=4.056633
+  step= 100 | train_loss=1.070797
+  step=1000 | train_loss=1.049958
+  step=8000 | train_loss=1.049958
+
+实验3：L2 Regularization Objective 的数字例子
+w = [3, 4], ||w||^2 = 25
+data_loss = 2.0000, lambda = 0.1000
+L2 penalty = (lambda/2) * ||w||^2 = 1.2500
+total objective = data_loss + penalty = 3.2500
