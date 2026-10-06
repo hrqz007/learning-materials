@@ -1,0 +1,82 @@
+=== 实验1：完整手工 Attention（无 Mask）===
+QK^T =
+ [[1. 0. 1.]
+ [0. 1. 1.]
+ [1. 1. 2.]]
+scaled scores =
+ [[0.707107 0.       0.707107]
+ [0.       0.707107 0.707107]
+ [0.707107 0.707107 1.414214]]
+attention weights =
+ [[0.401112 0.197776 0.401112]
+ [0.197776 0.401112 0.401112]
+ [0.248255 0.248255 0.50349 ]]
+row sums = [1. 1. 1.]
+output =
+ [[1.604448 0.796664]
+ [1.401112 1.203336]
+ [1.758725 1.      ]]
+
+=== 实验2：Causal Mask ===
+causal mask =
+ [[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+masked scores =
+ [[0.707107     -inf     -inf]
+ [0.       0.707107     -inf]
+ [0.707107 0.707107 1.414214]]
+masked weights =
+ [[1.       0.       0.      ]
+ [0.330238 0.669762 0.      ]
+ [0.248255 0.248255 0.50349 ]]
+future weight max = 0.0
+masked output =
+ [[1.       0.      ]
+ [0.330238 1.339523]
+ [1.758725 1.      ]]
+
+=== 实验3：为什么除以 sqrt(d_k) ===
+d=  8  std(dot)=2.8391  std(dot/sqrt(d))=1.0038
+d= 32  std(dot)=5.6759  std(dot/sqrt(d))=1.0034
+d=128  std(dot)=11.3092  std(dot/sqrt(d))=0.9996
+d=512  std(dot)=22.6831  std(dot/sqrt(d))=1.0025
+
+=== 实验4：Softmax 饱和程度：缩放前 vs 缩放后 ===
+d=  8  mean max prob raw=0.5626 scaled=0.2402 | entropy raw=1.3063 scaled=2.3693
+d= 32  mean max prob raw=0.7741 scaled=0.2433 | entropy raw=0.6174 scaled=2.3613
+d=128  mean max prob raw=0.8913 scaled=0.2466 | entropy raw=0.2773 scaled=2.3582
+d=512  mean max prob raw=0.9454 scaled=0.2453 | entropy raw=0.1338 scaled=2.3584
+
+=== 实验5：PyTorch scaled_dot_product_attention 对齐 ===
+manual output =
+ tensor([[[[1.0000, 0.0000],
+          [0.3302, 1.3395],
+          [1.7587, 1.0000]]]])
+torch output  =
+ tensor([[[[1.0000, 0.0000],
+          [0.3302, 1.3395],
+          [1.7587, 1.0000]]]])
+max abs diff = 1.1920928955078125e-07
+
+=== 实验6：输出是 Value 的加权和 ===
+Token2 weights = [0.330238 0.669762 0.      ]
+Token2 weighted sum = [0.330238 1.339523]
+masked output token2 = [0.330238 1.339523]
+diff = 0.0
+
+=== 实验7：Mask 必须在 Softmax 前生效 ===
+wrong row sums after zeroing future = [0.401112 0.598888 1.      ]
+correct causal row sums = [1. 1. 1.]
+
+=== 实验8：Backward：Q/K/V 都能收到梯度 ===
+loss = 1.1660820245742798
+||grad Q|| = 0.2522832751274109
+||grad K|| = 0.4847677946090698
+||grad V|| = 0.7922071814537048
+
+=== 实验9：Batch / Head Shape ===
+Q shape = (2, 4, 5, 8)
+score shape = (2, 4, 5, 5)
+weight shape = (2, 4, 5, 5)
+output shape = (2, 4, 5, 8)

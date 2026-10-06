@@ -1,8 +1,8 @@
 {
-  "original_file_count": 972,
-  "original_total_bytes": 449591557,
-  "snapshot_date_utc": "2026-10-05",
-  "snapshot_cutoff_utc": "2026-10-05T12:56:34Z",
+  "original_file_count": 1004,
+  "original_total_bytes": 453574352,
+  "snapshot_date_utc": "2026-10-06",
+  "snapshot_cutoff_utc": "2026-10-06T12:35:30Z",
   "files": [
     {
       "source_path": "01_第10讲_位置编码_Transformer为什么必须知道顺序_完整讲义.pdf",
@@ -5835,6 +5835,198 @@
       "target_path": "肿瘤新抗原与StableNeoRank/专题图解/肿瘤新抗原与StableNeoRank全景图.png",
       "size_bytes": 1858626,
       "sha256": "a64848a1fcfda290822be0fc23fdeb2fcde4f42cc147aa441125f106e0806d8d"
+    },
+    {
+      "source_path": "README_第53讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第53讲/README_第53讲.txt",
+      "size_bytes": 954,
+      "sha256": "ba42b76dd6241fadded6dc93b7884557ea010d42b540576b9fcc9267794b4cae"
+    },
+    {
+      "source_path": "lesson53_qkv_projection_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第53讲/lesson53_qkv_projection_experiment.py",
+      "size_bytes": 5543,
+      "sha256": "9e87d18d185c24c1c890ead774c62cf9a05f89b2c3f3038958d4e5d8cc0e05ee"
+    },
+    {
+      "source_path": "第53讲_QKV是怎样算出来的_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_QKV是怎样算出来的_完整材料包.zip",
+      "size_bytes": 504475,
+      "sha256": "b7430a321a7366b289ec0731cc679eb31fb2b4a5a4259b13c3e72e83f7ac79f2"
+    },
+    {
+      "source_path": "第53讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_实验实际输出.txt",
+      "size_bytes": 1730,
+      "sha256": "9c167b3bb010d680e3971552618193415cd5a7caf6c02c9c7557145829ee0b02"
+    },
+    {
+      "source_path": "第53讲_实验设计_QKVProjection.pdf",
+      "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_实验设计_QKVProjection.pdf",
+      "size_bytes": 158915,
+      "sha256": "6e94cb8a6e980db0e28767ce44750d3e7234fc34ec40e484c564807766c797dd"
+    },
+    {
+      "source_path": "第53讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_核心概念速查卡.pdf",
+      "size_bytes": 7247,
+      "sha256": "7f4aa746118b81ad6021e7829a9b1c73f4d19be389329676da8f638dab18e57f"
+    },
+    {
+      "source_path": "第53讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_练习题与答案.pdf",
+      "size_bytes": 7361,
+      "sha256": "aa14765fe99c183b7e5a84dea454c0b08c47eedb490fec03ae37fbf255390332"
+    },
+    {
+      "source_path": "第53讲_讲义_QKV是怎样算出来的.pdf",
+      "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_讲义_QKV是怎样算出来的.pdf",
+      "size_bytes": 182656,
+      "sha256": "ed8199621b14297be4f23e87273e22d96f49d5c094ed49f20b2b9571efc82eec"
+    },
+    {
+      "source_path": "README_第54讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第54讲/README_第54讲.txt",
+      "size_bytes": 852,
+      "sha256": "8132bcc77cb195919ff0f808f7a15a79da535c189439fca0a8401075f2cff7a3"
+    },
+    {
+      "source_path": "lesson54_scaled_dot_product_attention_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第54讲/lesson54_scaled_dot_product_attention_experiment.py",
+      "size_bytes": 4637,
+      "sha256": "52b4011eb05dd4f43d9964f8fe1601428c70678e219910b55eca491eea6c011b"
+    },
+    {
+      "source_path": "第54讲_ScaledDotProductAttention_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第54讲/第54讲_ScaledDotProductAttention_完整材料包.zip",
+      "size_bytes": 632554,
+      "sha256": "f9a1907a9a777d78099dcb06930e36c08b1c18c49c4cb5051acd686c29f2d4a8"
+    },
+    {
+      "source_path": "第54讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第54讲/第54讲_实验实际输出.txt",
+      "size_bytes": 2415,
+      "sha256": "7fc310835a39d32566e05d8c74c03b77ddbeb5d86dd43f5736eff0453b42c594"
+    },
+    {
+      "source_path": "第54讲_实验设计_ScaledDotProductAttention.pdf",
+      "target_path": "深度学习数学与神经网络基础/第54讲/第54讲_实验设计_ScaledDotProductAttention.pdf",
+      "size_bytes": 168432,
+      "sha256": "c51d81e1bd418f2f6701ede1d47e85e5a33b060fd1f4fd4598060f76a2c7fe61"
+    },
+    {
+      "source_path": "第54讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第54讲/第54讲_核心概念速查卡.pdf",
+      "size_bytes": 5631,
+      "sha256": "b6e4597181eca7f9af8743c7b674c5f5e1842a6ec1e5dbb1c33dd979edf910fb"
+    },
+    {
+      "source_path": "第54讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第54讲/第54讲_练习题与答案.pdf",
+      "size_bytes": 6715,
+      "sha256": "0da0b76dc3e869077eb501ee1159cc052646fcdd13ef9a604cf7e6a125e5374b"
+    },
+    {
+      "source_path": "第54讲_讲义_ScaledDotProductAttention.pdf",
+      "target_path": "深度学习数学与神经网络基础/第54讲/第54讲_讲义_ScaledDotProductAttention.pdf",
+      "size_bytes": 358433,
+      "sha256": "db19e9181100c529f3337acbc85bc077da29f3bc048ab3975b9a505dcb46e388"
+    },
+    {
+      "source_path": "README_第55讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第55讲/README_第55讲.txt",
+      "size_bytes": 872,
+      "sha256": "082cf1ef51e87bd7b164a19826d2afa8a646c2a57da1345bc2264c96967d8dc1"
+    },
+    {
+      "source_path": "lesson55_mask_multihead_attention_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第55讲/lesson55_mask_multihead_attention_experiment.py",
+      "size_bytes": 5349,
+      "sha256": "3771766eadb1df954d048bfe7baf6cc499db84cfdeb1b7a53ec0e1132a83d2a5"
+    },
+    {
+      "source_path": "第55讲_Mask与MultiHeadAttention_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_Mask与MultiHeadAttention_完整材料包.zip",
+      "size_bytes": 544076,
+      "sha256": "92c3e3728e1779384219e03785a8b5bf0af184db0014da63eb825851acae463c"
+    },
+    {
+      "source_path": "第55讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_实验实际输出.txt",
+      "size_bytes": 2542,
+      "sha256": "8770a9885978acd243555837aec7e9cc897557a809ceb16629d4e6741c4b55bd"
+    },
+    {
+      "source_path": "第55讲_实验设计_Mask与MultiHeadAttention.pdf",
+      "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_实验设计_Mask与MultiHeadAttention.pdf",
+      "size_bytes": 105325,
+      "sha256": "00ced253bcfa869fcade6838d67fe94188281b84c9bc367057ee28545cbc93b5"
+    },
+    {
+      "source_path": "第55讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_核心概念速查卡.pdf",
+      "size_bytes": 5800,
+      "sha256": "1fa7a13456819508a5f5d9702a39b343573df555e0e2cd6fc9eb13d974129a4b"
+    },
+    {
+      "source_path": "第55讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_练习题与答案.pdf",
+      "size_bytes": 6643,
+      "sha256": "fa886994ede7b82aacaf26738604c1f5ae428c241e772dad14feb79b733f2952"
+    },
+    {
+      "source_path": "第55讲_讲义_Mask与MultiHeadAttention.pdf",
+      "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_讲义_Mask与MultiHeadAttention.pdf",
+      "size_bytes": 302239,
+      "sha256": "8b21e4438339124dec7550efb08d83e11445667222458f46ef98417945ff4e9d"
+    },
+    {
+      "source_path": "README_第56讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第56讲/README_第56讲.txt",
+      "size_bytes": 913,
+      "sha256": "e06f1d17a440f9a4142a758ae575e7255b5d9b6e1c86896cc79bcd4d62667fc2"
+    },
+    {
+      "source_path": "lesson56_transformer_block_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第56讲/lesson56_transformer_block_experiment.py",
+      "size_bytes": 7512,
+      "sha256": "fef976498a21d4aa0c5d6fada03171e640320c86f315838522e691e32ccc5345"
+    },
+    {
+      "source_path": "第56讲_TransformerBlock中的MLPResidual与Norm_完整材料包.zip",
+      "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_TransformerBlock中的MLPResidual与Norm_完整材料包.zip",
+      "size_bytes": 518184,
+      "sha256": "5b44c374f964254069b9746f7697b9bc26c2dda8e93f76abe9b07f67c1f184fe"
+    },
+    {
+      "source_path": "第56讲_实验实际输出.txt",
+      "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_实验实际输出.txt",
+      "size_bytes": 1747,
+      "sha256": "e2d4ccc1716b9350798a60bc872983276baae26cf5ff23cbd2689e68bcac31c4"
+    },
+    {
+      "source_path": "第56讲_实验设计_TransformerBlock结构与梯度.pdf",
+      "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_实验设计_TransformerBlock结构与梯度.pdf",
+      "size_bytes": 163650,
+      "sha256": "05ee4ad97f064da33b2496a43369413cc9d7bc65fd1f9c31077dd6ac8f7b7adb"
+    },
+    {
+      "source_path": "第56讲_核心概念速查卡.pdf",
+      "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_核心概念速查卡.pdf",
+      "size_bytes": 5709,
+      "sha256": "d44b137a39587dc2b60872f3bad3d196094b4ad067c4bf1916c82fd5c7cb17df"
+    },
+    {
+      "source_path": "第56讲_练习题与答案.pdf",
+      "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_练习题与答案.pdf",
+      "size_bytes": 6624,
+      "sha256": "db1b3e15b2163829096589f5340cd5813343ce53ff8c5eddeb2ce715a2920f62"
+    },
+    {
+      "source_path": "第56讲_讲义_TransformerBlock中的MLPResidual与Norm.pdf",
+      "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_讲义_TransformerBlock中的MLPResidual与Norm.pdf",
+      "size_bytes": 257060,
+      "sha256": "80d754793b36afd879dd82c7896ccafffe766b66840355b2d8313bcfed7a6d26"
     }
   ]
 }

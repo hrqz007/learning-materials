@@ -1,0 +1,43 @@
+=== 实验1：Pre-Norm Block 的逐步 Shape ===
+x.shape       = (2, 4, 8)
+norm1.shape   = (2, 4, 8)
+attn.shape    = (2, 4, 8)
+after add     = (2, 4, 8)
+fc1.shape     = (2, 4, 16)
+gelu.shape    = (2, 4, 16)
+fc2.shape     = (2, 4, 8)
+block output  = (2, 4, 8)
+manual vs module max diff = 0.0
+
+=== 实验2：MLP 是逐 Token 的，不做 Token mixing ===
+只改 Token1 后，各 Token 的 MLP 输出最大变化 = [1.21119225025177, 0.0, 0.0, 0.0]
+
+=== 实验3：Causal Attention 可以把 Token1 的变化传到后续 Token ===
+只改 Token1 后，各 Token 的 Attention 输出最大变化 = [1.2467797994613647, 0.6707953214645386, 0.9125397801399231, 0.263211727142334]
+因果注意力下：未来 Token 可以受到更早 Token 的影响。
+
+=== 实验4：Residual Identity Path ===
+Pre-Norm zero-sublayer: max |y-x| = 0.0
+Post-Norm zero-sublayer: max |y-x| = 1.1890817880630493
+Post-Norm 输出仍经过 LayerNorm，因此即使 F=0 也不等于原始 x。
+
+=== 实验5：Residual 对深层梯度传播的最小演示 ===
+input grad norm without residual = 0.0
+input grad norm with residual    = 0.3688491880893707
+
+=== 实验6：Pre-Norm 与 Post-Norm 的 Toy Gradient 对照 ===
+toy pre-norm input grad norm  = 0.3781166076660156
+toy post-norm input grad norm = 0.22250260412693024
+注意：单次 toy 数值不是一般定理，只用于观察结构差异。
+
+=== 实验7：Parameter Count ===
+MHA params = 2362368
+MLP params = 4722432
+2x LayerNorm params = 3072
+Residual params = 0
+Total block-ish params = 7087872
+
+=== 实验8：train/eval 对 LayerNorm 与 Dropout 的影响不同 ===
+train mode two runs max diff = 2.0934367179870605
+eval mode two runs max diff  = 0.0
+LayerNorm 本身 train/eval 行为一致；差异来自 Dropout。
