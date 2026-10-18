@@ -1,19 +1,19 @@
 # 学习资料备份
 
-基础快照截止：2026-10-06 12:35:30（UTC）；最近单项增量更新：2026-10-17（UTC）。按课程和课次整理，共保留 1004 份原始文件、原文件名和文件内容，总计 455,137,776 字节。
+基础快照截止：2026-10-06 12:35:30（UTC）；最近增量更新：2026-10-18（UTC）。按课程和课次整理，共保留 1054 份原始文件、原文件名和文件内容，总计 483,798,679 字节。
 
 压缩包保留原样，未展开重复内容。不同文件名或版本的原件均保留；代码与图片按所属课程课次归档。备份过程未执行资料中的代码。
 
 这是本次整理的文件快照，不代表已启用持续自动同步，也不代表课程学习或实验已经完成。
 
-本次增量仅更新 Agent Systems 零基础科研教程第31讲资料包，保持原文件名、目录与 ZIP 原始字节（3,567,756 字节）；旧版本保留在 Git 历史中。其他文件沿用既有快照，本次未重新扫描全部来源。
+本次完整扫描“学习”文件夹（截止 2026-10-18 12:39 UTC），新增 Agent Memory Systems 第01–18讲共50份 PDF/Markdown 原件，合计28,660,903字节。不同文件名的原件均保留，既有文件及 Git 历史保持不变。
 
 ## 文件清单与核验
 
 - [文件清单.json](%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95.json)：机器可读清单
 - [文件清单.csv](%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95.csv)：便于表格查看的清单
 
-两份清单均记录 `source_path`（原文件名或相对路径）、`target_path`（仓库内相对路径）、`size_bytes`（原始字节数）和 `sha256`（文件内容的 SHA-256）。核验时，以仓库根目录为起点读取 `target_path`，检查字节数及 SHA-256 是否匹配。JSON 顶层的 `files` 包含全部 1004 条原始文件记录。
+两份清单均记录 `source_path`（原文件名或相对路径）、`target_path`（仓库内相对路径）、`size_bytes`（原始字节数）和 `sha256`（文件内容的 SHA-256）。核验时，以仓库根目录为起点读取 `target_path`，检查字节数及 SHA-256 是否匹配。JSON 顶层的 `files` 包含全部 1054 条原始文件记录。
 
 README 和两份清单不计入原始文件数。为传输临时重新打包的 ZIP 也不计入；课程自带的原始 ZIP 计入并保持原样。
 
@@ -259,6 +259,25 @@ README 和两份清单不计入原始文件数。为传输临时重新打包的 
 - [深度学习数学与神经网络基础/第54讲](%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E4%B8%8E%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E7%AC%AC54%E8%AE%B2/)：8 份文件
 - [深度学习数学与神经网络基础/第55讲](%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E4%B8%8E%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E7%AC%AC55%E8%AE%B2/)：8 份文件
 - [深度学习数学与神经网络基础/第56讲](%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%95%B0%E5%AD%A6%E4%B8%8E%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E7%AC%AC56%E8%AE%B2/)：8 份文件
+
+- [Agent_Memory_Systems/第01讲](Agent_Memory_Systems/第01讲/)：2 份文件
+- [Agent_Memory_Systems/第02讲](Agent_Memory_Systems/第02讲/)：2 份文件
+- [Agent_Memory_Systems/第03讲](Agent_Memory_Systems/第03讲/)：4 份文件
+- [Agent_Memory_Systems/第04讲](Agent_Memory_Systems/第04讲/)：3 份文件
+- [Agent_Memory_Systems/第05讲](Agent_Memory_Systems/第05讲/)：2 份文件
+- [Agent_Memory_Systems/第06讲](Agent_Memory_Systems/第06讲/)：3 份文件
+- [Agent_Memory_Systems/第07讲](Agent_Memory_Systems/第07讲/)：3 份文件
+- [Agent_Memory_Systems/第08讲](Agent_Memory_Systems/第08讲/)：3 份文件
+- [Agent_Memory_Systems/第09讲](Agent_Memory_Systems/第09讲/)：3 份文件
+- [Agent_Memory_Systems/第10讲](Agent_Memory_Systems/第10讲/)：2 份文件
+- [Agent_Memory_Systems/第11讲](Agent_Memory_Systems/第11讲/)：3 份文件
+- [Agent_Memory_Systems/第12讲](Agent_Memory_Systems/第12讲/)：3 份文件
+- [Agent_Memory_Systems/第13讲](Agent_Memory_Systems/第13讲/)：2 份文件
+- [Agent_Memory_Systems/第14讲](Agent_Memory_Systems/第14讲/)：3 份文件
+- [Agent_Memory_Systems/第15讲](Agent_Memory_Systems/第15讲/)：3 份文件
+- [Agent_Memory_Systems/第16讲](Agent_Memory_Systems/第16讲/)：3 份文件
+- [Agent_Memory_Systems/第17讲](Agent_Memory_Systems/第17讲/)：3 份文件
+- [Agent_Memory_Systems/第18讲](Agent_Memory_Systems/第18讲/)：3 份文件
 
 ## 版权与使用
 

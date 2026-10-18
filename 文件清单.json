@@ -1,6 +1,6 @@
 {
-  "original_file_count": 1004,
-  "original_total_bytes": 455137776,
+  "original_file_count": 1054,
+  "original_total_bytes": 483798679,
   "snapshot_date_utc": "2026-10-06",
   "snapshot_cutoff_utc": "2026-10-06T12:35:30Z",
   "files": [
@@ -1041,6 +1041,306 @@
       "target_path": "Agent基础教程/第07讲/Agent_Lesson7_Prompt_Injection_and_Agent_Hijacking.docx",
       "size_bytes": 918627,
       "sha256": "137923ce17d3989c2a0fcab78d9c0cb300678cf049f4af9775a472b02b167aaa"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L01_什么是智能体记忆系统.pdf",
+      "target_path": "Agent_Memory_Systems/第01讲/Agent_Memory_Systems_L01_什么是智能体记忆系统.pdf",
+      "size_bytes": 1034033,
+      "sha256": "f6e46f0473f8100531965479e9b32761066f9daf2b084c057396cd86004f7dad"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L01_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第01讲/Agent_Memory_Systems_L01_讲义正文.md",
+      "size_bytes": 34004,
+      "sha256": "3c63265a86604b33b2ffd78ab71da8a04381108e6aeb4130e764afee5da2e519"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L02_为什么大语言模型需要外部记忆(1).pdf",
+      "target_path": "Agent_Memory_Systems/第02讲/Agent_Memory_Systems_L02_为什么大语言模型需要外部记忆(1).pdf",
+      "size_bytes": 833016,
+      "sha256": "4be0e0a2d47ab7e7a6dfacf20fcb80fb31b3f5c4f13c23143dab2eca0247cb4a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L02_为什么大语言模型需要外部记忆.pdf",
+      "target_path": "Agent_Memory_Systems/第02讲/Agent_Memory_Systems_L02_为什么大语言模型需要外部记忆.pdf",
+      "size_bytes": 833016,
+      "sha256": "4be0e0a2d47ab7e7a6dfacf20fcb80fb31b3f5c4f13c23143dab2eca0247cb4a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L03_记忆_上下文_聊天记录与知识库(1).pdf",
+      "target_path": "Agent_Memory_Systems/第03讲/Agent_Memory_Systems_L03_记忆_上下文_聊天记录与知识库(1).pdf",
+      "size_bytes": 867874,
+      "sha256": "2283bedcf65f594e2705a98610037f11312e088131a2f3cd7e0cd1e6ed515e0b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L03_记忆_上下文_聊天记录与知识库.pdf",
+      "target_path": "Agent_Memory_Systems/第03讲/Agent_Memory_Systems_L03_记忆_上下文_聊天记录与知识库.pdf",
+      "size_bytes": 867874,
+      "sha256": "2283bedcf65f594e2705a98610037f11312e088131a2f3cd7e0cd1e6ed515e0b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L03_讲义正文(1).md",
+      "target_path": "Agent_Memory_Systems/第03讲/Agent_Memory_Systems_L03_讲义正文(1).md",
+      "size_bytes": 43021,
+      "sha256": "2b83e6ce63e5c4bb2dd69be86f6dbbec34521bb9926232b12311103803ab34b3"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L03_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第03讲/Agent_Memory_Systems_L03_讲义正文.md",
+      "size_bytes": 43021,
+      "sha256": "2b83e6ce63e5c4bb2dd69be86f6dbbec34521bb9926232b12311103803ab34b3"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L04_记忆系统在智能体架构中的位置(1).pdf",
+      "target_path": "Agent_Memory_Systems/第04讲/Agent_Memory_Systems_L04_记忆系统在智能体架构中的位置(1).pdf",
+      "size_bytes": 970302,
+      "sha256": "41e484fd800366b586240c7d1cab6371317bd688c719217aaa9eb55d16cd71a9"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L04_记忆系统在智能体架构中的位置.pdf",
+      "target_path": "Agent_Memory_Systems/第04讲/Agent_Memory_Systems_L04_记忆系统在智能体架构中的位置.pdf",
+      "size_bytes": 970302,
+      "sha256": "41e484fd800366b586240c7d1cab6371317bd688c719217aaa9eb55d16cd71a9"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L04_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第04讲/Agent_Memory_Systems_L04_讲义正文.md",
+      "size_bytes": 46247,
+      "sha256": "d2596daa3f692bbe85c8baba6bf35b6debaa218b4fa5dcaeb58196a303d808bb"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L05_Token_上下文窗口与信息容量.pdf",
+      "target_path": "Agent_Memory_Systems/第05讲/Agent_Memory_Systems_L05_Token_上下文窗口与信息容量.pdf",
+      "size_bytes": 1005446,
+      "sha256": "4bffc1ded363c0c359aa76b7d9d7ba2b7f152764d48695776073e7d99660c5d5"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L05_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第05讲/Agent_Memory_Systems_L05_讲义正文.md",
+      "size_bytes": 51554,
+      "sha256": "ecdbd5a20a2a7d7f9013e1ebf2362b436a79e8b530a86c4318ea711937e939e0"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L06_大语言模型怎样利用上下文信息(1).pdf",
+      "target_path": "Agent_Memory_Systems/第06讲/Agent_Memory_Systems_L06_大语言模型怎样利用上下文信息(1).pdf",
+      "size_bytes": 1107858,
+      "sha256": "6684ad9bdc23b9fa64628bc54c6db9a130c304d21ab002500fb8e218fba8378d"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L06_大语言模型怎样利用上下文信息.pdf",
+      "target_path": "Agent_Memory_Systems/第06讲/Agent_Memory_Systems_L06_大语言模型怎样利用上下文信息.pdf",
+      "size_bytes": 1107858,
+      "sha256": "6684ad9bdc23b9fa64628bc54c6db9a130c304d21ab002500fb8e218fba8378d"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L06_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第06讲/Agent_Memory_Systems_L06_讲义正文.md",
+      "size_bytes": 43535,
+      "sha256": "2b5c7c96dc39eb5e77b314b0aa15d42e9606a0cec7e4dc75133074befc8341cd"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L07_Embedding与语义向量(1).pdf",
+      "target_path": "Agent_Memory_Systems/第07讲/Agent_Memory_Systems_L07_Embedding与语义向量(1).pdf",
+      "size_bytes": 850323,
+      "sha256": "05bc0091c02a61e40b1493d6c91739b62a07ab4ef91a0d54a31462ed4223d0d6"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L07_Embedding与语义向量.pdf",
+      "target_path": "Agent_Memory_Systems/第07讲/Agent_Memory_Systems_L07_Embedding与语义向量.pdf",
+      "size_bytes": 850323,
+      "sha256": "05bc0091c02a61e40b1493d6c91739b62a07ab4ef91a0d54a31462ed4223d0d6"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L07_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第07讲/Agent_Memory_Systems_L07_讲义正文.md",
+      "size_bytes": 39010,
+      "sha256": "1fe953cfb7e8da0eddfab21cbf9b8e011170514f10adfb37fb162341535de8c6"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L08_搜索_检索与RAG基础原理(1).pdf",
+      "target_path": "Agent_Memory_Systems/第08讲/Agent_Memory_Systems_L08_搜索_检索与RAG基础原理(1).pdf",
+      "size_bytes": 872377,
+      "sha256": "939385e2ec10daaa6e0ea9c566224ea748fcaca45c046fdee75bb53536f93d9c"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L08_搜索_检索与RAG基础原理.pdf",
+      "target_path": "Agent_Memory_Systems/第08讲/Agent_Memory_Systems_L08_搜索_检索与RAG基础原理.pdf",
+      "size_bytes": 872377,
+      "sha256": "939385e2ec10daaa6e0ea9c566224ea748fcaca45c046fdee75bb53536f93d9c"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L08_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第08讲/Agent_Memory_Systems_L08_讲义正文.md",
+      "size_bytes": 50270,
+      "sha256": "a439eec3f4897016ff9eaf64e1e026852741d6c0b10ffab4f7a95f7c40fba2de"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L09_计算机怎样组织和保存记忆数据(1).pdf",
+      "target_path": "Agent_Memory_Systems/第09讲/Agent_Memory_Systems_L09_计算机怎样组织和保存记忆数据(1).pdf",
+      "size_bytes": 886675,
+      "sha256": "6dc3c9a44f73fbc608a7c2f7f8b114b18e15d21ccf98a61012d855075707b5e5"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L09_计算机怎样组织和保存记忆数据.pdf",
+      "target_path": "Agent_Memory_Systems/第09讲/Agent_Memory_Systems_L09_计算机怎样组织和保存记忆数据.pdf",
+      "size_bytes": 886675,
+      "sha256": "6dc3c9a44f73fbc608a7c2f7f8b114b18e15d21ccf98a61012d855075707b5e5"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L09_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第09讲/Agent_Memory_Systems_L09_讲义正文.md",
+      "size_bytes": 45906,
+      "sha256": "668b762ba3e078a24ed9357e3d0dd9523cac295ce090414031385d1055605807"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L10_智能体记忆的四种类型.pdf",
+      "target_path": "Agent_Memory_Systems/第10讲/Agent_Memory_Systems_L10_智能体记忆的四种类型.pdf",
+      "size_bytes": 1003763,
+      "sha256": "abeb3c38764466dfb713c3364d9a51366b4a74842dc208c96fd7144d6df1170d"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L10_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第10讲/Agent_Memory_Systems_L10_讲义正文.md",
+      "size_bytes": 39937,
+      "sha256": "e7f69f2e482c95c99676b8cbc258a736b2eb40ee00a97a4790a60a3486702d2e"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L11_记忆来源与候选记忆形成(1).pdf",
+      "target_path": "Agent_Memory_Systems/第11讲/Agent_Memory_Systems_L11_记忆来源与候选记忆形成(1).pdf",
+      "size_bytes": 1022107,
+      "sha256": "a26c711bafef23f30f798dc6b1131e92c9eecbb35ee285e29db56b2b4c7be4b3"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L11_记忆来源与候选记忆形成.pdf",
+      "target_path": "Agent_Memory_Systems/第11讲/Agent_Memory_Systems_L11_记忆来源与候选记忆形成.pdf",
+      "size_bytes": 1022107,
+      "sha256": "a26c711bafef23f30f798dc6b1131e92c9eecbb35ee285e29db56b2b4c7be4b3"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L11_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第11讲/Agent_Memory_Systems_L11_讲义正文.md",
+      "size_bytes": 41635,
+      "sha256": "4a2c6afc335050984bb0d23408f82f83e47bcde13ed373a306f902b501068001"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L12_哪些信息值得记住_重要性相关性与写入策略(1).pdf",
+      "target_path": "Agent_Memory_Systems/第12讲/Agent_Memory_Systems_L12_哪些信息值得记住_重要性相关性与写入策略(1).pdf",
+      "size_bytes": 614469,
+      "sha256": "bbb580350006ef2d16b419f6b00a32ec4921812058478b708197f2d978e1c135"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L12_哪些信息值得记住_重要性相关性与写入策略.pdf",
+      "target_path": "Agent_Memory_Systems/第12讲/Agent_Memory_Systems_L12_哪些信息值得记住_重要性相关性与写入策略.pdf",
+      "size_bytes": 614469,
+      "sha256": "bbb580350006ef2d16b419f6b00a32ec4921812058478b708197f2d978e1c135"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L12_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第12讲/Agent_Memory_Systems_L12_讲义正文.md",
+      "size_bytes": 28341,
+      "sha256": "b2f716dcfdbfb2c60617f42960cbfcb6d4add49c9a6e908fe0bac4aa5b827cae"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L13_记忆编码_分段_摘要与压缩.pdf",
+      "target_path": "Agent_Memory_Systems/第13讲/Agent_Memory_Systems_L13_记忆编码_分段_摘要与压缩.pdf",
+      "size_bytes": 1000944,
+      "sha256": "0c252bd12103c4e0f05519d338dac184e92c20ef41bbb798bce7c0739bd01462"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L13_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第13讲/Agent_Memory_Systems_L13_讲义正文.md",
+      "size_bytes": 34447,
+      "sha256": "bd16b7a13ce45cf1eefde57e087deae100b3b2a255415bc00a6bab8e88a84f0a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L14_时间_来源_状态与记忆冲突(1).pdf",
+      "target_path": "Agent_Memory_Systems/第14讲/Agent_Memory_Systems_L14_时间_来源_状态与记忆冲突(1).pdf",
+      "size_bytes": 734113,
+      "sha256": "ab4dac3bc041f538fb2b519d9738a4787bc915426a82efb89c8cde05f2e81111"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L14_时间_来源_状态与记忆冲突.pdf",
+      "target_path": "Agent_Memory_Systems/第14讲/Agent_Memory_Systems_L14_时间_来源_状态与记忆冲突.pdf",
+      "size_bytes": 734113,
+      "sha256": "ab4dac3bc041f538fb2b519d9738a4787bc915426a82efb89c8cde05f2e81111"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L14_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第14讲/Agent_Memory_Systems_L14_讲义正文.md",
+      "size_bytes": 30730,
+      "sha256": "2e1c0126d492855f74abb64ea976bd9e7e68343c5c2d270ac72588127709d686"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L15_记忆巩固_合并与长期记忆形成.pdf",
+      "target_path": "Agent_Memory_Systems/第15讲/Agent_Memory_Systems_L15_记忆巩固_合并与长期记忆形成.pdf",
+      "size_bytes": 1046816,
+      "sha256": "6c585033e8c7d585a4cabe355e7f4f147221062e3342bc9e5c7ab38fd4c7c14d"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L15_讲义正文(1).md",
+      "target_path": "Agent_Memory_Systems/第15讲/Agent_Memory_Systems_L15_讲义正文(1).md",
+      "size_bytes": 32462,
+      "sha256": "0df4b84254e8851525bde66e513c88847c0d6bd844708558d25d51edf830d30e"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L15_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第15讲/Agent_Memory_Systems_L15_讲义正文.md",
+      "size_bytes": 32462,
+      "sha256": "0df4b84254e8851525bde66e513c88847c0d6bd844708558d25d51edf830d30e"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L16_记忆的元数据_来源追溯与可信度(1).pdf",
+      "target_path": "Agent_Memory_Systems/第16讲/Agent_Memory_Systems_L16_记忆的元数据_来源追溯与可信度(1).pdf",
+      "size_bytes": 1083281,
+      "sha256": "920c637ee955aae4f91fdb2925f292b7d96a5ea176656ebec9111bc46937d348"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L16_记忆的元数据_来源追溯与可信度.pdf",
+      "target_path": "Agent_Memory_Systems/第16讲/Agent_Memory_Systems_L16_记忆的元数据_来源追溯与可信度.pdf",
+      "size_bytes": 1083281,
+      "sha256": "920c637ee955aae4f91fdb2925f292b7d96a5ea176656ebec9111bc46937d348"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L16_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第16讲/Agent_Memory_Systems_L16_讲义正文.md",
+      "size_bytes": 33080,
+      "sha256": "e4d93c99b3bd0a1b14e15788c61c444885f18c15dfbd3b4ce3d500657f8b7182"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L17_文本记忆与结构化记忆(1).pdf",
+      "target_path": "Agent_Memory_Systems/第17讲/Agent_Memory_Systems_L17_文本记忆与结构化记忆(1).pdf",
+      "size_bytes": 1049662,
+      "sha256": "c469d0d3e1e2ad270a13aa867952fe13f22fbfc99079f4bc2b4e241a019e98ad"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L17_文本记忆与结构化记忆.pdf",
+      "target_path": "Agent_Memory_Systems/第17讲/Agent_Memory_Systems_L17_文本记忆与结构化记忆.pdf",
+      "size_bytes": 1049662,
+      "sha256": "c469d0d3e1e2ad270a13aa867952fe13f22fbfc99079f4bc2b4e241a019e98ad"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L17_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第17讲/Agent_Memory_Systems_L17_讲义正文.md",
+      "size_bytes": 34820,
+      "sha256": "9aef3c1f4bc5ada1a38ceac17a29e3b2ec300c00df6deac9d66ab32bbffae75f"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L18_向量记忆与向量数据库.pdf",
+      "target_path": "Agent_Memory_Systems/第18讲/Agent_Memory_Systems_L18_向量记忆与向量数据库.pdf",
+      "size_bytes": 1005547,
+      "sha256": "ef1197e06f3de2e76b35c8f0cda358339172742cc552d4f9d3ced65fdba3428f"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L18_讲义正文(1).md",
+      "target_path": "Agent_Memory_Systems/第18讲/Agent_Memory_Systems_L18_讲义正文(1).md",
+      "size_bytes": 37879,
+      "sha256": "ae42ee93c49d2c0b7c73ae49815a5c95845f9a07fdb6dace442be91aae8677ae"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L18_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第18讲/Agent_Memory_Systems_L18_讲义正文.md",
+      "size_bytes": 37879,
+      "sha256": "ae42ee93c49d2c0b7c73ae49815a5c95845f9a07fdb6dace442be91aae8677ae"
     },
     {
       "source_path": "Agent_Systems_Foundations_01_CN.zip",
@@ -2453,6 +2753,30 @@
       "sha256": "1447755614566ea4561a01dc21985df09c062c18caa75083b8c38b7c49547bbe"
     },
     {
+      "source_path": "README_第53讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第53讲/README_第53讲.txt",
+      "size_bytes": 954,
+      "sha256": "ba42b76dd6241fadded6dc93b7884557ea010d42b540576b9fcc9267794b4cae"
+    },
+    {
+      "source_path": "README_第54讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第54讲/README_第54讲.txt",
+      "size_bytes": 852,
+      "sha256": "8132bcc77cb195919ff0f808f7a15a79da535c189439fca0a8401075f2cff7a3"
+    },
+    {
+      "source_path": "README_第55讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第55讲/README_第55讲.txt",
+      "size_bytes": 872,
+      "sha256": "082cf1ef51e87bd7b164a19826d2afa8a646c2a57da1345bc2264c96967d8dc1"
+    },
+    {
+      "source_path": "README_第56讲.txt",
+      "target_path": "深度学习数学与神经网络基础/第56讲/README_第56讲.txt",
+      "size_bytes": 913,
+      "sha256": "e06f1d17a440f9a4142a758ae575e7255b5d9b6e1c86896cc79bcd4d62667fc2"
+    },
+    {
       "source_path": "Spark_Principles_Lecture12_CN.pdf",
       "target_path": "大数据处理技术/Spark/第12讲/Spark_Principles_Lecture12_CN.pdf",
       "size_bytes": 1216373,
@@ -3645,6 +3969,30 @@
       "target_path": "深度学习数学与神经网络基础/第52讲/lesson52_embedding_experiment.py",
       "size_bytes": 12622,
       "sha256": "aa58bbef49bf618595f36172c4b8c3011491b6902d10e36b9e8bd359bf275671"
+    },
+    {
+      "source_path": "lesson53_qkv_projection_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第53讲/lesson53_qkv_projection_experiment.py",
+      "size_bytes": 5543,
+      "sha256": "9e87d18d185c24c1c890ead774c62cf9a05f89b2c3f3038958d4e5d8cc0e05ee"
+    },
+    {
+      "source_path": "lesson54_scaled_dot_product_attention_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第54讲/lesson54_scaled_dot_product_attention_experiment.py",
+      "size_bytes": 4637,
+      "sha256": "52b4011eb05dd4f43d9964f8fe1601428c70678e219910b55eca491eea6c011b"
+    },
+    {
+      "source_path": "lesson55_mask_multihead_attention_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第55讲/lesson55_mask_multihead_attention_experiment.py",
+      "size_bytes": 5349,
+      "sha256": "3771766eadb1df954d048bfe7baf6cc499db84cfdeb1b7a53ec0e1132a83d2a5"
+    },
+    {
+      "source_path": "lesson56_transformer_block_experiment.py",
+      "target_path": "深度学习数学与神经网络基础/第56讲/lesson56_transformer_block_experiment.py",
+      "size_bytes": 7512,
+      "sha256": "fef976498a21d4aa0c5d6fada03171e640320c86f315838522e691e32ccc5345"
     },
     {
       "source_path": "pass_at_k_demo.png",
@@ -5825,30 +6173,6 @@
       "sha256": "005e6015bf3941aee5525cee1714d0673dd848bc07350626baa3077c0db746c4"
     },
     {
-      "source_path": "粘贴的文本 (1).txt",
-      "target_path": "Agent_Systems零基础科研教程/课程总览与续课说明/粘贴的文本 (1).txt",
-      "size_bytes": 16157,
-      "sha256": "ac3719e3315a32127cf49853903e114b0f3cb6c0146a95fff68ddfe6624c17e1"
-    },
-    {
-      "source_path": "肿瘤新抗原与StableNeoRank全景图.png",
-      "target_path": "肿瘤新抗原与StableNeoRank/专题图解/肿瘤新抗原与StableNeoRank全景图.png",
-      "size_bytes": 1858626,
-      "sha256": "a64848a1fcfda290822be0fc23fdeb2fcde4f42cc147aa441125f106e0806d8d"
-    },
-    {
-      "source_path": "README_第53讲.txt",
-      "target_path": "深度学习数学与神经网络基础/第53讲/README_第53讲.txt",
-      "size_bytes": 954,
-      "sha256": "ba42b76dd6241fadded6dc93b7884557ea010d42b540576b9fcc9267794b4cae"
-    },
-    {
-      "source_path": "lesson53_qkv_projection_experiment.py",
-      "target_path": "深度学习数学与神经网络基础/第53讲/lesson53_qkv_projection_experiment.py",
-      "size_bytes": 5543,
-      "sha256": "9e87d18d185c24c1c890ead774c62cf9a05f89b2c3f3038958d4e5d8cc0e05ee"
-    },
-    {
       "source_path": "第53讲_QKV是怎样算出来的_完整材料包.zip",
       "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_QKV是怎样算出来的_完整材料包.zip",
       "size_bytes": 504475,
@@ -5883,18 +6207,6 @@
       "target_path": "深度学习数学与神经网络基础/第53讲/第53讲_讲义_QKV是怎样算出来的.pdf",
       "size_bytes": 182656,
       "sha256": "ed8199621b14297be4f23e87273e22d96f49d5c094ed49f20b2b9571efc82eec"
-    },
-    {
-      "source_path": "README_第54讲.txt",
-      "target_path": "深度学习数学与神经网络基础/第54讲/README_第54讲.txt",
-      "size_bytes": 852,
-      "sha256": "8132bcc77cb195919ff0f808f7a15a79da535c189439fca0a8401075f2cff7a3"
-    },
-    {
-      "source_path": "lesson54_scaled_dot_product_attention_experiment.py",
-      "target_path": "深度学习数学与神经网络基础/第54讲/lesson54_scaled_dot_product_attention_experiment.py",
-      "size_bytes": 4637,
-      "sha256": "52b4011eb05dd4f43d9964f8fe1601428c70678e219910b55eca491eea6c011b"
     },
     {
       "source_path": "第54讲_ScaledDotProductAttention_完整材料包.zip",
@@ -5933,18 +6245,6 @@
       "sha256": "db19e9181100c529f3337acbc85bc077da29f3bc048ab3975b9a505dcb46e388"
     },
     {
-      "source_path": "README_第55讲.txt",
-      "target_path": "深度学习数学与神经网络基础/第55讲/README_第55讲.txt",
-      "size_bytes": 872,
-      "sha256": "082cf1ef51e87bd7b164a19826d2afa8a646c2a57da1345bc2264c96967d8dc1"
-    },
-    {
-      "source_path": "lesson55_mask_multihead_attention_experiment.py",
-      "target_path": "深度学习数学与神经网络基础/第55讲/lesson55_mask_multihead_attention_experiment.py",
-      "size_bytes": 5349,
-      "sha256": "3771766eadb1df954d048bfe7baf6cc499db84cfdeb1b7a53ec0e1132a83d2a5"
-    },
-    {
       "source_path": "第55讲_Mask与MultiHeadAttention_完整材料包.zip",
       "target_path": "深度学习数学与神经网络基础/第55讲/第55讲_Mask与MultiHeadAttention_完整材料包.zip",
       "size_bytes": 544076,
@@ -5981,18 +6281,6 @@
       "sha256": "8b21e4438339124dec7550efb08d83e11445667222458f46ef98417945ff4e9d"
     },
     {
-      "source_path": "README_第56讲.txt",
-      "target_path": "深度学习数学与神经网络基础/第56讲/README_第56讲.txt",
-      "size_bytes": 913,
-      "sha256": "e06f1d17a440f9a4142a758ae575e7255b5d9b6e1c86896cc79bcd4d62667fc2"
-    },
-    {
-      "source_path": "lesson56_transformer_block_experiment.py",
-      "target_path": "深度学习数学与神经网络基础/第56讲/lesson56_transformer_block_experiment.py",
-      "size_bytes": 7512,
-      "sha256": "fef976498a21d4aa0c5d6fada03171e640320c86f315838522e691e32ccc5345"
-    },
-    {
       "source_path": "第56讲_TransformerBlock中的MLPResidual与Norm_完整材料包.zip",
       "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_TransformerBlock中的MLPResidual与Norm_完整材料包.zip",
       "size_bytes": 518184,
@@ -6027,8 +6315,20 @@
       "target_path": "深度学习数学与神经网络基础/第56讲/第56讲_讲义_TransformerBlock中的MLPResidual与Norm.pdf",
       "size_bytes": 257060,
       "sha256": "80d754793b36afd879dd82c7896ccafffe766b66840355b2d8313bcfed7a6d26"
+    },
+    {
+      "source_path": "粘贴的文本 (1).txt",
+      "target_path": "Agent_Systems零基础科研教程/课程总览与续课说明/粘贴的文本 (1).txt",
+      "size_bytes": 16157,
+      "sha256": "ac3719e3315a32127cf49853903e114b0f3cb6c0146a95fff68ddfe6624c17e1"
+    },
+    {
+      "source_path": "肿瘤新抗原与StableNeoRank全景图.png",
+      "target_path": "肿瘤新抗原与StableNeoRank/专题图解/肿瘤新抗原与StableNeoRank全景图.png",
+      "size_bytes": 1858626,
+      "sha256": "a64848a1fcfda290822be0fc23fdeb2fcde4f42cc147aa441125f106e0806d8d"
     }
   ],
-  "last_incremental_update_utc": "2026-10-17T12:26:00Z",
-  "last_incremental_update_note": "Updated only Agent Systems lesson 31 original ZIP; other entries retained from the prior snapshot."
+  "last_incremental_update_utc": "2026-10-18",
+  "last_incremental_update_note": "完整扫描学习文件夹；新增 Agent Memory Systems 第01–18讲共50份原始PDF/Markdown，保留所有不同文件名的原件及既有历史。扫描截止 2026-10-18 12:39 UTC。"
 }
