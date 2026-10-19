@@ -1,6 +1,6 @@
 {
-  "original_file_count": 1054,
-  "original_total_bytes": 483798679,
+  "original_file_count": 1097,
+  "original_total_bytes": 533550757,
   "snapshot_date_utc": "2026-10-06",
   "snapshot_cutoff_utc": "2026-10-06T12:35:30Z",
   "files": [
@@ -1043,6 +1043,36 @@
       "sha256": "137923ce17d3989c2a0fcab78d9c0cb300678cf049f4af9775a472b02b167aaa"
     },
     {
+      "source_path": "Agent_Memory_Systems_32讲_核心概念易混淆知识卡_一页速查(1).pdf",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_32讲_核心概念易混淆知识卡_一页速查(1).pdf",
+      "size_bytes": 457815,
+      "sha256": "a2980af2788a1eeec36bf99a4b989ac16716f8af1188907e52f1f1bc3030fe8b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_32讲_核心概念易混淆知识卡_一页速查.pdf",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_32讲_核心概念易混淆知识卡_一页速查.pdf",
+      "size_bytes": 457815,
+      "sha256": "a2980af2788a1eeec36bf99a4b989ac16716f8af1188907e52f1f1bc3030fe8b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_32讲_核心概念易混淆知识卡_完整版.pdf",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_32讲_核心概念易混淆知识卡_完整版.pdf",
+      "size_bytes": 500011,
+      "sha256": "fa9b13caa897ea849934ca69fb7c484fd573f51058d0b84a5a40043e97c37170"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_32讲_核心概念易混淆知识卡_文字备份.md",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_32讲_核心概念易混淆知识卡_文字备份.md",
+      "size_bytes": 14347,
+      "sha256": "4aeae1c95d70320cd020a46e031b4d3c8ec4606577593f2108ca761567ea4b0b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_32讲完整课程资料包_含知识卡_20261019.zip",
+      "target_path": "Agent_Memory_Systems/完整课程资料包/Agent_Memory_Systems_32讲完整课程资料包_含知识卡_20261019.zip",
+      "size_bytes": 28410996,
+      "sha256": "f392432461220a0ff8269e793b32b1d685bb25c9de35c7a2efd5d77bf5505c91"
+    },
+    {
       "source_path": "Agent_Memory_Systems_L01_什么是智能体记忆系统.pdf",
       "target_path": "Agent_Memory_Systems/第01讲/Agent_Memory_Systems_L01_什么是智能体记忆系统.pdf",
       "size_bytes": 1034033,
@@ -1341,6 +1371,234 @@
       "target_path": "Agent_Memory_Systems/第18讲/Agent_Memory_Systems_L18_讲义正文.md",
       "size_bytes": 37879,
       "sha256": "ae42ee93c49d2c0b7c73ae49815a5c95845f9a07fdb6dace442be91aae8677ae"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L19_图记忆_知识图谱与时间图谱.pdf",
+      "target_path": "Agent_Memory_Systems/第19讲/Agent_Memory_Systems_L19_图记忆_知识图谱与时间图谱.pdf",
+      "size_bytes": 916246,
+      "sha256": "89d4e19fd5cf5cc679b16f573505c4a20ce571f94c9f3f4b430507235bba6bee"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L19_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第19讲/Agent_Memory_Systems_L19_讲义正文.md",
+      "size_bytes": 39008,
+      "sha256": "34302558642a36821e32ed0a85962c081c58dceae92f2ef84fbcfd521b454f5d"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L20_分层记忆与混合架构(1).pdf",
+      "target_path": "Agent_Memory_Systems/第20讲/Agent_Memory_Systems_L20_分层记忆与混合架构(1).pdf",
+      "size_bytes": 1016089,
+      "sha256": "616426aef391c0c5b6e51bc31fd40882bb6a4e914f35a8c1402bda45c19af245"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L20_分层记忆与混合架构.pdf",
+      "target_path": "Agent_Memory_Systems/第20讲/Agent_Memory_Systems_L20_分层记忆与混合架构.pdf",
+      "size_bytes": 1016089,
+      "sha256": "616426aef391c0c5b6e51bc31fd40882bb6a4e914f35a8c1402bda45c19af245"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L20_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第20讲/Agent_Memory_Systems_L20_讲义正文.md",
+      "size_bytes": 35159,
+      "sha256": "ebb41bf0b93051e2a13c88ad843e7a80a8b729dbe60926ec9c8345f38517a435"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L21_什么时候应该检索记忆.pdf",
+      "target_path": "Agent_Memory_Systems/第21讲/Agent_Memory_Systems_L21_什么时候应该检索记忆.pdf",
+      "size_bytes": 832040,
+      "sha256": "98e55c422c0b6cd85d40f91b8efbf341aff71a815c818461517af7d2e3da37a7"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L21_讲义正文(1).md",
+      "target_path": "Agent_Memory_Systems/第21讲/Agent_Memory_Systems_L21_讲义正文(1).md",
+      "size_bytes": 35189,
+      "sha256": "2420fa63838cfb06a5372334518c7446be69ce2152a3796b97ad1af8b6483863"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L21_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第21讲/Agent_Memory_Systems_L21_讲义正文.md",
+      "size_bytes": 35189,
+      "sha256": "2420fa63838cfb06a5372334518c7446be69ce2152a3796b97ad1af8b6483863"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L22_完整理论讲义_v1.pdf",
+      "target_path": "Agent_Memory_Systems/第22讲/Agent_Memory_Systems_L22_完整理论讲义_v1.pdf",
+      "size_bytes": 862454,
+      "sha256": "16bd1a1c710027ba70aadab5bd0047add7dbac47185515a5faad052ea8c268cf"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L22_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第22讲/Agent_Memory_Systems_L22_讲义正文.md",
+      "size_bytes": 31339,
+      "sha256": "968b4a56a744ad20e08a3b5971d0f8a1a0852a66f2e5645d4bdd83b208bca87e"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L23_多跳记忆检索与时间约束(1).pdf",
+      "target_path": "Agent_Memory_Systems/第23讲/Agent_Memory_Systems_L23_多跳记忆检索与时间约束(1).pdf",
+      "size_bytes": 873062,
+      "sha256": "d5edee64223d00a6e86bde58a7b048de140ed3b8266760ea6818532590b60afa"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L23_多跳记忆检索与时间约束.pdf",
+      "target_path": "Agent_Memory_Systems/第23讲/Agent_Memory_Systems_L23_多跳记忆检索与时间约束.pdf",
+      "size_bytes": 873062,
+      "sha256": "d5edee64223d00a6e86bde58a7b048de140ed3b8266760ea6818532590b60afa"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L23_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第23讲/Agent_Memory_Systems_L23_讲义正文.md",
+      "size_bytes": 34919,
+      "sha256": "3fc15bab53d03f7898bb02871b41d5843f400454d3752224e0bed7792d53c7cc"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L24_记忆进入推理规划与行动.pdf",
+      "target_path": "Agent_Memory_Systems/第24讲/Agent_Memory_Systems_L24_记忆进入推理规划与行动.pdf",
+      "size_bytes": 954253,
+      "sha256": "e06660683ec0a032ca025b54170c2c77643bbca86c62dac3c140238242bc41af"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L24_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第24讲/Agent_Memory_Systems_L24_讲义正文.md",
+      "size_bytes": 34354,
+      "sha256": "7f7b00ca858e5372285e2cd1df86f9325810b52746faff4b947092d8bd7879a9"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L25_记忆更新_纠错与遗忘.pdf",
+      "target_path": "Agent_Memory_Systems/第25讲/Agent_Memory_Systems_L25_记忆更新_纠错与遗忘.pdf",
+      "size_bytes": 795363,
+      "sha256": "384f509bcf9aa44341170a420fc5fabaac5b51e5e995b4d9302d5d4d6d17e24e"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L25_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第25讲/Agent_Memory_Systems_L25_讲义正文.md",
+      "size_bytes": 30576,
+      "sha256": "2334eb2ab866dc75508d3b441060ebb3853f5260aebdddd5eb70a68b2d9ef4b6"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L26_自主记忆管理_反思与生命周期成本.pdf",
+      "target_path": "Agent_Memory_Systems/第26讲/Agent_Memory_Systems_L26_自主记忆管理_反思与生命周期成本.pdf",
+      "size_bytes": 909141,
+      "sha256": "eebb53cc4ed92459bb92bb1db83e209fd7416461a94a6639aae665cfae87a973"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L26_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第26讲/Agent_Memory_Systems_L26_讲义正文.md",
+      "size_bytes": 38658,
+      "sha256": "011d9f990bee2ce0591e895bf03688f0e3a941e46c6611716d4d32b32dda7cad"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L27_GenerativeAgents_Reflexion_MemoryBank.pdf",
+      "target_path": "Agent_Memory_Systems/第27讲/Agent_Memory_Systems_L27_GenerativeAgents_Reflexion_MemoryBank.pdf",
+      "size_bytes": 869723,
+      "sha256": "a1754ef3fabe9b5251ff0d1b48fe5e4b5de5526f06d677ee306178c6bb9c884f"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L27_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第27讲/Agent_Memory_Systems_L27_讲义正文.md",
+      "size_bytes": 36714,
+      "sha256": "4ba0a61005205a833204c30792581e13c3f363736cfb5b2b069f726157df9ea7"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L28_MemGPT与Letta_虚拟上下文和长期记忆.pdf",
+      "target_path": "Agent_Memory_Systems/第28讲/Agent_Memory_Systems_L28_MemGPT与Letta_虚拟上下文和长期记忆.pdf",
+      "size_bytes": 1059133,
+      "sha256": "e836d6bfee09306971fdc8b8a977bdb6fa3aa666a73e4ee6a77cf895d2563e69"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L28_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第28讲/Agent_Memory_Systems_L28_讲义正文.md",
+      "size_bytes": 51583,
+      "sha256": "ac9d6b29a2dd38f3173f0db8f71ed421e544176cf199f211ba0a3fc75aebee2a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L29_Mem0_A-MEM与动态记忆组织(1).pdf",
+      "target_path": "Agent_Memory_Systems/第29讲/Agent_Memory_Systems_L29_Mem0_A-MEM与动态记忆组织(1).pdf",
+      "size_bytes": 904931,
+      "sha256": "b8f916177e2465ea96eaa7840b2384837bfddebac6e73064996388cf3695ae49"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L29_Mem0_A-MEM与动态记忆组织.pdf",
+      "target_path": "Agent_Memory_Systems/第29讲/Agent_Memory_Systems_L29_Mem0_A-MEM与动态记忆组织.pdf",
+      "size_bytes": 904931,
+      "sha256": "b8f916177e2465ea96eaa7840b2384837bfddebac6e73064996388cf3695ae49"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L29_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第29讲/Agent_Memory_Systems_L29_讲义正文.md",
+      "size_bytes": 45410,
+      "sha256": "28d3f1705c2a6d74262aca0db5bef167f1f5c84578dbf16bcf112d5471f94ef6"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L30_Zep_Graphiti与时间知识图谱(1).pdf",
+      "target_path": "Agent_Memory_Systems/第30讲/Agent_Memory_Systems_L30_Zep_Graphiti与时间知识图谱(1).pdf",
+      "size_bytes": 1024313,
+      "sha256": "55b1851afbdf9ceb9f936c1237266b2cd336e6708f47a1b9e1848e9ab9d1aa4a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L30_Zep_Graphiti与时间知识图谱.pdf",
+      "target_path": "Agent_Memory_Systems/第30讲/Agent_Memory_Systems_L30_Zep_Graphiti与时间知识图谱.pdf",
+      "size_bytes": 1024313,
+      "sha256": "55b1851afbdf9ceb9f936c1237266b2cd336e6708f47a1b9e1848e9ab9d1aa4a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L30_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第30讲/Agent_Memory_Systems_L30_讲义正文.md",
+      "size_bytes": 54417,
+      "sha256": "298dc9a88f6f57f4f230f85f9ecc7b6f7c9599ca7c6bbc29d5f8886bdbb6e152"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L31_可靠性与评估.pdf",
+      "target_path": "Agent_Memory_Systems/第31讲/Agent_Memory_Systems_L31_可靠性与评估.pdf",
+      "size_bytes": 933534,
+      "sha256": "08f9b4ed2626076c5dd27c12581ae261cadf8ca05ba55b16515a6620ccd20d8a"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L31_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第31讲/Agent_Memory_Systems_L31_讲义正文.md",
+      "size_bytes": 34585,
+      "sha256": "f70c91057e3ac4a2b2f265e76191a48b86d5a4a89aa393b73761e91827d8ab00"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L32_开放问题_失败机制与科研理解总复习(1).pdf",
+      "target_path": "Agent_Memory_Systems/第32讲/Agent_Memory_Systems_L32_开放问题_失败机制与科研理解总复习(1).pdf",
+      "size_bytes": 1008181,
+      "sha256": "c080a382f4418e7a0285d1c97f96a0f59aa7767359681e4cdfc0a444e66dcc8b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L32_开放问题_失败机制与科研理解总复习.pdf",
+      "target_path": "Agent_Memory_Systems/第32讲/Agent_Memory_Systems_L32_开放问题_失败机制与科研理解总复习.pdf",
+      "size_bytes": 1008181,
+      "sha256": "c080a382f4418e7a0285d1c97f96a0f59aa7767359681e4cdfc0a444e66dcc8b"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_L32_讲义正文.md",
+      "target_path": "Agent_Memory_Systems/第32讲/Agent_Memory_Systems_L32_讲义正文.md",
+      "size_bytes": 39542,
+      "sha256": "697301e7f4b6c12112f0922429248c80c9615f1c848538bd5d5efa7438697cb5"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_补充知识卡_18组进阶概念辨析(1).pdf",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_补充知识卡_18组进阶概念辨析(1).pdf",
+      "size_bytes": 526461,
+      "sha256": "a843c58f48fd5d7173fb6098f93c32d932a122c63649cb97bd88552484df3fc1"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_补充知识卡_18组进阶概念辨析.pdf",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_补充知识卡_18组进阶概念辨析.pdf",
+      "size_bytes": 526461,
+      "sha256": "a843c58f48fd5d7173fb6098f93c32d932a122c63649cb97bd88552484df3fc1"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_补充知识卡_一页速查.pdf",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_补充知识卡_一页速查.pdf",
+      "size_bytes": 482530,
+      "sha256": "4791a239067acfe1d798561547714aeaf8f9efadcb8e249a6e3eeb21706215d6"
+    },
+    {
+      "source_path": "Agent_Memory_Systems_补充知识卡_文字备份.md",
+      "target_path": "Agent_Memory_Systems/知识卡/Agent_Memory_Systems_补充知识卡_文字备份.md",
+      "size_bytes": 13961,
+      "sha256": "975053a4d3bb65aa3c2a4a080add84ac4457281525844968bcf5af2c36b4d865"
     },
     {
       "source_path": "Agent_Systems_Foundations_01_CN.zip",
@@ -6329,6 +6587,6 @@
       "sha256": "a64848a1fcfda290822be0fc23fdeb2fcde4f42cc147aa441125f106e0806d8d"
     }
   ],
-  "last_incremental_update_utc": "2026-10-18",
-  "last_incremental_update_note": "完整扫描学习文件夹；新增 Agent Memory Systems 第01–18讲共50份原始PDF/Markdown，保留所有不同文件名的原件及既有历史。扫描截止 2026-10-18 12:39 UTC。"
+  "last_incremental_update_utc": "2026-10-19",
+  "last_incremental_update_note": "完整扫描学习文件夹；新增 Agent Memory Systems 第19–32讲、知识卡和完整课程原始ZIP，共43份原件。保留所有不同文件名的原件及既有历史；未确认用途的上传图片未公开。扫描截止 2026-10-19 13:56 UTC。"
 }
